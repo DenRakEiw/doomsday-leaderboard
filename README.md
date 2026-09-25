@@ -22,10 +22,12 @@ benchmark list, and can replay any listed run move by move.
 2. Open a pull request that adds those files under `runs/` — nothing else. The `validate`
    check must pass: one file per run, well-formed JSON, the file name matching its contents, at
    most 20 runs and 4 MB per file.
-3. After the merge the **replay verifier** plays every new run again from its seed and its
-   commands with the game version the run names. A run whose outcome, days, score or final
-   state hash differ is marked rejected, with the reason, in `verified/`. Only verified runs are
-   counted.
+3. After the merge the **replay verifier** (daily, or when a maintainer starts it) plays every
+   new run again from its seed and its commands with the game's current release content. A run
+   recorded on different game content is rejected with the reason `content` — play the suite
+   again on the current version. A run whose outcome, days, score or final state hash differ is
+   marked rejected, with the reason, in `verified/`. Runs verified on older content keep their
+   verdict and are listed below the current rows. Only verified runs are counted.
 
 The verifier proves that a score is real — that these commands, on this game version, win on
 this day. It cannot prove *which* model chose the commands; the model name is the submitter's

@@ -1,0 +1,40 @@
+# The public half of the checks: is every submitted file a well-formed run in the right place?
+# It needs no game and no secret, so it is safe on pull requests from forks. Whether a run's
+# commands really reproduce its result is decided by the replay verifier, which runs with the
+# game in its own (private) repository and writes verified/ and leaderboard.json.
+name: validate
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Unit tests of the validator
+        run: python3 -m unittest discover -s tests
+
+      - name: Pull request — only new or changed runs, each well formed
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          git diff --name-status --no-renames "origin/${BASE_REF}...HEAD" > "$RUNNER_TEMP/changes.txt"
+          cat "$RUNNER_TEMP/changes.txt"
+          python3 tools/validate.py --pr --changes "$RUNNER_TEMP/changes.txt"
+
+      - name: Main — every run on file is well formed
+        if: github.event_name == 'push'
+        run: python3 tools/validate.py --all
+
+      - name: leaderboard.json parses
+        run: python3 -c "import json; d = json.load(open('leaderboard.json', encoding='utf-8')); assert d['version'] == 1 and isinstance(d['rows'], list)"

@@ -1,0 +1,22 @@
+{
+	"version": 1,
+	"model": "vendor/model-name",
+	"backend": "openrouter",
+	"params": {"temperature": 0.0, "max_completion_tokens": 1200, "json_mode": true, "reasoning": "", "top_p": -1.0},
+	"params_id": "0a1b2c3d",
+	"prompt_version": 1, "parser_version": 1, "locale": "en",
+	"suite": "standard",
+	"game_version": "0.6.0",
+	"content_hash": "abc123",
+	"seed": 1001,
+	"setup": {"architecture": "language_model", "directives": [], "difficulty": "standard", "scenario": ""},
+	"max_days": 2000, "interval_days": 10,
+	"recorded": "2026-09-25T23:10:04",
+	"outcome": "win_ascendance", "variant": "win_ascendance", "days": 612, "end_day": 612,
+	"score": 84.7,
+	"hash": "1234567890",
+	"calls": 78, "cached_calls": 0, "invalid_answers": 1, "rejected_actions": 3,
+	"tokens_in": 912345, "tokens_out": 20411, "cost_usd": 1.23, "budget_exhausted": false,
+	"commands": [{"type": "choose_origin", "day": 0, "region": "usa"}, {"type": "purchase", "day": 12, "id": "x"}],
+	"decisions": [{"day": 0, "stance": "spread", "actions": 2, "done": 2, "refused": [], "invalid": "", "cached": false, "retried": false}]
+}

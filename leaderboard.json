@@ -1296,6 +1296,66 @@
 					"score": 0.0
 				}
 			]
+		},
+		{
+			"model": "nvidia/nemotron-3-ultra-550b-a55b:free",
+			"backend": "openrouter",
+			"effort": "high",
+			"params": {
+				"temperature": 0.0,
+				"max_completion_tokens": 16000.0,
+				"json_mode": true,
+				"reasoning": "high",
+				"top_p": -1.0,
+				"effort": "high"
+			},
+			"params_id": "d82fcc15",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "quick",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": false,
+			"runs": 2,
+			"of": 3,
+			"score": 39.2,
+			"wins": 1,
+			"win_rate": 0.5,
+			"outcomes": {
+				"lose_contained": 1,
+				"win_merge": 1
+			},
+			"mean_win_days": 862,
+			"calls": 250,
+			"invalid_answers": 11,
+			"rejected_actions": 28,
+			"tokens_in": 3729881,
+			"tokens_out": 973130,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/nvidia--nemotron-3-ultra-550b-a55b-free__d82fcc15__p1__quick__s1002.json",
+				"runs/nvidia--nemotron-3-ultra-550b-a55b-free__d82fcc15__p1__quick__s1003.json"
+			],
+			"seeds": [
+				{
+					"seed": 1002,
+					"file": "runs/nvidia--nemotron-3-ultra-550b-a55b-free__d82fcc15__p1__quick__s1002.json",
+					"sha256": "de3a7d79e8026e61ec21b22076852121a8897af307b1b6f5067231ef8ba87515",
+					"outcome": "lose_contained",
+					"days": 604,
+					"score": 0.0
+				},
+				{
+					"seed": 1003,
+					"file": "runs/nvidia--nemotron-3-ultra-550b-a55b-free__d82fcc15__p1__quick__s1003.json",
+					"sha256": "adbdd0f5a6fdb7d9ba3e51653a529261035be86fd8e7816acfbfa5556f6f1a5a",
+					"outcome": "win_merge",
+					"days": 862,
+					"score": 78.4
+				}
+			]
 		}
 	]
 }

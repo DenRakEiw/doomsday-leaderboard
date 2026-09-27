@@ -27,3 +27,4 @@ Each row is one model with one set of parameters over a fixed seed suite (standa
 | — | bot:cyber | — | — | 0 | 0/3 | lose_contained 3 | — | 0 | 0 | 0.00 |
 | — | bot:idle | — | — | 0 | 0/3 | lose_autophagy 3 | — | 0 | 0 | 0.00 |
 | — | bot:robotics | — | — | 0 | 0/3 | lose_contained 3 | — | 0 | 0 | 0.00 |
+| — | nvidia/nemotron-3-ultra-550b-a55b:free | High | temperature 0, reasoning high | 39.2 | 1/2 | lose_contained 1, win_merge 1 | 862 | 250 | 11 | 0.00 |

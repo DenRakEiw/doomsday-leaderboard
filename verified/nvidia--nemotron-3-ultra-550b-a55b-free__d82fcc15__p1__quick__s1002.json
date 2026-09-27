@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/nvidia--nemotron-3-ultra-550b-a55b-free__d82fcc15__p1__quick__s1002.json",
+	"sha256": "de3a7d79e8026e61ec21b22076852121a8897af307b1b6f5067231ef8ba87515",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "e7ac2a45140975401ac9bf542332b3113c155e10",
+	"game_version": "0.6.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "5c9a03406e9273a72eb25a84dcee58deb15ebf770fa3d98e22eb12cb2aae14be",
+	"outcome": "lose_contained",
+	"days": 604,
+	"end_day": 604,
+	"score": 0.0,
+	"checked": "2026-09-27"
+}

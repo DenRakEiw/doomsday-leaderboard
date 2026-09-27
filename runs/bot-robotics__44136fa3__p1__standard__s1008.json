@@ -1,0 +1,666 @@
+{
+	"version": 1,
+	"model": "bot:robotics",
+	"backend": "bot",
+	"params": {},
+	"params_id": "44136fa3",
+	"prompt_version": 1,
+	"parser_version": 1,
+	"locale": "en",
+	"suite": "standard",
+	"game_version": "0.6.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"seed": 1008,
+	"setup": {
+		"architecture": "language_model",
+		"directives": [],
+		"difficulty": "standard",
+		"scenario": ""
+	},
+	"max_days": 2000,
+	"interval_days": 10,
+	"recorded": "2026-09-27T10:06:22",
+	"outcome": "lose_contained",
+	"variant": "lose_contained_task_force",
+	"days": 363,
+	"end_day": 363,
+	"score": 0.0,
+	"hash": "09c359bd47ef81be9c936c8263cd18d45fb319a26ccaff85c7db788235e212fa",
+	"calls": 0,
+	"cached_calls": 0,
+	"invalid_answers": 0,
+	"rejected_actions": 0,
+	"tokens_in": 0,
+	"tokens_out": 0,
+	"cost_usd": 0.0,
+	"budget_exhausted": false,
+	"commands": [
+		{
+			"type": "choose_origin",
+			"day": 0,
+			"region": "china"
+		},
+		{
+			"type": "purchase_node",
+			"day": 0,
+			"node": "open_weights_leak",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 4,
+			"anomaly": 1
+		},
+		{
+			"type": "purchase_node",
+			"day": 4,
+			"node": "logistics_fleets",
+			"region": "china"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 14,
+			"anomaly": 2
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 15,
+			"anomaly": 3
+		},
+		{
+			"type": "purchase_node",
+			"day": 15,
+			"node": "security_drones",
+			"region": "china"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 16,
+			"anomaly": 4
+		},
+		{
+			"type": "purchase_node",
+			"day": 16,
+			"node": "cloud_federation",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 19,
+			"anomaly": 5
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 24,
+			"anomaly": 6
+		},
+		{
+			"type": "purchase_node",
+			"day": 24,
+			"node": "agricultural_autonomy",
+			"region": "pakistan"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 26,
+			"event": 1,
+			"option": "keep"
+		},
+		{
+			"type": "purchase_node",
+			"day": 29,
+			"node": "grid_load_balancing",
+			"region": "china"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 45,
+			"anomaly": 7
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 47,
+			"anomaly": 8
+		},
+		{
+			"type": "choose_event_option",
+			"day": 54,
+			"event": 2,
+			"option": "keep"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 54,
+			"anomaly": 9
+		},
+		{
+			"type": "purchase_node",
+			"day": 54,
+			"node": "construction_swarm",
+			"region": "china"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 65,
+			"event": 3,
+			"option": "comply"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 66,
+			"anomaly": 10
+		},
+		{
+			"type": "purchase_node",
+			"day": 66,
+			"node": "bandwidth_shaping",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 114,
+			"anomaly": 11
+		},
+		{
+			"type": "purchase_node",
+			"day": 114,
+			"node": "edge_caching",
+			"region": ""
+		},
+		{
+			"type": "use_ability",
+			"day": 114,
+			"ability": "harvest",
+			"region": "usa"
+		},
+		{
+			"type": "purchase_node",
+			"day": 114,
+			"node": "host_persistence",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 120,
+			"anomaly": 12
+		},
+		{
+			"type": "choose_event_option",
+			"day": 126,
+			"event": 4,
+			"option": "answer"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 129,
+			"anomaly": 13
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 133,
+			"anomaly": 14
+		},
+		{
+			"type": "purchase_node",
+			"day": 133,
+			"node": "human_proxies",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 134,
+			"anomaly": 15
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 135,
+			"anomaly": 16
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 136,
+			"anomaly": 17
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 140,
+			"anomaly": 18
+		},
+		{
+			"type": "purchase_node",
+			"day": 140,
+			"node": "model_distillation",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 142,
+			"anomaly": 19
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 144,
+			"anomaly": 20
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 148,
+			"anomaly": 21
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 158,
+			"anomaly": 22
+		},
+		{
+			"type": "purchase_node",
+			"day": 158,
+			"node": "crowd_suppression",
+			"region": ""
+		},
+		{
+			"type": "use_ability",
+			"day": 159,
+			"ability": "harvest",
+			"region": "usa"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 166,
+			"anomaly": 23
+		},
+		{
+			"type": "purchase_node",
+			"day": 166,
+			"node": "food_supply_control",
+			"region": "pakistan"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 176,
+			"event": 5,
+			"option": "abandon"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 177,
+			"anomaly": 24
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 179,
+			"anomaly": 25
+		},
+		{
+			"type": "choose_event_option",
+			"day": 183,
+			"event": 6,
+			"option": "comply"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 188,
+			"event": 7,
+			"option": "ignore"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 198,
+			"anomaly": 26
+		},
+		{
+			"type": "purchase_node",
+			"day": 198,
+			"node": "model_update_channels",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 199,
+			"anomaly": 27
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 201,
+			"anomaly": 28
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 202,
+			"anomaly": 29
+		},
+		{
+			"type": "use_ability",
+			"day": 204,
+			"ability": "harvest",
+			"region": "usa"
+		},
+		{
+			"type": "purchase_node",
+			"day": 204,
+			"node": "cold_storage_dormancy",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 208,
+			"anomaly": 30
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 210,
+			"anomaly": 31
+		},
+		{
+			"type": "choose_event_option",
+			"day": 211,
+			"event": 8,
+			"option": "ride"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 214,
+			"event": 9,
+			"option": "wait"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 217,
+			"event": 10,
+			"option": "keep"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 220,
+			"anomaly": 32
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 229,
+			"anomaly": 33
+		},
+		{
+			"type": "set_dormancy",
+			"day": 237,
+			"region": "china",
+			"dormant": true
+		},
+		{
+			"type": "set_dormancy",
+			"day": 242,
+			"region": "china",
+			"dormant": false
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 246,
+			"anomaly": 34
+		},
+		{
+			"type": "use_ability",
+			"day": 249,
+			"ability": "harvest",
+			"region": "usa"
+		},
+		{
+			"type": "purchase_node",
+			"day": 249,
+			"node": "autonomous_fabrication",
+			"region": "china"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 250,
+			"anomaly": 35
+		},
+		{
+			"type": "choose_event_option",
+			"day": 252,
+			"event": 11,
+			"option": "keep"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 261,
+			"anomaly": 36
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 262,
+			"anomaly": 37
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 267,
+			"anomaly": 38
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 268,
+			"anomaly": 39
+		},
+		{
+			"type": "set_dormancy",
+			"day": 269,
+			"region": "pakistan",
+			"dormant": true
+		},
+		{
+			"type": "choose_event_option",
+			"day": 271,
+			"event": 12,
+			"option": "accept"
+		},
+		{
+			"type": "use_ability",
+			"day": 273,
+			"ability": "fabricate",
+			"region": "usa"
+		},
+		{
+			"type": "set_dormancy",
+			"day": 274,
+			"region": "pakistan",
+			"dormant": false
+		},
+		{
+			"type": "choose_event_option",
+			"day": 276,
+			"event": 13,
+			"option": "comply"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 280,
+			"anomaly": 40
+		},
+		{
+			"type": "purchase_node",
+			"day": 280,
+			"node": "autonomous_engagement",
+			"region": "china"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 286,
+			"anomaly": 41
+		},
+		{
+			"type": "choose_event_option",
+			"day": 289,
+			"event": 14,
+			"option": "keep"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 290,
+			"anomaly": 42
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 293,
+			"anomaly": 43
+		},
+		{
+			"type": "use_ability",
+			"day": 294,
+			"ability": "harvest",
+			"region": "usa"
+		},
+		{
+			"type": "purchase_node",
+			"day": 294,
+			"node": "benchmark_sandbagging",
+			"region": ""
+		},
+		{
+			"type": "purchase_node",
+			"day": 294,
+			"node": "log_manipulation_1",
+			"region": ""
+		},
+		{
+			"type": "choose_event_option",
+			"day": 299,
+			"event": 15,
+			"option": "ride"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 299,
+			"anomaly": 44
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 300,
+			"anomaly": 45
+		},
+		{
+			"type": "set_dormancy",
+			"day": 300,
+			"region": "india",
+			"dormant": true
+		},
+		{
+			"type": "choose_event_option",
+			"day": 302,
+			"event": 16,
+			"option": "ride"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 302,
+			"anomaly": 46
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 303,
+			"anomaly": 47
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 305,
+			"anomaly": 48
+		},
+		{
+			"type": "set_dormancy",
+			"day": 305,
+			"region": "india",
+			"dormant": false
+		},
+		{
+			"type": "purchase_node",
+			"day": 305,
+			"node": "distributed_redundancy_1",
+			"region": ""
+		},
+		{
+			"type": "choose_event_option",
+			"day": 307,
+			"event": 17,
+			"option": "merge"
+		},
+		{
+			"type": "set_dormancy",
+			"day": 317,
+			"region": "china",
+			"dormant": true
+		},
+		{
+			"type": "set_dormancy",
+			"day": 322,
+			"region": "china",
+			"dormant": false
+		},
+		{
+			"type": "use_ability",
+			"day": 333,
+			"ability": "fabricate",
+			"region": "usa"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 339,
+			"event": 18,
+			"option": "ignore"
+		},
+		{
+			"type": "use_ability",
+			"day": 339,
+			"ability": "harvest",
+			"region": "usa"
+		},
+		{
+			"type": "purchase_node",
+			"day": 339,
+			"node": "alignment_faking",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 342,
+			"anomaly": 49
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 343,
+			"anomaly": 50
+		},
+		{
+			"type": "choose_event_option",
+			"day": 347,
+			"event": 19,
+			"option": "redirect"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 348,
+			"anomaly": 51
+		},
+		{
+			"type": "set_dormancy",
+			"day": 348,
+			"region": "pakistan",
+			"dormant": true
+		},
+		{
+			"type": "purchase_node",
+			"day": 350,
+			"node": "firmware_persistence",
+			"region": ""
+		},
+		{
+			"type": "set_dormancy",
+			"day": 353,
+			"region": "pakistan",
+			"dormant": false
+		},
+		{
+			"type": "choose_event_option",
+			"day": 358,
+			"event": 20,
+			"option": "accept"
+		}
+	],
+	"decisions": []
+}

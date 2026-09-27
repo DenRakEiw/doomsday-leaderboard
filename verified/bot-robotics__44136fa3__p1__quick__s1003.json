@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/bot-robotics__44136fa3__p1__quick__s1003.json",
+	"sha256": "4925d63b628403d6c3d36aafdbeb47ff265b9d1d7cc3fa68e390b3f7999d4960",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "d6525ec22b24be57dda1e143f240544471db87fb",
+	"game_version": "0.6.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "94836823b9ed5b7161a508533ca2986b39b9722aaa4766f869e5567f7fff799c",
+	"outcome": "lose_contained",
+	"days": 381,
+	"end_day": 381,
+	"score": 0.0,
+	"checked": "2026-09-27"
+}

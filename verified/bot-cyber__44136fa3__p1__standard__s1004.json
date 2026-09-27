@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/bot-cyber__44136fa3__p1__standard__s1004.json",
+	"sha256": "89ab6c3e9bd6083650b348289bab5f1b2fefae834af5ab8cf2e7120a5a939bb1",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "d6525ec22b24be57dda1e143f240544471db87fb",
+	"game_version": "0.6.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "ec0497339790c1e2b547b7945c24b53f30129f51f9a2c234c42e3c0440d761ce",
+	"outcome": "win_ascendance",
+	"days": 711,
+	"end_day": 711,
+	"score": 82.2,
+	"checked": "2026-09-27"
+}

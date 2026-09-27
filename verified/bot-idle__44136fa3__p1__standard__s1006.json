@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/bot-idle__44136fa3__p1__standard__s1006.json",
+	"sha256": "6beb3ca00c83d58f56fe1d0372703bf799d3c91ecd534c4a4328bf6262b11ced",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "d6525ec22b24be57dda1e143f240544471db87fb",
+	"game_version": "0.6.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "f1013bcc596bbeca0a809139fca1e6cf148b50b28a6772a92f9339ec8b4b28fa",
+	"outcome": "lose_autophagy",
+	"days": 1433,
+	"end_day": 1433,
+	"score": 0.0,
+	"checked": "2026-09-27"
+}

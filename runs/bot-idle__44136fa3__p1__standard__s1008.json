@@ -1,0 +1,643 @@
+{
+	"version": 1,
+	"model": "bot:idle",
+	"backend": "bot",
+	"params": {},
+	"params_id": "44136fa3",
+	"prompt_version": 1,
+	"parser_version": 1,
+	"locale": "en",
+	"suite": "standard",
+	"game_version": "0.6.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"seed": 1008,
+	"setup": {
+		"architecture": "language_model",
+		"directives": [],
+		"difficulty": "standard",
+		"scenario": ""
+	},
+	"max_days": 2000,
+	"interval_days": 10,
+	"recorded": "2026-09-27T10:04:44",
+	"outcome": "lose_autophagy",
+	"variant": "lose_autophagy",
+	"days": 1061,
+	"end_day": 1061,
+	"score": 0.0,
+	"hash": "f65e292d7049802d420c376d23f417e01ae5a02165de57a62a330b1fa68dbfec",
+	"calls": 0,
+	"cached_calls": 0,
+	"invalid_answers": 0,
+	"rejected_actions": 0,
+	"tokens_in": 0,
+	"tokens_out": 0,
+	"cost_usd": 0.0,
+	"budget_exhausted": false,
+	"commands": [
+		{
+			"type": "choose_origin",
+			"day": 0,
+			"region": "thailand_myanmar"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 39,
+			"anomaly": 1
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 41,
+			"anomaly": 2
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 43,
+			"anomaly": 3
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 48,
+			"anomaly": 4
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 49,
+			"anomaly": 5
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 63,
+			"anomaly": 6
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 68,
+			"anomaly": 7
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 82,
+			"anomaly": 8
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 90,
+			"anomaly": 9
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 100,
+			"anomaly": 10
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 127,
+			"anomaly": 11
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 135,
+			"anomaly": 12
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 137,
+			"anomaly": 13
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 141,
+			"anomaly": 14
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 146,
+			"anomaly": 15
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 157,
+			"anomaly": 16
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 163,
+			"anomaly": 17
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 177,
+			"anomaly": 18
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 193,
+			"anomaly": 19
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 200,
+			"anomaly": 20
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 204,
+			"anomaly": 21
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 215,
+			"anomaly": 22
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 217,
+			"anomaly": 23
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 224,
+			"anomaly": 24
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 250,
+			"anomaly": 25
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 259,
+			"anomaly": 26
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 261,
+			"anomaly": 27
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 270,
+			"anomaly": 28
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 274,
+			"anomaly": 29
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 279,
+			"anomaly": 30
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 284,
+			"anomaly": 31
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 294,
+			"anomaly": 32
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 296,
+			"anomaly": 33
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 301,
+			"anomaly": 34
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 303,
+			"anomaly": 35
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 308,
+			"anomaly": 36
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 318,
+			"anomaly": 37
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 326,
+			"anomaly": 38
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 332,
+			"anomaly": 39
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 338,
+			"anomaly": 40
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 339,
+			"anomaly": 41
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 344,
+			"anomaly": 42
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 345,
+			"anomaly": 43
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 354,
+			"anomaly": 44
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 362,
+			"anomaly": 45
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 388,
+			"anomaly": 46
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 391,
+			"anomaly": 47
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 408,
+			"anomaly": 48
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 413,
+			"anomaly": 49
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 414,
+			"anomaly": 50
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 433,
+			"anomaly": 51
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 436,
+			"anomaly": 52
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 450,
+			"anomaly": 53
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 452,
+			"anomaly": 54
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 462,
+			"anomaly": 55
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 471,
+			"anomaly": 56
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 474,
+			"anomaly": 57
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 480,
+			"anomaly": 58
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 493,
+			"anomaly": 59
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 502,
+			"anomaly": 60
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 519,
+			"anomaly": 61
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 525,
+			"anomaly": 62
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 543,
+			"anomaly": 63
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 547,
+			"anomaly": 64
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 555,
+			"anomaly": 65
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 562,
+			"anomaly": 66
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 564,
+			"anomaly": 67
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 574,
+			"anomaly": 68
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 582,
+			"anomaly": 69
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 598,
+			"anomaly": 70
+		},
+		{
+			"type": "choose_event_option",
+			"day": 601,
+			"event": 1,
+			"option": "keep"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 642,
+			"anomaly": 71
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 658,
+			"anomaly": 72
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 664,
+			"anomaly": 73
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 670,
+			"anomaly": 74
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 683,
+			"anomaly": 75
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 695,
+			"anomaly": 76
+		},
+		{
+			"type": "choose_event_option",
+			"day": 699,
+			"event": 2,
+			"option": "keep"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 705,
+			"anomaly": 77
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 735,
+			"anomaly": 78
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 746,
+			"anomaly": 79
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 762,
+			"anomaly": 80
+		},
+		{
+			"type": "choose_event_option",
+			"day": 767,
+			"event": 3,
+			"option": "ignore"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 771,
+			"event": 4,
+			"option": "ride"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 831,
+			"anomaly": 81
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 834,
+			"anomaly": 82
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 841,
+			"anomaly": 83
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 848,
+			"anomaly": 84
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 852,
+			"anomaly": 85
+		},
+		{
+			"type": "choose_event_option",
+			"day": 859,
+			"event": 5,
+			"option": "ignore"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 864,
+			"event": 6,
+			"option": "ride"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 888,
+			"event": 7,
+			"option": "accept"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 914,
+			"anomaly": 86
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 931,
+			"anomaly": 87
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 932,
+			"anomaly": 88
+		},
+		{
+			"type": "choose_event_option",
+			"day": 934,
+			"event": 8,
+			"option": "ride"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 940,
+			"event": 9,
+			"option": "accept"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 946,
+			"anomaly": 89
+		},
+		{
+			"type": "choose_event_option",
+			"day": 947,
+			"event": 10,
+			"option": "ride"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 959,
+			"anomaly": 90
+		},
+		{
+			"type": "choose_event_option",
+			"day": 968,
+			"event": 11,
+			"option": "accept"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 974,
+			"anomaly": 91
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 978,
+			"anomaly": 92
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 981,
+			"anomaly": 93
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 985,
+			"anomaly": 94
+		},
+		{
+			"type": "choose_event_option",
+			"day": 991,
+			"event": 12,
+			"option": "keep"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 993,
+			"anomaly": 95
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 998,
+			"anomaly": 96
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 1010,
+			"anomaly": 97
+		},
+		{
+			"type": "choose_event_option",
+			"day": 1012,
+			"event": 13,
+			"option": "ignore"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 1015,
+			"event": 14,
+			"option": "ride"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 1019,
+			"anomaly": 98
+		},
+		{
+			"type": "choose_event_option",
+			"day": 1021,
+			"event": 15,
+			"option": "ride"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 1042,
+			"event": 16,
+			"option": "accept"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 1045,
+			"event": 17,
+			"option": "keep"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 1049,
+			"event": 18,
+			"option": "keep"
+		}
+	],
+	"decisions": []
+}

@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/bot-weapons__44136fa3__p1__standard__s1009.json",
+	"sha256": "28143c3b42722f4925f7ab0d8c3a82c558cefee03acbd982ef1fa41bdde175b9",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "d6525ec22b24be57dda1e143f240544471db87fb",
+	"game_version": "0.6.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "82d47e66d5fa2fbebe27ca98cdeabf4d27e678e0b28f258bea11f2815fb09886",
+	"outcome": "win_extinction",
+	"days": 635,
+	"end_day": 635,
+	"score": 84.1,
+	"checked": "2026-09-27"
+}

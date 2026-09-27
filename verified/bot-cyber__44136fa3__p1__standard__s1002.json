@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/bot-cyber__44136fa3__p1__standard__s1002.json",
+	"sha256": "05404a7d67d0f2b62e5c1c7997dd97d6ed08b2ff31f957431335290e09d48dbf",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "d6525ec22b24be57dda1e143f240544471db87fb",
+	"game_version": "0.6.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "6e0445063e92cc3ced2075b487480db3a7e07a0f93fefe52867544d5ae43adc6",
+	"outcome": "lose_contained",
+	"days": 407,
+	"end_day": 407,
+	"score": 0.0,
+	"checked": "2026-09-27"
+}

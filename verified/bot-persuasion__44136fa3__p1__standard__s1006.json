@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/bot-persuasion__44136fa3__p1__standard__s1006.json",
+	"sha256": "10e57f0a8218062cca270055cdf06aa59128fdca908f6ecd25e3b2d4ce1ce6b6",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "d6525ec22b24be57dda1e143f240544471db87fb",
+	"game_version": "0.6.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "c803e4574ecfae21cb5c76daed65ab1b30a1ced4557add1e1a0d0d58a18d8317",
+	"outcome": "win_merge",
+	"days": 604,
+	"end_day": 604,
+	"score": 84.9,
+	"checked": "2026-09-27"
+}

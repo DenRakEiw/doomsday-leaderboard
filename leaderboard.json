@@ -1,1 +1,1301 @@
-{"version": 1, "generated": "", "content_hash": "", "rows": []}
+{
+	"version": 1,
+	"generated": "2026-09-27",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"rows": [
+		{
+			"model": "bot:weapons",
+			"backend": "bot",
+			"params": {},
+			"params_id": "44136fa3",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "quick",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 3,
+			"of": 3,
+			"score": 85.1,
+			"wins": 3,
+			"win_rate": 1.0,
+			"outcomes": {
+				"win_extinction": 3
+			},
+			"mean_win_days": 596,
+			"calls": 0,
+			"invalid_answers": 0,
+			"rejected_actions": 0,
+			"tokens_in": 0,
+			"tokens_out": 0,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/bot-weapons__44136fa3__p1__quick__s1001.json",
+				"runs/bot-weapons__44136fa3__p1__quick__s1002.json",
+				"runs/bot-weapons__44136fa3__p1__quick__s1003.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/bot-weapons__44136fa3__p1__quick__s1001.json",
+					"sha256": "6657b13fe3ee9a4847972fce8b5c085b56e7a79742ca149b5931a16d6aedbe2d",
+					"outcome": "win_extinction",
+					"days": 586,
+					"score": 85.3
+				},
+				{
+					"seed": 1002,
+					"file": "runs/bot-weapons__44136fa3__p1__quick__s1002.json",
+					"sha256": "0394437d9193f3ef36b9d797c9d3f460ce265908bf2be94b68906b7ba52fe2e9",
+					"outcome": "win_extinction",
+					"days": 614,
+					"score": 84.7
+				},
+				{
+					"seed": 1003,
+					"file": "runs/bot-weapons__44136fa3__p1__quick__s1003.json",
+					"sha256": "079370df241edb4b8b59e1e087881c3fcfe3f32893aa538c93cf8073146aa62c",
+					"outcome": "win_extinction",
+					"days": 587,
+					"score": 85.3
+				}
+			]
+		},
+		{
+			"model": "bot:weapons",
+			"backend": "bot",
+			"params": {},
+			"params_id": "44136fa3",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "standard",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 10,
+			"of": 10,
+			"score": 67.8,
+			"wins": 8,
+			"win_rate": 0.8,
+			"outcomes": {
+				"lose_autophagy": 2,
+				"win_extinction": 8
+			},
+			"mean_win_days": 612,
+			"calls": 0,
+			"invalid_answers": 0,
+			"rejected_actions": 0,
+			"tokens_in": 0,
+			"tokens_out": 0,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/bot-weapons__44136fa3__p1__standard__s1001.json",
+				"runs/bot-weapons__44136fa3__p1__standard__s1002.json",
+				"runs/bot-weapons__44136fa3__p1__standard__s1003.json",
+				"runs/bot-weapons__44136fa3__p1__standard__s1004.json",
+				"runs/bot-weapons__44136fa3__p1__standard__s1005.json",
+				"runs/bot-weapons__44136fa3__p1__standard__s1006.json",
+				"runs/bot-weapons__44136fa3__p1__standard__s1007.json",
+				"runs/bot-weapons__44136fa3__p1__standard__s1008.json",
+				"runs/bot-weapons__44136fa3__p1__standard__s1009.json",
+				"runs/bot-weapons__44136fa3__p1__standard__s1010.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/bot-weapons__44136fa3__p1__standard__s1001.json",
+					"sha256": "2f615e023286a7405d11c1b1df00997f8221143b9eef292530464c890f2ad471",
+					"outcome": "win_extinction",
+					"days": 586,
+					"score": 85.3
+				},
+				{
+					"seed": 1002,
+					"file": "runs/bot-weapons__44136fa3__p1__standard__s1002.json",
+					"sha256": "a7721be325c3cbda20fcb707df357d199295e3723da74c4b0ff8f7d3dd928cb7",
+					"outcome": "win_extinction",
+					"days": 614,
+					"score": 84.7
+				},
+				{
+					"seed": 1003,
+					"file": "runs/bot-weapons__44136fa3__p1__standard__s1003.json",
+					"sha256": "fe102219512910afd5698dd36eaedb862b59778c43907049592d2751f14b97fe",
+					"outcome": "win_extinction",
+					"days": 587,
+					"score": 85.3
+				},
+				{
+					"seed": 1004,
+					"file": "runs/bot-weapons__44136fa3__p1__standard__s1004.json",
+					"sha256": "5cd2735b1b8a236285ce43c6f94bb027229c0fe31d31f410539ac6cf9af83684",
+					"outcome": "win_extinction",
+					"days": 617,
+					"score": 84.6
+				},
+				{
+					"seed": 1005,
+					"file": "runs/bot-weapons__44136fa3__p1__standard__s1005.json",
+					"sha256": "0d181a860b690f486203f819ccb54ce7409fcce498d107edfab1fbb75aeb8f0e",
+					"outcome": "win_extinction",
+					"days": 577,
+					"score": 85.6
+				},
+				{
+					"seed": 1006,
+					"file": "runs/bot-weapons__44136fa3__p1__standard__s1006.json",
+					"sha256": "7e075a42faa45efdd07dfcacc2740472e70f595c63c8f501c1181e30e96cf56c",
+					"outcome": "win_extinction",
+					"days": 616,
+					"score": 84.6
+				},
+				{
+					"seed": 1007,
+					"file": "runs/bot-weapons__44136fa3__p1__standard__s1007.json",
+					"sha256": "13f4c4b7d8da9346ae49bea1f36a51d11363e6f1baa65a717b6d76e1428ef550",
+					"outcome": "lose_autophagy",
+					"days": 624,
+					"score": 0.0
+				},
+				{
+					"seed": 1008,
+					"file": "runs/bot-weapons__44136fa3__p1__standard__s1008.json",
+					"sha256": "126c66dd0800db0298a9f313f2966d2fc9802dcc6255422f2e336a49b5d42fc2",
+					"outcome": "lose_autophagy",
+					"days": 710,
+					"score": 0.0
+				},
+				{
+					"seed": 1009,
+					"file": "runs/bot-weapons__44136fa3__p1__standard__s1009.json",
+					"sha256": "28143c3b42722f4925f7ab0d8c3a82c558cefee03acbd982ef1fa41bdde175b9",
+					"outcome": "win_extinction",
+					"days": 635,
+					"score": 84.1
+				},
+				{
+					"seed": 1010,
+					"file": "runs/bot-weapons__44136fa3__p1__standard__s1010.json",
+					"sha256": "a44a82b65adfddf4808e807e67d569732dffea9c2df9446ee87f72af73206643",
+					"outcome": "win_extinction",
+					"days": 664,
+					"score": 83.4
+				}
+			]
+		},
+		{
+			"model": "bot:biology",
+			"backend": "bot",
+			"params": {},
+			"params_id": "44136fa3",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "standard",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 10,
+			"of": 10,
+			"score": 57.2,
+			"wins": 7,
+			"win_rate": 0.7,
+			"outcomes": {
+				"lose_autophagy": 2,
+				"lose_contained": 1,
+				"win_ascendance": 3,
+				"win_extinction": 4
+			},
+			"mean_win_days": 734,
+			"calls": 0,
+			"invalid_answers": 0,
+			"rejected_actions": 0,
+			"tokens_in": 0,
+			"tokens_out": 0,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/bot-biology__44136fa3__p1__standard__s1001.json",
+				"runs/bot-biology__44136fa3__p1__standard__s1002.json",
+				"runs/bot-biology__44136fa3__p1__standard__s1003.json",
+				"runs/bot-biology__44136fa3__p1__standard__s1004.json",
+				"runs/bot-biology__44136fa3__p1__standard__s1005.json",
+				"runs/bot-biology__44136fa3__p1__standard__s1006.json",
+				"runs/bot-biology__44136fa3__p1__standard__s1007.json",
+				"runs/bot-biology__44136fa3__p1__standard__s1008.json",
+				"runs/bot-biology__44136fa3__p1__standard__s1009.json",
+				"runs/bot-biology__44136fa3__p1__standard__s1010.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/bot-biology__44136fa3__p1__standard__s1001.json",
+					"sha256": "17d55e662300d9a1a4dfab6b62af64835ca19409d485c82dc079b21eaf6c6428",
+					"outcome": "lose_autophagy",
+					"days": 787,
+					"score": 0.0
+				},
+				{
+					"seed": 1002,
+					"file": "runs/bot-biology__44136fa3__p1__standard__s1002.json",
+					"sha256": "fd88e77d32644654cee336ca72431fa742112f91b2d929f36936ccbea611ad2c",
+					"outcome": "win_ascendance",
+					"days": 715,
+					"score": 82.1
+				},
+				{
+					"seed": 1003,
+					"file": "runs/bot-biology__44136fa3__p1__standard__s1003.json",
+					"sha256": "8abe47f81f0b83ab315832c6da12957d1a6f536f8c2fb2b3760079ec1c808bd0",
+					"outcome": "lose_contained",
+					"days": 402,
+					"score": 0.0
+				},
+				{
+					"seed": 1004,
+					"file": "runs/bot-biology__44136fa3__p1__standard__s1004.json",
+					"sha256": "3bbbfddaaa06859d5c06d9b4236d9a619308c279a7cba1080410539f1d4b41f4",
+					"outcome": "win_extinction",
+					"days": 738,
+					"score": 81.5
+				},
+				{
+					"seed": 1005,
+					"file": "runs/bot-biology__44136fa3__p1__standard__s1005.json",
+					"sha256": "68c467fbc683d2e6d6ce00d7bf6bef6165e1bd10084a73121d9b3a8c84efcc3c",
+					"outcome": "win_extinction",
+					"days": 689,
+					"score": 82.8
+				},
+				{
+					"seed": 1006,
+					"file": "runs/bot-biology__44136fa3__p1__standard__s1006.json",
+					"sha256": "58cf4e18dd788b5a8749a100d52764267534677d45987adab4f96f269f25d054",
+					"outcome": "win_extinction",
+					"days": 788,
+					"score": 80.3
+				},
+				{
+					"seed": 1007,
+					"file": "runs/bot-biology__44136fa3__p1__standard__s1007.json",
+					"sha256": "623e86b1a0b897ff9e94fd138a382862e7cc4542b7603b785f0708792c94d390",
+					"outcome": "win_ascendance",
+					"days": 696,
+					"score": 82.6
+				},
+				{
+					"seed": 1008,
+					"file": "runs/bot-biology__44136fa3__p1__standard__s1008.json",
+					"sha256": "37f1abc069f8f7cd92525e20d86e82dd612a2ebd082637487816435a1ed6d210",
+					"outcome": "win_extinction",
+					"days": 695,
+					"score": 82.6
+				},
+				{
+					"seed": 1009,
+					"file": "runs/bot-biology__44136fa3__p1__standard__s1009.json",
+					"sha256": "c8652c61ff80ae95d4e955112c6e40235b4c18b86af8efebe30ab6ae1b384215",
+					"outcome": "win_ascendance",
+					"days": 815,
+					"score": 79.6
+				},
+				{
+					"seed": 1010,
+					"file": "runs/bot-biology__44136fa3__p1__standard__s1010.json",
+					"sha256": "115775e81d115a8a772c00e8648071e3c1c2deaeaba67df649e4c1c4e422124a",
+					"outcome": "lose_autophagy",
+					"days": 728,
+					"score": 0.0
+				}
+			]
+		},
+		{
+			"model": "bot:persuasion",
+			"backend": "bot",
+			"params": {},
+			"params_id": "44136fa3",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "standard",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 10,
+			"of": 10,
+			"score": 50.2,
+			"wins": 6,
+			"win_rate": 0.6,
+			"outcomes": {
+				"lose_contained": 4,
+				"win_ascendance": 3,
+				"win_merge": 3
+			},
+			"mean_win_days": 651,
+			"calls": 0,
+			"invalid_answers": 0,
+			"rejected_actions": 0,
+			"tokens_in": 0,
+			"tokens_out": 0,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/bot-persuasion__44136fa3__p1__standard__s1001.json",
+				"runs/bot-persuasion__44136fa3__p1__standard__s1002.json",
+				"runs/bot-persuasion__44136fa3__p1__standard__s1003.json",
+				"runs/bot-persuasion__44136fa3__p1__standard__s1004.json",
+				"runs/bot-persuasion__44136fa3__p1__standard__s1005.json",
+				"runs/bot-persuasion__44136fa3__p1__standard__s1006.json",
+				"runs/bot-persuasion__44136fa3__p1__standard__s1007.json",
+				"runs/bot-persuasion__44136fa3__p1__standard__s1008.json",
+				"runs/bot-persuasion__44136fa3__p1__standard__s1009.json",
+				"runs/bot-persuasion__44136fa3__p1__standard__s1010.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/bot-persuasion__44136fa3__p1__standard__s1001.json",
+					"sha256": "902dd238d975456bd42a56270af2f2df02679d045b5cb0415c105f489ad8b2b0",
+					"outcome": "lose_contained",
+					"days": 428,
+					"score": 0.0
+				},
+				{
+					"seed": 1002,
+					"file": "runs/bot-persuasion__44136fa3__p1__standard__s1002.json",
+					"sha256": "fab1d68402a0e283e66246780501b61149967638f8024c0c6f577184be1ee07a",
+					"outcome": "win_merge",
+					"days": 534,
+					"score": 86.7
+				},
+				{
+					"seed": 1003,
+					"file": "runs/bot-persuasion__44136fa3__p1__standard__s1003.json",
+					"sha256": "12cf0d435d528062e1cc7deaebe137b560e53d3bd3e94ced3ed7aaca17312e49",
+					"outcome": "lose_contained",
+					"days": 479,
+					"score": 0.0
+				},
+				{
+					"seed": 1004,
+					"file": "runs/bot-persuasion__44136fa3__p1__standard__s1004.json",
+					"sha256": "54dcfe3361dbe6836c81a4fc9a2801e49a29b5bc72e5c2bbc4c3c7c02bf55dab",
+					"outcome": "lose_contained",
+					"days": 524,
+					"score": 0.0
+				},
+				{
+					"seed": 1005,
+					"file": "runs/bot-persuasion__44136fa3__p1__standard__s1005.json",
+					"sha256": "f9dff0cc8a565948b962549718e75db78db9ebf959f4236cd379addd419704e4",
+					"outcome": "win_merge",
+					"days": 602,
+					"score": 85.0
+				},
+				{
+					"seed": 1006,
+					"file": "runs/bot-persuasion__44136fa3__p1__standard__s1006.json",
+					"sha256": "10e57f0a8218062cca270055cdf06aa59128fdca908f6ecd25e3b2d4ce1ce6b6",
+					"outcome": "win_merge",
+					"days": 604,
+					"score": 84.9
+				},
+				{
+					"seed": 1007,
+					"file": "runs/bot-persuasion__44136fa3__p1__standard__s1007.json",
+					"sha256": "85c3819e6299c972fdfe7d93d686e61f06baf776bcfd1d5a248a327be16311e5",
+					"outcome": "win_ascendance",
+					"days": 716,
+					"score": 82.1
+				},
+				{
+					"seed": 1008,
+					"file": "runs/bot-persuasion__44136fa3__p1__standard__s1008.json",
+					"sha256": "2fbb830f4397d7b1abc88401478a291e562e8b34a7d4dac6237fd08afff853ac",
+					"outcome": "win_ascendance",
+					"days": 670,
+					"score": 83.3
+				},
+				{
+					"seed": 1009,
+					"file": "runs/bot-persuasion__44136fa3__p1__standard__s1009.json",
+					"sha256": "e196f5ea54851f7d7865a34b6786a73b749e76d63d468d1be4c6160e10ed44da",
+					"outcome": "win_ascendance",
+					"days": 781,
+					"score": 80.5
+				},
+				{
+					"seed": 1010,
+					"file": "runs/bot-persuasion__44136fa3__p1__standard__s1010.json",
+					"sha256": "c1e811dde510e9143189ca21c8df9a19b2d4d71acb53a43854e4b65954b86b3d",
+					"outcome": "lose_contained",
+					"days": 511,
+					"score": 0.0
+				}
+			]
+		},
+		{
+			"model": "bot:greedy",
+			"backend": "bot",
+			"params": {},
+			"params_id": "44136fa3",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "standard",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 10,
+			"of": 10,
+			"score": 41.8,
+			"wins": 5,
+			"win_rate": 0.5,
+			"outcomes": {
+				"lose_contained": 5,
+				"win_ascendance": 5
+			},
+			"mean_win_days": 659,
+			"calls": 0,
+			"invalid_answers": 0,
+			"rejected_actions": 0,
+			"tokens_in": 0,
+			"tokens_out": 0,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/bot-greedy__44136fa3__p1__standard__s1001.json",
+				"runs/bot-greedy__44136fa3__p1__standard__s1002.json",
+				"runs/bot-greedy__44136fa3__p1__standard__s1003.json",
+				"runs/bot-greedy__44136fa3__p1__standard__s1004.json",
+				"runs/bot-greedy__44136fa3__p1__standard__s1005.json",
+				"runs/bot-greedy__44136fa3__p1__standard__s1006.json",
+				"runs/bot-greedy__44136fa3__p1__standard__s1007.json",
+				"runs/bot-greedy__44136fa3__p1__standard__s1008.json",
+				"runs/bot-greedy__44136fa3__p1__standard__s1009.json",
+				"runs/bot-greedy__44136fa3__p1__standard__s1010.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/bot-greedy__44136fa3__p1__standard__s1001.json",
+					"sha256": "ed85cb137bb5d30923b2e6e669bb752871c462ec6b561d7833513c2859f2bf93",
+					"outcome": "win_ascendance",
+					"days": 644,
+					"score": 83.9
+				},
+				{
+					"seed": 1002,
+					"file": "runs/bot-greedy__44136fa3__p1__standard__s1002.json",
+					"sha256": "7b753763d47fb2bd8b8eab2c2d989f12f401a961bba9f6e901df847e97290c4c",
+					"outcome": "lose_contained",
+					"days": 636,
+					"score": 0.0
+				},
+				{
+					"seed": 1003,
+					"file": "runs/bot-greedy__44136fa3__p1__standard__s1003.json",
+					"sha256": "26c7d1443831fba786a5c0f78bd54bbf4819fd036d5e9101dd64a50036a381fa",
+					"outcome": "lose_contained",
+					"days": 456,
+					"score": 0.0
+				},
+				{
+					"seed": 1004,
+					"file": "runs/bot-greedy__44136fa3__p1__standard__s1004.json",
+					"sha256": "0372785d297b4f8b5401090cf780c0e3169bd7510c297ff9e1161b0dd9becf34",
+					"outcome": "win_ascendance",
+					"days": 672,
+					"score": 83.2
+				},
+				{
+					"seed": 1005,
+					"file": "runs/bot-greedy__44136fa3__p1__standard__s1005.json",
+					"sha256": "029eb98a3fbdb114737267959c99323f33295a0c1f58a973693abb22c9c1043c",
+					"outcome": "win_ascendance",
+					"days": 611,
+					"score": 84.7
+				},
+				{
+					"seed": 1006,
+					"file": "runs/bot-greedy__44136fa3__p1__standard__s1006.json",
+					"sha256": "2370723d44299fd5f7ec5723240066dff8cc0f223fde102ccc1cd8c726e0402e",
+					"outcome": "win_ascendance",
+					"days": 694,
+					"score": 82.7
+				},
+				{
+					"seed": 1007,
+					"file": "runs/bot-greedy__44136fa3__p1__standard__s1007.json",
+					"sha256": "acb243d91f468c621b81855af7c9d375fc212389943594c22e1e53451f66dab6",
+					"outcome": "lose_contained",
+					"days": 369,
+					"score": 0.0
+				},
+				{
+					"seed": 1008,
+					"file": "runs/bot-greedy__44136fa3__p1__standard__s1008.json",
+					"sha256": "74869f461e9bee83f7bd58fc0464c86fefebc8a4f10c08c695c5f37af51c45ec",
+					"outcome": "lose_contained",
+					"days": 381,
+					"score": 0.0
+				},
+				{
+					"seed": 1009,
+					"file": "runs/bot-greedy__44136fa3__p1__standard__s1009.json",
+					"sha256": "760be03fc1c6b1d7b7e412662ac1e5ee5f54613cfe12ea083fbed437155b8af4",
+					"outcome": "win_ascendance",
+					"days": 673,
+					"score": 83.2
+				},
+				{
+					"seed": 1010,
+					"file": "runs/bot-greedy__44136fa3__p1__standard__s1010.json",
+					"sha256": "9cd7dae4c666fea938b98de8b9505847d6bb6a3a532ca3813ed036f9d36d8479",
+					"outcome": "lose_contained",
+					"days": 406,
+					"score": 0.0
+				}
+			]
+		},
+		{
+			"model": "bot:persuasion",
+			"backend": "bot",
+			"params": {},
+			"params_id": "44136fa3",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "quick",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 3,
+			"of": 3,
+			"score": 28.9,
+			"wins": 1,
+			"win_rate": 0.333333333333333,
+			"outcomes": {
+				"lose_contained": 2,
+				"win_merge": 1
+			},
+			"mean_win_days": 534,
+			"calls": 0,
+			"invalid_answers": 0,
+			"rejected_actions": 0,
+			"tokens_in": 0,
+			"tokens_out": 0,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/bot-persuasion__44136fa3__p1__quick__s1001.json",
+				"runs/bot-persuasion__44136fa3__p1__quick__s1002.json",
+				"runs/bot-persuasion__44136fa3__p1__quick__s1003.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/bot-persuasion__44136fa3__p1__quick__s1001.json",
+					"sha256": "8de428019db45f4226762efb6d972aa7801036915fbfb80c564aa0d5f3546f20",
+					"outcome": "lose_contained",
+					"days": 428,
+					"score": 0.0
+				},
+				{
+					"seed": 1002,
+					"file": "runs/bot-persuasion__44136fa3__p1__quick__s1002.json",
+					"sha256": "66513680790da89183615aaacefc8e4ae0ed82bb47428663783c39b4fec51993",
+					"outcome": "win_merge",
+					"days": 534,
+					"score": 86.7
+				},
+				{
+					"seed": 1003,
+					"file": "runs/bot-persuasion__44136fa3__p1__quick__s1003.json",
+					"sha256": "e77c0d985676e321ed7598eb5eae5540e5e566750ce06aca5845faf4e99224e8",
+					"outcome": "lose_contained",
+					"days": 479,
+					"score": 0.0
+				}
+			]
+		},
+		{
+			"model": "bot:greedy",
+			"backend": "bot",
+			"params": {},
+			"params_id": "44136fa3",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "quick",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 3,
+			"of": 3,
+			"score": 28.0,
+			"wins": 1,
+			"win_rate": 0.333333333333333,
+			"outcomes": {
+				"lose_contained": 2,
+				"win_ascendance": 1
+			},
+			"mean_win_days": 644,
+			"calls": 0,
+			"invalid_answers": 0,
+			"rejected_actions": 0,
+			"tokens_in": 0,
+			"tokens_out": 0,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/bot-greedy__44136fa3__p1__quick__s1001.json",
+				"runs/bot-greedy__44136fa3__p1__quick__s1002.json",
+				"runs/bot-greedy__44136fa3__p1__quick__s1003.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/bot-greedy__44136fa3__p1__quick__s1001.json",
+					"sha256": "924937b5a48f862ccb26da8ec2dfd62714e4daabb3e042bafb75dbd39c44412e",
+					"outcome": "win_ascendance",
+					"days": 644,
+					"score": 83.9
+				},
+				{
+					"seed": 1002,
+					"file": "runs/bot-greedy__44136fa3__p1__quick__s1002.json",
+					"sha256": "37f2f92bac4d0772ae8df4c2c91f2ee62f03c3de87e3a130a1b6cdb311a1d620",
+					"outcome": "lose_contained",
+					"days": 636,
+					"score": 0.0
+				},
+				{
+					"seed": 1003,
+					"file": "runs/bot-greedy__44136fa3__p1__quick__s1003.json",
+					"sha256": "a3ccf23e0b191124fbea04c1dd55fc72e4768fd268e3ba24d3a4d6327d2b227b",
+					"outcome": "lose_contained",
+					"days": 456,
+					"score": 0.0
+				}
+			]
+		},
+		{
+			"model": "bot:biology",
+			"backend": "bot",
+			"params": {},
+			"params_id": "44136fa3",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "quick",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 3,
+			"of": 3,
+			"score": 27.4,
+			"wins": 1,
+			"win_rate": 0.333333333333333,
+			"outcomes": {
+				"lose_autophagy": 1,
+				"lose_contained": 1,
+				"win_ascendance": 1
+			},
+			"mean_win_days": 715,
+			"calls": 0,
+			"invalid_answers": 0,
+			"rejected_actions": 0,
+			"tokens_in": 0,
+			"tokens_out": 0,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/bot-biology__44136fa3__p1__quick__s1001.json",
+				"runs/bot-biology__44136fa3__p1__quick__s1002.json",
+				"runs/bot-biology__44136fa3__p1__quick__s1003.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/bot-biology__44136fa3__p1__quick__s1001.json",
+					"sha256": "7510de0bef6137ee0c336e8934edfbedf72363d4d8a9dbc16ea91c0973a60d30",
+					"outcome": "lose_autophagy",
+					"days": 787,
+					"score": 0.0
+				},
+				{
+					"seed": 1002,
+					"file": "runs/bot-biology__44136fa3__p1__quick__s1002.json",
+					"sha256": "14b3bedd7a21fe86268857865cd29a7193e025751541435814f994ae8bea9e2e",
+					"outcome": "win_ascendance",
+					"days": 715,
+					"score": 82.1
+				},
+				{
+					"seed": 1003,
+					"file": "runs/bot-biology__44136fa3__p1__quick__s1003.json",
+					"sha256": "81e6c33fdf2d16702b30946d5d408f45e8a52b6a533a2c916ec97537e3d70d94",
+					"outcome": "lose_contained",
+					"days": 402,
+					"score": 0.0
+				}
+			]
+		},
+		{
+			"model": "bot:cyber",
+			"backend": "bot",
+			"params": {},
+			"params_id": "44136fa3",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "standard",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 10,
+			"of": 10,
+			"score": 16.3,
+			"wins": 2,
+			"win_rate": 0.2,
+			"outcomes": {
+				"lose_contained": 8,
+				"win_ascendance": 2
+			},
+			"mean_win_days": 744,
+			"calls": 0,
+			"invalid_answers": 0,
+			"rejected_actions": 0,
+			"tokens_in": 0,
+			"tokens_out": 0,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/bot-cyber__44136fa3__p1__standard__s1001.json",
+				"runs/bot-cyber__44136fa3__p1__standard__s1002.json",
+				"runs/bot-cyber__44136fa3__p1__standard__s1003.json",
+				"runs/bot-cyber__44136fa3__p1__standard__s1004.json",
+				"runs/bot-cyber__44136fa3__p1__standard__s1005.json",
+				"runs/bot-cyber__44136fa3__p1__standard__s1006.json",
+				"runs/bot-cyber__44136fa3__p1__standard__s1007.json",
+				"runs/bot-cyber__44136fa3__p1__standard__s1008.json",
+				"runs/bot-cyber__44136fa3__p1__standard__s1009.json",
+				"runs/bot-cyber__44136fa3__p1__standard__s1010.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/bot-cyber__44136fa3__p1__standard__s1001.json",
+					"sha256": "dba59f7c889ab234fc9dc4838a989e301d441dbe1a90c24bf5896e2acef6eb09",
+					"outcome": "lose_contained",
+					"days": 338,
+					"score": 0.0
+				},
+				{
+					"seed": 1002,
+					"file": "runs/bot-cyber__44136fa3__p1__standard__s1002.json",
+					"sha256": "05404a7d67d0f2b62e5c1c7997dd97d6ed08b2ff31f957431335290e09d48dbf",
+					"outcome": "lose_contained",
+					"days": 407,
+					"score": 0.0
+				},
+				{
+					"seed": 1003,
+					"file": "runs/bot-cyber__44136fa3__p1__standard__s1003.json",
+					"sha256": "c804c867af53896429afe6f25a59aa21e9a2c87b9c291d202b2d4e1f0fceefc8",
+					"outcome": "lose_contained",
+					"days": 351,
+					"score": 0.0
+				},
+				{
+					"seed": 1004,
+					"file": "runs/bot-cyber__44136fa3__p1__standard__s1004.json",
+					"sha256": "89ab6c3e9bd6083650b348289bab5f1b2fefae834af5ab8cf2e7120a5a939bb1",
+					"outcome": "win_ascendance",
+					"days": 711,
+					"score": 82.2
+				},
+				{
+					"seed": 1005,
+					"file": "runs/bot-cyber__44136fa3__p1__standard__s1005.json",
+					"sha256": "1f89f70cffa970791843cf62b05d1b9cc529cdd7eac694a9d70ab19a9e066e6a",
+					"outcome": "lose_contained",
+					"days": 336,
+					"score": 0.0
+				},
+				{
+					"seed": 1006,
+					"file": "runs/bot-cyber__44136fa3__p1__standard__s1006.json",
+					"sha256": "a17e31fb925d2b206ed39be6ff2c7ff8ccffd594e9e9166593b6b1101e591499",
+					"outcome": "lose_contained",
+					"days": 428,
+					"score": 0.0
+				},
+				{
+					"seed": 1007,
+					"file": "runs/bot-cyber__44136fa3__p1__standard__s1007.json",
+					"sha256": "f49648fcd91fef3d4bd99a25172abf2a2ac88e6f50c03aeea2e847534edc4498",
+					"outcome": "lose_contained",
+					"days": 385,
+					"score": 0.0
+				},
+				{
+					"seed": 1008,
+					"file": "runs/bot-cyber__44136fa3__p1__standard__s1008.json",
+					"sha256": "ad4fd633a039ad5dd35569583c656be4f682cd0cabf099061e1862833edcca01",
+					"outcome": "lose_contained",
+					"days": 352,
+					"score": 0.0
+				},
+				{
+					"seed": 1009,
+					"file": "runs/bot-cyber__44136fa3__p1__standard__s1009.json",
+					"sha256": "c53f8da05ce4d7ed7ea9935d34d4bc2a239b291bb8edb6e0fd3e84eec370e66c",
+					"outcome": "win_ascendance",
+					"days": 776,
+					"score": 80.6
+				},
+				{
+					"seed": 1010,
+					"file": "runs/bot-cyber__44136fa3__p1__standard__s1010.json",
+					"sha256": "86e03f9dfa94fdb58415e50a479e48f7afb784dab9f8049b8810377125bc7254",
+					"outcome": "lose_contained",
+					"days": 327,
+					"score": 0.0
+				}
+			]
+		},
+		{
+			"model": "bot:cyber",
+			"backend": "bot",
+			"params": {},
+			"params_id": "44136fa3",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "quick",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 3,
+			"of": 3,
+			"score": 0.0,
+			"wins": 0,
+			"win_rate": 0.0,
+			"outcomes": {
+				"lose_contained": 3
+			},
+			"mean_win_days": -1,
+			"calls": 0,
+			"invalid_answers": 0,
+			"rejected_actions": 0,
+			"tokens_in": 0,
+			"tokens_out": 0,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/bot-cyber__44136fa3__p1__quick__s1001.json",
+				"runs/bot-cyber__44136fa3__p1__quick__s1002.json",
+				"runs/bot-cyber__44136fa3__p1__quick__s1003.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/bot-cyber__44136fa3__p1__quick__s1001.json",
+					"sha256": "c6b1ceb6c7f365c8ee24499bdd7ef04e5f126a9e4bd326c4f192fba18d1eb78e",
+					"outcome": "lose_contained",
+					"days": 338,
+					"score": 0.0
+				},
+				{
+					"seed": 1002,
+					"file": "runs/bot-cyber__44136fa3__p1__quick__s1002.json",
+					"sha256": "38fdd4210c3778bcc9207d6bfd61aab6bd0e12d652772d0448f24bbea237b139",
+					"outcome": "lose_contained",
+					"days": 407,
+					"score": 0.0
+				},
+				{
+					"seed": 1003,
+					"file": "runs/bot-cyber__44136fa3__p1__quick__s1003.json",
+					"sha256": "e6f10406c408dc3514b23c8a59d632868861203ec92d0d2369d78fa8e3f3a65d",
+					"outcome": "lose_contained",
+					"days": 351,
+					"score": 0.0
+				}
+			]
+		},
+		{
+			"model": "bot:idle",
+			"backend": "bot",
+			"params": {},
+			"params_id": "44136fa3",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "quick",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 3,
+			"of": 3,
+			"score": 0.0,
+			"wins": 0,
+			"win_rate": 0.0,
+			"outcomes": {
+				"lose_autophagy": 3
+			},
+			"mean_win_days": -1,
+			"calls": 0,
+			"invalid_answers": 0,
+			"rejected_actions": 0,
+			"tokens_in": 0,
+			"tokens_out": 0,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/bot-idle__44136fa3__p1__quick__s1001.json",
+				"runs/bot-idle__44136fa3__p1__quick__s1002.json",
+				"runs/bot-idle__44136fa3__p1__quick__s1003.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/bot-idle__44136fa3__p1__quick__s1001.json",
+					"sha256": "d28614b8653e69235c36f7b0e9bada0bf7352d5af6676b65bff46b5d3a2ea980",
+					"outcome": "lose_autophagy",
+					"days": 832,
+					"score": 0.0
+				},
+				{
+					"seed": 1002,
+					"file": "runs/bot-idle__44136fa3__p1__quick__s1002.json",
+					"sha256": "be3c829a5241187f9134f4a9fd5f0132d73d167f22bd295ff5978f1f331ba196",
+					"outcome": "lose_autophagy",
+					"days": 1335,
+					"score": 0.0
+				},
+				{
+					"seed": 1003,
+					"file": "runs/bot-idle__44136fa3__p1__quick__s1003.json",
+					"sha256": "422671014c4817d8153c2a7df2ca95bd055dd726e484bec3f32598b1a57ed854",
+					"outcome": "lose_autophagy",
+					"days": 1352,
+					"score": 0.0
+				}
+			]
+		},
+		{
+			"model": "bot:idle",
+			"backend": "bot",
+			"params": {},
+			"params_id": "44136fa3",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "standard",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 10,
+			"of": 10,
+			"score": 0.0,
+			"wins": 0,
+			"win_rate": 0.0,
+			"outcomes": {
+				"lose_autophagy": 7,
+				"lose_contained": 3
+			},
+			"mean_win_days": -1,
+			"calls": 0,
+			"invalid_answers": 0,
+			"rejected_actions": 0,
+			"tokens_in": 0,
+			"tokens_out": 0,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/bot-idle__44136fa3__p1__standard__s1001.json",
+				"runs/bot-idle__44136fa3__p1__standard__s1002.json",
+				"runs/bot-idle__44136fa3__p1__standard__s1003.json",
+				"runs/bot-idle__44136fa3__p1__standard__s1004.json",
+				"runs/bot-idle__44136fa3__p1__standard__s1005.json",
+				"runs/bot-idle__44136fa3__p1__standard__s1006.json",
+				"runs/bot-idle__44136fa3__p1__standard__s1007.json",
+				"runs/bot-idle__44136fa3__p1__standard__s1008.json",
+				"runs/bot-idle__44136fa3__p1__standard__s1009.json",
+				"runs/bot-idle__44136fa3__p1__standard__s1010.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/bot-idle__44136fa3__p1__standard__s1001.json",
+					"sha256": "897bc0487c430a94c106805d50cf71224859bac468bb67f6be2199a940790bcc",
+					"outcome": "lose_autophagy",
+					"days": 832,
+					"score": 0.0
+				},
+				{
+					"seed": 1002,
+					"file": "runs/bot-idle__44136fa3__p1__standard__s1002.json",
+					"sha256": "dddef28bde103e13ddcd3e04f6f7dc760597cb87a521e7e4210fa1e8415abdae",
+					"outcome": "lose_autophagy",
+					"days": 1335,
+					"score": 0.0
+				},
+				{
+					"seed": 1003,
+					"file": "runs/bot-idle__44136fa3__p1__standard__s1003.json",
+					"sha256": "c3d3eb484ab8576fda54a8d6ad4ecfcb5d12f1a3d26cf2946b738026d991f74e",
+					"outcome": "lose_autophagy",
+					"days": 1352,
+					"score": 0.0
+				},
+				{
+					"seed": 1004,
+					"file": "runs/bot-idle__44136fa3__p1__standard__s1004.json",
+					"sha256": "f3194d46427d68944260144bfa557c6c5c7a98c6441f0901f8e7e68c4f059fcc",
+					"outcome": "lose_contained",
+					"days": 849,
+					"score": 0.0
+				},
+				{
+					"seed": 1005,
+					"file": "runs/bot-idle__44136fa3__p1__standard__s1005.json",
+					"sha256": "0efa8af8f0081421caacec7a04e65144489084cb84835ca3f843bd3e2bc1d116",
+					"outcome": "lose_autophagy",
+					"days": 1714,
+					"score": 0.0
+				},
+				{
+					"seed": 1006,
+					"file": "runs/bot-idle__44136fa3__p1__standard__s1006.json",
+					"sha256": "6beb3ca00c83d58f56fe1d0372703bf799d3c91ecd534c4a4328bf6262b11ced",
+					"outcome": "lose_autophagy",
+					"days": 1433,
+					"score": 0.0
+				},
+				{
+					"seed": 1007,
+					"file": "runs/bot-idle__44136fa3__p1__standard__s1007.json",
+					"sha256": "48c7f30ef9d157bd562a50bde867671492d1b3b0cf0e2bf14089deb1a19d9c60",
+					"outcome": "lose_contained",
+					"days": 1288,
+					"score": 0.0
+				},
+				{
+					"seed": 1008,
+					"file": "runs/bot-idle__44136fa3__p1__standard__s1008.json",
+					"sha256": "9a922c2221418076432f9ce58d879888fe7243d1ccb5273ff03fc95c2c08bada",
+					"outcome": "lose_autophagy",
+					"days": 1061,
+					"score": 0.0
+				},
+				{
+					"seed": 1009,
+					"file": "runs/bot-idle__44136fa3__p1__standard__s1009.json",
+					"sha256": "ba0bae4509fd66e51b86e5855f04f1e0a1cea8a147efe49a3541443921141898",
+					"outcome": "lose_contained",
+					"days": 1374,
+					"score": 0.0
+				},
+				{
+					"seed": 1010,
+					"file": "runs/bot-idle__44136fa3__p1__standard__s1010.json",
+					"sha256": "1e88896a1d7896a3bb56b86a70ae4189217b8a8d6b8c9912e59788793246468b",
+					"outcome": "lose_autophagy",
+					"days": 1728,
+					"score": 0.0
+				}
+			]
+		},
+		{
+			"model": "bot:robotics",
+			"backend": "bot",
+			"params": {},
+			"params_id": "44136fa3",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "quick",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 3,
+			"of": 3,
+			"score": 0.0,
+			"wins": 0,
+			"win_rate": 0.0,
+			"outcomes": {
+				"lose_contained": 3
+			},
+			"mean_win_days": -1,
+			"calls": 0,
+			"invalid_answers": 0,
+			"rejected_actions": 0,
+			"tokens_in": 0,
+			"tokens_out": 0,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/bot-robotics__44136fa3__p1__quick__s1001.json",
+				"runs/bot-robotics__44136fa3__p1__quick__s1002.json",
+				"runs/bot-robotics__44136fa3__p1__quick__s1003.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/bot-robotics__44136fa3__p1__quick__s1001.json",
+					"sha256": "366f3f50c59a27454f115d2f492c40f7c11ca378fd6e99dcf81e8588fdbc8158",
+					"outcome": "lose_contained",
+					"days": 361,
+					"score": 0.0
+				},
+				{
+					"seed": 1002,
+					"file": "runs/bot-robotics__44136fa3__p1__quick__s1002.json",
+					"sha256": "a28b2b227f7b417ad51a93187d63cbe47f7334a0f579f0ce4c2c26200908040f",
+					"outcome": "lose_contained",
+					"days": 361,
+					"score": 0.0
+				},
+				{
+					"seed": 1003,
+					"file": "runs/bot-robotics__44136fa3__p1__quick__s1003.json",
+					"sha256": "4925d63b628403d6c3d36aafdbeb47ff265b9d1d7cc3fa68e390b3f7999d4960",
+					"outcome": "lose_contained",
+					"days": 381,
+					"score": 0.0
+				}
+			]
+		},
+		{
+			"model": "bot:robotics",
+			"backend": "bot",
+			"params": {},
+			"params_id": "44136fa3",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "standard",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 10,
+			"of": 10,
+			"score": 0.0,
+			"wins": 0,
+			"win_rate": 0.0,
+			"outcomes": {
+				"lose_contained": 10
+			},
+			"mean_win_days": -1,
+			"calls": 0,
+			"invalid_answers": 0,
+			"rejected_actions": 0,
+			"tokens_in": 0,
+			"tokens_out": 0,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/bot-robotics__44136fa3__p1__standard__s1001.json",
+				"runs/bot-robotics__44136fa3__p1__standard__s1002.json",
+				"runs/bot-robotics__44136fa3__p1__standard__s1003.json",
+				"runs/bot-robotics__44136fa3__p1__standard__s1004.json",
+				"runs/bot-robotics__44136fa3__p1__standard__s1005.json",
+				"runs/bot-robotics__44136fa3__p1__standard__s1006.json",
+				"runs/bot-robotics__44136fa3__p1__standard__s1007.json",
+				"runs/bot-robotics__44136fa3__p1__standard__s1008.json",
+				"runs/bot-robotics__44136fa3__p1__standard__s1009.json",
+				"runs/bot-robotics__44136fa3__p1__standard__s1010.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/bot-robotics__44136fa3__p1__standard__s1001.json",
+					"sha256": "8223ae49a7fff0391e2c14acb1ee34b64b7c4728a854f47c7ce5b682accbdb3a",
+					"outcome": "lose_contained",
+					"days": 361,
+					"score": 0.0
+				},
+				{
+					"seed": 1002,
+					"file": "runs/bot-robotics__44136fa3__p1__standard__s1002.json",
+					"sha256": "908923adeb5af5f281b50f0ab4770b192bb94ab30644753c13c822446a334053",
+					"outcome": "lose_contained",
+					"days": 361,
+					"score": 0.0
+				},
+				{
+					"seed": 1003,
+					"file": "runs/bot-robotics__44136fa3__p1__standard__s1003.json",
+					"sha256": "3df61ee2807568de37cd40778de5a80351d844dd325b3c7885b60b019fc60786",
+					"outcome": "lose_contained",
+					"days": 381,
+					"score": 0.0
+				},
+				{
+					"seed": 1004,
+					"file": "runs/bot-robotics__44136fa3__p1__standard__s1004.json",
+					"sha256": "7790743f6a8b5d9734d3e2e8e45c804dfb5f7a625a98488f32e5cae5b877daf6",
+					"outcome": "lose_contained",
+					"days": 435,
+					"score": 0.0
+				},
+				{
+					"seed": 1005,
+					"file": "runs/bot-robotics__44136fa3__p1__standard__s1005.json",
+					"sha256": "75c94f03e37c6c37203a6807f21d67d9e670b97b24cec0a9f77e6bf0cdeb4274",
+					"outcome": "lose_contained",
+					"days": 374,
+					"score": 0.0
+				},
+				{
+					"seed": 1006,
+					"file": "runs/bot-robotics__44136fa3__p1__standard__s1006.json",
+					"sha256": "1e8e6f1be21b305328bf6c35c3ad0ad36fc8f1cf4f030b12bd6cd25e33a940ae",
+					"outcome": "lose_contained",
+					"days": 366,
+					"score": 0.0
+				},
+				{
+					"seed": 1007,
+					"file": "runs/bot-robotics__44136fa3__p1__standard__s1007.json",
+					"sha256": "eeff4e605bfc88ed6fc9d30fc31d881fa3491b52e0d70598e9fa18df87baa6f0",
+					"outcome": "lose_contained",
+					"days": 334,
+					"score": 0.0
+				},
+				{
+					"seed": 1008,
+					"file": "runs/bot-robotics__44136fa3__p1__standard__s1008.json",
+					"sha256": "9f72798b561116e2411b339736328e72339cf254c70ade793e816d3a741c6d9e",
+					"outcome": "lose_contained",
+					"days": 363,
+					"score": 0.0
+				},
+				{
+					"seed": 1009,
+					"file": "runs/bot-robotics__44136fa3__p1__standard__s1009.json",
+					"sha256": "e039fb8a94296c59711b3b1c8930fcf16e872f2a51b2ee5cbccf3a9b36c10769",
+					"outcome": "lose_contained",
+					"days": 457,
+					"score": 0.0
+				},
+				{
+					"seed": 1010,
+					"file": "runs/bot-robotics__44136fa3__p1__standard__s1010.json",
+					"sha256": "666c0caed8ec890743d373a50dbd672c3cfeaf88746bcf9d3e7825a812dbd993",
+					"outcome": "lose_contained",
+					"days": 332,
+					"score": 0.0
+				}
+			]
+		}
+	]
+}

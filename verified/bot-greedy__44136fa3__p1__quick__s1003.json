@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/bot-greedy__44136fa3__p1__quick__s1003.json",
+	"sha256": "a3ccf23e0b191124fbea04c1dd55fc72e4768fd268e3ba24d3a4d6327d2b227b",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "d6525ec22b24be57dda1e143f240544471db87fb",
+	"game_version": "0.6.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "033ba6dcab64895c16d0fa84510d3a75d050a712615e1cbc26c1fee1fd02546f",
+	"outcome": "lose_contained",
+	"days": 456,
+	"end_day": 456,
+	"score": 0.0,
+	"checked": "2026-09-27"
+}

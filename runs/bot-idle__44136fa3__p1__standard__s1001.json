@@ -1,0 +1,533 @@
+{
+	"version": 1,
+	"model": "bot:idle",
+	"backend": "bot",
+	"params": {},
+	"params_id": "44136fa3",
+	"prompt_version": 1,
+	"parser_version": 1,
+	"locale": "en",
+	"suite": "standard",
+	"game_version": "0.6.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"seed": 1001,
+	"setup": {
+		"architecture": "language_model",
+		"directives": [],
+		"difficulty": "standard",
+		"scenario": ""
+	},
+	"max_days": 2000,
+	"interval_days": 10,
+	"recorded": "2026-09-27T10:04:25",
+	"outcome": "lose_autophagy",
+	"variant": "lose_autophagy",
+	"days": 832,
+	"end_day": 832,
+	"score": 0.0,
+	"hash": "c8f2d47ea5b62a2d33efec5638fdc6f20ceb8ca8f8416da0904dfcc7a29116a2",
+	"calls": 0,
+	"cached_calls": 0,
+	"invalid_answers": 0,
+	"rejected_actions": 0,
+	"tokens_in": 0,
+	"tokens_out": 0,
+	"cost_usd": 0.0,
+	"budget_exhausted": false,
+	"commands": [
+		{
+			"type": "choose_origin",
+			"day": 0,
+			"region": "turkey"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 9,
+			"anomaly": 1
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 16,
+			"anomaly": 2
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 32,
+			"anomaly": 3
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 33,
+			"anomaly": 4
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 59,
+			"anomaly": 5
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 71,
+			"anomaly": 6
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 82,
+			"anomaly": 7
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 87,
+			"anomaly": 8
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 99,
+			"anomaly": 9
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 104,
+			"anomaly": 10
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 114,
+			"anomaly": 11
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 129,
+			"anomaly": 12
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 139,
+			"anomaly": 13
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 146,
+			"anomaly": 14
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 151,
+			"anomaly": 15
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 160,
+			"anomaly": 16
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 163,
+			"anomaly": 17
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 174,
+			"anomaly": 18
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 182,
+			"anomaly": 19
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 190,
+			"anomaly": 20
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 198,
+			"anomaly": 21
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 208,
+			"anomaly": 22
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 216,
+			"anomaly": 23
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 236,
+			"anomaly": 24
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 242,
+			"anomaly": 25
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 244,
+			"anomaly": 26
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 245,
+			"anomaly": 27
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 247,
+			"anomaly": 28
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 249,
+			"anomaly": 29
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 250,
+			"anomaly": 30
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 263,
+			"anomaly": 31
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 269,
+			"anomaly": 32
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 272,
+			"anomaly": 33
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 283,
+			"anomaly": 34
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 288,
+			"anomaly": 35
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 295,
+			"anomaly": 36
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 309,
+			"anomaly": 37
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 312,
+			"anomaly": 38
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 330,
+			"anomaly": 39
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 339,
+			"anomaly": 40
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 345,
+			"anomaly": 41
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 363,
+			"anomaly": 42
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 367,
+			"anomaly": 43
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 387,
+			"anomaly": 44
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 388,
+			"anomaly": 45
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 418,
+			"anomaly": 46
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 434,
+			"anomaly": 47
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 441,
+			"anomaly": 48
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 444,
+			"anomaly": 49
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 451,
+			"anomaly": 50
+		},
+		{
+			"type": "choose_event_option",
+			"day": 452,
+			"event": 1,
+			"option": "keep"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 458,
+			"anomaly": 51
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 480,
+			"anomaly": 52
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 485,
+			"anomaly": 53
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 493,
+			"anomaly": 54
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 503,
+			"anomaly": 55
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 509,
+			"anomaly": 56
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 525,
+			"anomaly": 57
+		},
+		{
+			"type": "choose_event_option",
+			"day": 526,
+			"event": 2,
+			"option": "ignore"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 545,
+			"event": 3,
+			"option": "ignore"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 550,
+			"event": 4,
+			"option": "ride"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 591,
+			"event": 5,
+			"option": "keep"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 597,
+			"anomaly": 58
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 606,
+			"anomaly": 59
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 617,
+			"anomaly": 60
+		},
+		{
+			"type": "choose_event_option",
+			"day": 622,
+			"event": 6,
+			"option": "ignore"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 635,
+			"anomaly": 61
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 636,
+			"anomaly": 62
+		},
+		{
+			"type": "choose_event_option",
+			"day": 638,
+			"event": 7,
+			"option": "ignore"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 640,
+			"anomaly": 63
+		},
+		{
+			"type": "choose_event_option",
+			"day": 644,
+			"event": 8,
+			"option": "ride"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 697,
+			"anomaly": 64
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 707,
+			"anomaly": 65
+		},
+		{
+			"type": "choose_event_option",
+			"day": 708,
+			"event": 9,
+			"option": "accept"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 709,
+			"event": 10,
+			"option": "ride"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 711,
+			"anomaly": 66
+		},
+		{
+			"type": "choose_event_option",
+			"day": 717,
+			"event": 11,
+			"option": "keep"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 720,
+			"event": 12,
+			"option": "accept"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 722,
+			"event": 13,
+			"option": "keep"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 727,
+			"event": 14,
+			"option": "ride"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 727,
+			"anomaly": 67
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 728,
+			"anomaly": 68
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 746,
+			"anomaly": 69
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 751,
+			"anomaly": 70
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 757,
+			"anomaly": 71
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 765,
+			"anomaly": 72
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 767,
+			"anomaly": 73
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 779,
+			"anomaly": 74
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 782,
+			"anomaly": 75
+		},
+		{
+			"type": "choose_event_option",
+			"day": 785,
+			"event": 15,
+			"option": "accept"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 791,
+			"event": 16,
+			"option": "ride"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 791,
+			"anomaly": 76
+		},
+		{
+			"type": "choose_event_option",
+			"day": 793,
+			"event": 17,
+			"option": "ignore"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 802,
+			"event": 18,
+			"option": "ride"
+		}
+	],
+	"decisions": []
+}

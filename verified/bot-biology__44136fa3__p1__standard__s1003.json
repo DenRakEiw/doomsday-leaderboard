@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/bot-biology__44136fa3__p1__standard__s1003.json",
+	"sha256": "8abe47f81f0b83ab315832c6da12957d1a6f536f8c2fb2b3760079ec1c808bd0",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "d6525ec22b24be57dda1e143f240544471db87fb",
+	"game_version": "0.6.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "a97c9be29b4b5233faff72d2daf569646a951f154f5c339b0cc94c9de93330db",
+	"outcome": "lose_contained",
+	"days": 402,
+	"end_day": 402,
+	"score": 0.0,
+	"checked": "2026-09-27"
+}

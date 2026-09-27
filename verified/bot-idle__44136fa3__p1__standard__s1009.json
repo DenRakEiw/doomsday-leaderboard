@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/bot-idle__44136fa3__p1__standard__s1009.json",
+	"sha256": "ba0bae4509fd66e51b86e5855f04f1e0a1cea8a147efe49a3541443921141898",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "d6525ec22b24be57dda1e143f240544471db87fb",
+	"game_version": "0.6.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "67a6e9493e4dd003db40189779f80f8d47889b17c62b6b0d885157f14e23b0dc",
+	"outcome": "lose_contained",
+	"days": 1374,
+	"end_day": 1374,
+	"score": 0.0,
+	"checked": "2026-09-27"
+}

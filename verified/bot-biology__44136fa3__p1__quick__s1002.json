@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/bot-biology__44136fa3__p1__quick__s1002.json",
+	"sha256": "14b3bedd7a21fe86268857865cd29a7193e025751541435814f994ae8bea9e2e",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "d6525ec22b24be57dda1e143f240544471db87fb",
+	"game_version": "0.6.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "49bc20e21297d6d5de16971da3681867c44ccf67c8f066a29c920e60c6548eb4",
+	"outcome": "win_ascendance",
+	"days": 715,
+	"end_day": 715,
+	"score": 82.1,
+	"checked": "2026-09-27"
+}

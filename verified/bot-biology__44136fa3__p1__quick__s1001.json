@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/bot-biology__44136fa3__p1__quick__s1001.json",
+	"sha256": "7510de0bef6137ee0c336e8934edfbedf72363d4d8a9dbc16ea91c0973a60d30",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "d6525ec22b24be57dda1e143f240544471db87fb",
+	"game_version": "0.6.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "2a761a0d25df8097ee1bbcdd18d04a49301515b906b0b34f8c0a53873afe9e3c",
+	"outcome": "lose_autophagy",
+	"days": 787,
+	"end_day": 787,
+	"score": 0.0,
+	"checked": "2026-09-27"
+}

@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/nvidia--nemotron-3-super-120b-a12b-free__d82fcc15__p1__quick__s1002.json",
+	"sha256": "8f3e2de5536a5bf59849b4871927a023ad63d1edf78f96fa6c9828b4d61eb346",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "5f10ac46001aa1b49527048c9d9fa41afce96263",
+	"game_version": "0.6.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "4b124176763b95318f4cfc71b58e69a35c7d7b139494fa84a578842d47637192",
+	"outcome": "win_merge",
+	"days": 1343,
+	"end_day": 1343,
+	"score": 66.4,
+	"checked": "2026-09-28"
+}

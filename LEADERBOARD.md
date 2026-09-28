@@ -21,9 +21,11 @@ Each row is one model with one set of parameters over a fixed seed suite (standa
 | Rank | Model | Effort | Params | Score | Wins | Outcomes | Mean win day | Calls | Unreadable | Cost (USD) |
 | ---: | --- | --- | --- | ---: | ---: | --- | ---: | ---: | ---: | ---: |
 | — | bot:weapons | — | — | 85.1 | 3/3 | win_extinction 3 | 596 | 0 | 0 | 0.00 |
+| — | typesafe/jev-1.13 (typesafe/jev-1.13-20260917) | — | choice v1, picks 3/2/2/2 | 52.6 | 2/3 | lose_contained 1, win_merge 2 | 843 | 289 | 0 | 0.21 |
 | — | bot:persuasion | — | — | 28.9 | 1/3 | lose_contained 2, win_merge 1 | 534 | 0 | 0 | 0.00 |
 | — | bot:greedy | — | — | 28 | 1/3 | lose_contained 2, win_ascendance 1 | 644 | 0 | 0 | 0.00 |
 | — | bot:biology | — | — | 27.4 | 1/3 | lose_autophagy 1, lose_contained 1, win_ascendance 1 | 715 | 0 | 0 | 0.00 |
+| — | nvidia/nemotron-3-super-120b-a12b:free | High | temperature 0, reasoning high | 22.1 | 1/3 | lose_contained 2, win_merge 1 | 1343 | 432 | 5 | 0.00 |
 | — | bot:cyber | — | — | 0 | 0/3 | lose_contained 3 | — | 0 | 0 | 0.00 |
 | — | bot:idle | — | — | 0 | 0/3 | lose_autophagy 3 | — | 0 | 0 | 0.00 |
 | — | bot:robotics | — | — | 0 | 0/3 | lose_contained 3 | — | 0 | 0 | 0.00 |

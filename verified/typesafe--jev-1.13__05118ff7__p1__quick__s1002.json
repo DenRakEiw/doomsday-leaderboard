@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/typesafe--jev-1.13__05118ff7__p1__quick__s1002.json",
+	"sha256": "91ad30e8ed7f7a581749afd01ddd8dbe5d221e518930d5276245b4b15d333574",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "5f10ac46001aa1b49527048c9d9fa41afce96263",
+	"game_version": "0.6.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "02cbedff31b945de1805fc711a257e608c769ed7ee67b6c6e6a8ceb3c786dba9",
+	"outcome": "win_merge",
+	"days": 839,
+	"end_day": 839,
+	"score": 79.0,
+	"checked": "2026-09-28"
+}

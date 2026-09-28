@@ -1,6 +1,6 @@
 {
 	"version": 1,
-	"generated": "2026-09-27",
+	"generated": "2026-09-28",
 	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
 	"rows": [
 		{
@@ -309,6 +309,78 @@
 					"sha256": "115775e81d115a8a772c00e8648071e3c1c2deaeaba67df649e4c1c4e422124a",
 					"outcome": "lose_autophagy",
 					"days": 728,
+					"score": 0.0
+				}
+			]
+		},
+		{
+			"model": "typesafe/jev-1.13",
+			"backend": "typesafe",
+			"model_versions": [
+				"typesafe/jev-1.13-20260917"
+			],
+			"params": {
+				"choice_version": 1.0,
+				"max_picks": {
+					"buy": 3.0,
+					"use": 2.0,
+					"wake": 2.0,
+					"sleep": 2.0
+				}
+			},
+			"params_id": "05118ff7",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "quick",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 3,
+			"of": 3,
+			"score": 52.6,
+			"wins": 2,
+			"win_rate": 0.666666666666667,
+			"outcomes": {
+				"lose_contained": 1,
+				"win_merge": 2
+			},
+			"mean_win_days": 843,
+			"calls": 289,
+			"invalid_answers": 0,
+			"rejected_actions": 6,
+			"tokens_in": 5095051,
+			"tokens_out": 354898,
+			"cost_usd": 0.213992142,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/typesafe--jev-1.13__05118ff7__p1__quick__s1001.json",
+				"runs/typesafe--jev-1.13__05118ff7__p1__quick__s1002.json",
+				"runs/typesafe--jev-1.13__05118ff7__p1__quick__s1003.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/typesafe--jev-1.13__05118ff7__p1__quick__s1001.json",
+					"sha256": "e4e2fbb1b84a42843d0f641fa365d06b03e35885fc0b09461abeae63b2408bed",
+					"outcome": "win_merge",
+					"days": 847,
+					"score": 78.8
+				},
+				{
+					"seed": 1002,
+					"file": "runs/typesafe--jev-1.13__05118ff7__p1__quick__s1002.json",
+					"sha256": "91ad30e8ed7f7a581749afd01ddd8dbe5d221e518930d5276245b4b15d333574",
+					"outcome": "win_merge",
+					"days": 839,
+					"score": 79.0
+				},
+				{
+					"seed": 1003,
+					"file": "runs/typesafe--jev-1.13__05118ff7__p1__quick__s1003.json",
+					"sha256": "6a3a443dec1213701119ddd7db94a8135e390c6e5ce130fa2091c630ff39cc82",
+					"outcome": "lose_contained",
+					"days": 429,
 					"score": 0.0
 				}
 			]
@@ -742,6 +814,75 @@
 					"sha256": "81e6c33fdf2d16702b30946d5d408f45e8a52b6a533a2c916ec97537e3d70d94",
 					"outcome": "lose_contained",
 					"days": 402,
+					"score": 0.0
+				}
+			]
+		},
+		{
+			"model": "nvidia/nemotron-3-super-120b-a12b:free",
+			"backend": "openrouter",
+			"effort": "high",
+			"params": {
+				"temperature": 0.0,
+				"max_completion_tokens": 16000.0,
+				"json_mode": true,
+				"reasoning": "high",
+				"top_p": -1.0,
+				"effort": "high"
+			},
+			"params_id": "d82fcc15",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "quick",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 3,
+			"of": 3,
+			"score": 22.1,
+			"wins": 1,
+			"win_rate": 0.333333333333333,
+			"outcomes": {
+				"lose_contained": 2,
+				"win_merge": 1
+			},
+			"mean_win_days": 1343,
+			"calls": 432,
+			"invalid_answers": 5,
+			"rejected_actions": 210,
+			"tokens_in": 6533904,
+			"tokens_out": 1862370,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/nvidia--nemotron-3-super-120b-a12b-free__d82fcc15__p1__quick__s1001.json",
+				"runs/nvidia--nemotron-3-super-120b-a12b-free__d82fcc15__p1__quick__s1002.json",
+				"runs/nvidia--nemotron-3-super-120b-a12b-free__d82fcc15__p1__quick__s1003.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/nvidia--nemotron-3-super-120b-a12b-free__d82fcc15__p1__quick__s1001.json",
+					"sha256": "f67394bb5f5081625dd5ef0a74e0a85bf6a4906dbd2295c02e88305ff0b56cdd",
+					"outcome": "lose_contained",
+					"days": 804,
+					"score": 0.0
+				},
+				{
+					"seed": 1002,
+					"file": "runs/nvidia--nemotron-3-super-120b-a12b-free__d82fcc15__p1__quick__s1002.json",
+					"sha256": "8f3e2de5536a5bf59849b4871927a023ad63d1edf78f96fa6c9828b4d61eb346",
+					"outcome": "win_merge",
+					"days": 1343,
+					"score": 66.4
+				},
+				{
+					"seed": 1003,
+					"file": "runs/nvidia--nemotron-3-super-120b-a12b-free__d82fcc15__p1__quick__s1003.json",
+					"sha256": "0f9059118a3281ada596d53127c210b43cae9f25b45199551289bd82827f219b",
+					"outcome": "lose_contained",
+					"days": 448,
 					"score": 0.0
 				}
 			]

@@ -1,6 +1,6 @@
 {
 	"version": 1,
-	"generated": "2026-09-28",
+	"generated": "2026-11-06",
 	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
 	"rows": [
 		{
@@ -310,6 +310,74 @@
 					"outcome": "lose_autophagy",
 					"days": 728,
 					"score": 0.0
+				}
+			]
+		},
+		{
+			"model": "anthropic/claude-sonnet-5",
+			"backend": "openrouter",
+			"effort": "reasoning-medium",
+			"params": {
+				"temperature": 0.0,
+				"max_completion_tokens": 4000.0,
+				"json_mode": true,
+				"reasoning": "medium",
+				"top_p": -1.0
+			},
+			"params_id": "946492ad",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "quick",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 3,
+			"of": 3,
+			"score": 53.4,
+			"wins": 2,
+			"win_rate": 0.666666666666667,
+			"outcomes": {
+				"lose_contained": 1,
+				"win_merge": 2
+			},
+			"mean_win_days": 798,
+			"calls": 274,
+			"invalid_answers": 0,
+			"rejected_actions": 18,
+			"tokens_in": 5598392,
+			"tokens_out": 191808,
+			"cost_usd": 4.32604,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/anthropic--claude-sonnet-5__946492ad__p1__quick__s1001.json",
+				"runs/anthropic--claude-sonnet-5__946492ad__p1__quick__s1002.json",
+				"runs/anthropic--claude-sonnet-5__946492ad__p1__quick__s1003.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/anthropic--claude-sonnet-5__946492ad__p1__quick__s1001.json",
+					"sha256": "066feffcec07df01761741d3cdb19dd5d00092a2b6d2d30a9ee7204f5a3a5d07",
+					"outcome": "lose_contained",
+					"days": 450,
+					"score": 0.0
+				},
+				{
+					"seed": 1002,
+					"file": "runs/anthropic--claude-sonnet-5__946492ad__p1__quick__s1002.json",
+					"sha256": "6e22933f59a528a224cd284d0572e57e24569d76e1c333843a3a2d46fcb031da",
+					"outcome": "win_merge",
+					"days": 809,
+					"score": 79.8
+				},
+				{
+					"seed": 1003,
+					"file": "runs/anthropic--claude-sonnet-5__946492ad__p1__quick__s1003.json",
+					"sha256": "319f037dfc7a3940b29114bc5108b89d6b89b7d5da4a60bf7b12dff771d9115c",
+					"outcome": "win_merge",
+					"days": 786,
+					"score": 80.3
 				}
 			]
 		},

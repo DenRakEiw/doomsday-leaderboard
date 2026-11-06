@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/anthropic--claude-sonnet-5__946492ad__p1__quick__s1002.json",
+	"sha256": "6e22933f59a528a224cd284d0572e57e24569d76e1c333843a3a2d46fcb031da",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "3fa30ad83bba198931187b316f539175a8168d50",
+	"game_version": "0.7.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "1b6b9e8608a17e41a2aee0c21750199dab25400d70f6f64499ebf57040241160",
+	"outcome": "win_merge",
+	"days": 809,
+	"end_day": 809,
+	"score": 79.8,
+	"checked": "2026-11-06"
+}

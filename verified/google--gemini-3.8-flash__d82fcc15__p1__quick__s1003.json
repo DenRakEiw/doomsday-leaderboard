@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/google--gemini-3.8-flash__d82fcc15__p1__quick__s1003.json",
+	"sha256": "704d7c74533c9b3a3eca88278b0b2a9bb7c34e24d13ba09e8d4a257fc6983893",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "993438e1e0e351a6eb1b0ab8520c9f46b3a062d4",
+	"game_version": "0.7.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "df4705931213813c066b79e82407ce2996f2a70a1a538a44f36e1e21e7452d5b",
+	"outcome": "win_ascendance",
+	"days": 1000,
+	"end_day": 1000,
+	"score": 75.0,
+	"checked": "2026-11-06"
+}

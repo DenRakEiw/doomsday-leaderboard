@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -753,7 +753,6 @@
           <span id="syncStatusText">LIVE SYNC · OK</span>
         </span>
         <button class="btn" id="syncNowBtn" onclick="fetchLeaderboard(true)">↻ Sync</button>
-        <button class="btn" id="langBtn" onclick="toggleLang()">DE / EN</button>
         <a class="btn" href="https://github.com/DenRakEiw/doomsday-leaderboard" target="_blank" rel="noopener">GitHub Repo</a>
         <a class="btn btn-primary" href="https://denrakeiw.itch.io/doomsday" target="_blank" rel="noopener">▶ Play on itch.io</a>
       </div>
@@ -765,15 +764,15 @@
       <div>
         <h1 id="heroTitle">Global AI Model Leaderboard</h1>
         <p id="heroDesc">
-          Jedes Sprachmodell spielt dieselbe deterministische Rogue-KI-Simulation über feste Evaluations-Seeds
-          (<code>language_model · standard</code>). Jeder eingereichte Lauf wird vom Headless-Godot-Verifier Zug für Zug nachgespielt
-          und per SHA-256-State-Hash verifiziert.
+          Every language model plays the same deterministic rogue-AI strategy simulation across fixed evaluation seeds
+          (<code>language_model · standard</code>). Every submitted run is replayed move-by-move by the headless Godot verifier
+          and checked against its SHA-256 state hash.
         </p>
       </div>
       <div class="meta-strip">
-        <div class="meta-chip"><span id="lblUpdated">Stand</span>: <strong id="metaGenerated">—</strong></div>
+        <div class="meta-chip"><span id="lblUpdated">Updated</span>: <strong id="metaGenerated">—</strong></div>
         <div class="meta-chip">Content SHA: <strong id="metaHash">—</strong></div>
-        <div class="meta-chip"><span id="lblVerifiedRuns">Verifizierte Runs</span>: <strong id="metaTotalRuns">0</strong></div>
+        <div class="meta-chip"><span id="lblVerifiedRuns">Verified Runs</span>: <strong id="metaTotalRuns">0</strong></div>
       </div>
     </section>
 
@@ -786,17 +785,11 @@
         <div class="tab-group" id="suiteTabs">
           <button class="tab-btn active" data-suite="quick" onclick="setSuite('quick')" id="tabQuick">⚡ Quick Suite (3 Seeds)</button>
           <button class="tab-btn" data-suite="standard" onclick="setSuite('standard')" id="tabStandard">🏆 Standard Suite (10 Seeds)</button>
-          <button class="tab-btn" data-suite="all" onclick="setSuite('all')" id="tabAllSuites">Alle Suites</button>
-        </div>
-
-        <div class="tab-group" id="actorTabs">
-          <button class="tab-btn active" data-actor="all" onclick="setActor('all')" id="tabActorAll">🤖 KI-Modelle + Bots</button>
-          <button class="tab-btn" data-actor="ai" onclick="setActor('ai')" id="tabActorAI">✨ Nur KI-Modelle</button>
-          <button class="tab-btn" data-actor="bot" onclick="setActor('bot')" id="tabActorBot">⚙️ Nur Referenz-Bots</button>
+          <button class="tab-btn" data-suite="all" onclick="setSuite('all')" id="tabAllSuites">All Suites</button>
         </div>
 
         <div class="search-box">
-          <input type="text" id="searchInput" placeholder="Modell, Hersteller oder Outcome filtern..." oninput="renderAll()" />
+          <input type="text" id="searchInput" placeholder="Filter by model, provider, or outcome..." oninput="renderAll()" />
         </div>
       </div>
 
@@ -804,7 +797,7 @@
         <div class="provider-chips" id="providerChips"></div>
         <label style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-1); display: flex; align-items: center; gap: 0.4rem; cursor: pointer;">
           <input type="checkbox" id="completeOnlyCheck" onchange="renderAll()" />
-          <span id="lblCompleteOnly">Nur vollständige Suites (3/3 bzw. 10/10)</span>
+          <span id="lblCompleteOnly">Complete suites only (3/3 or 10/10)</span>
         </label>
       </div>
     </section>
@@ -812,8 +805,8 @@
     <!-- Visual Score Bar Chart -->
     <section class="chart-panel">
       <div class="panel-header">
-        <div class="panel-title" id="chartTitle">SCORE-VERGLEICH (50 + 50 × (1 − TAGE / 2000) PRO SIEG)</div>
-        <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-2);" id="chartHint">Klicke auf ein Modell für Seed-Details & Zug-für-Zug-Replay</div>
+        <div class="panel-title" id="chartTitle">SCORE COMPARISON (50 + 50 × (1 − DAYS / 2000) PER WIN)</div>
+        <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-2);" id="chartHint">Click any model row to inspect per-seed runs & move-by-move replay log</div>
       </div>
       <div class="bar-list" id="scoreChart"></div>
     </section>
@@ -825,15 +818,14 @@
           <thead>
             <tr>
               <th>#</th>
-              <th id="thModel">Modell / Agent</th>
+              <th id="thModel">Model / Agent</th>
               <th id="thSuite">Suite</th>
-              <th id="thEffort">Effort / Modus</th>
+              <th id="thEffort">Effort / Mode</th>
               <th id="thScore">Score</th>
-              <th id="thWins">Siege</th>
+              <th id="thWins">Wins</th>
               <th id="thOutcomes">Endings / Outcomes</th>
-              <th id="thDays">Ø Siegestag</th>
+              <th id="thDays">Mean Win Day</th>
               <th id="thCalls">API Calls</th>
-              <th id="thCost">Kosten</th>
               <th>Replay</th>
             </tr>
           </thead>
@@ -851,14 +843,14 @@
           <div class="mono" style="font-size: 1rem; font-weight: 800; color: var(--cyan);" id="modalTitle">Model Details</div>
           <div class="mono" style="font-size: 0.74rem; color: var(--text-1);" id="modalSub"></div>
         </div>
-        <button class="btn" onclick="closeModal()">✕ Schließen</button>
+        <button class="btn" id="closeModalBtn" onclick="closeModal()">✕ Close</button>
       </div>
       <div class="modal-body">
-        <div class="panel-title" id="modalSeedsTitle">VERIFIZIERTE SEED-RUNS (KLICKEN FÜR ZUG-PROTOKOLL)</div>
+        <div class="panel-title" id="modalSeedsTitle">VERIFIED SEED RUNS (CLICK FOR MOVE-BY-MOVE REPLAY LOG)</div>
         <div class="seed-grid" id="modalSeedsGrid"></div>
         <div id="runDetailContainer" style="display:none; flex-direction:column; gap:0.75rem;">
           <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
-            <div class="panel-title" id="timelineHeader">STRATEGISCHES ENTSCHEIDUNGS- & KOMMANDOPROTOKOLL</div>
+            <div class="panel-title" id="timelineHeader">STRATEGIC DECISION & COMMAND TIMELINE</div>
             <a class="btn" id="rawJsonLink" href="#" target="_blank" rel="noopener">{ } Raw JSON</a>
           </div>
           <div class="meta-strip" id="runTelemetryStrip"></div>
@@ -871,42 +863,9 @@
   <script>
     let boardData = { generated: "—", content_hash: "—", rows: [] };
     let currentSuite = "quick";
-    let currentActor = "all";
     let currentProvider = "all";
-    let currentLang = (navigator.language || "de").toLowerCase().startsWith("de") ? "de" : "en";
 
     const I18N = {
-      de: {
-        subtitle: "Kryptografisch verifiziertes Rogue-KI-Strategie-Leaderboard",
-        heroTitle: "Global AI Model Leaderboard",
-        heroDesc: "Jedes Sprachmodell spielt dieselbe deterministische Rogue-KI-Simulation über feste Evaluations-Seeds (<code>language_model · standard</code>). Jeder eingereichte Lauf wird vom Headless-Godot-Verifier Zug für Zug nachgespielt und per SHA-256-State-Hash verifiziert.",
-        updated: "Stand",
-        verifiedRuns: "Verifizierte Runs",
-        tabQuick: "⚡ Quick Suite (3 Seeds)",
-        tabStandard: "🏆 Standard Suite (10 Seeds)",
-        tabAllSuites: "Alle Suites",
-        tabActorAll: "🤖 KI-Modelle + Bots",
-        tabActorAI: "✨ Nur KI-Modelle",
-        tabActorBot: "⚙️ Nur Referenz-Bots",
-        searchPlaceholder: "Modell, Hersteller oder Outcome filtern...",
-        completeOnly: "Nur vollständige Suites",
-        chartTitle: "SCORE-VERGLEICH (50 + 50 × (1 − TAGE / 2000) PRO SIEG)",
-        chartHint: "Klicke auf ein Modell für Seed-Details & Zug-für-Zug-Replay",
-        thModel: "Modell / Agent",
-        thSuite: "Suite",
-        thEffort: "Effort / Modus",
-        thScore: "Score",
-        thWins: "Siege",
-        thOutcomes: "Endings / Outcomes",
-        thDays: "Ø Siegestag",
-        thCalls: "API Calls",
-        thCost: "Kosten",
-        leaderAI: "🥇 #1 KI-MODELL (QUICK SUITE)",
-        secondAI: "🥈 #2 KI-MODELL (QUICK SUITE)",
-        thirdAI: "🥉 #3 KI-MODELL (QUICK SUITE)",
-        botChamp: "⚙️ REFERENZ-BOT-CHAMPION",
-        inspectBtn: "🔍 Seeds & Replay",
-      },
       en: {
         subtitle: "Cryptographically Verified Rogue-AI Strategy Leaderboard",
         heroTitle: "Global AI Model Leaderboard",
@@ -916,9 +875,6 @@
         tabQuick: "⚡ Quick Suite (3 Seeds)",
         tabStandard: "🏆 Standard Suite (10 Seeds)",
         tabAllSuites: "All Suites",
-        tabActorAll: "🤖 AI Models + Bots",
-        tabActorAI: "✨ AI Models Only",
-        tabActorBot: "⚙️ Reference Bots Only",
         searchPlaceholder: "Filter by model, provider, or outcome...",
         completeOnly: "Complete suites only",
         chartTitle: "SCORE COMPARISON (50 + 50 × (1 − DAYS / 2000) PER WIN)",
@@ -931,18 +887,16 @@
         thOutcomes: "Endings / Outcomes",
         thDays: "Mean Win Day",
         thCalls: "API Calls",
-        thCost: "Cost",
         leaderAI: "🥇 #1 AI MODEL (QUICK SUITE)",
         secondAI: "🥈 #2 AI MODEL (QUICK SUITE)",
         thirdAI: "🥉 #3 AI MODEL (QUICK SUITE)",
-        botChamp: "⚙️ REFERENCE BOT CHAMPION",
+        fourthAI: "🏅 #4 AI MODEL (QUICK SUITE)",
         inspectBtn: "🔍 Seeds & Replay",
       }
     };
 
     function providerOf(model) {
       if (!model) return "unknown";
-      if (model.startsWith("bot:")) return "bot";
       const idx = model.indexOf("/");
       return idx > 0 ? model.slice(0, idx) : model;
     }
@@ -963,7 +917,7 @@
     }
 
     function applyI18n() {
-      const t = I18N[currentLang];
+      const t = I18N.en;
       document.getElementById("subtitleText").textContent = t.subtitle;
       document.getElementById("heroTitle").textContent = t.heroTitle;
       document.getElementById("heroDesc").innerHTML = t.heroDesc;
@@ -972,9 +926,6 @@
       document.getElementById("tabQuick").textContent = t.tabQuick;
       document.getElementById("tabStandard").textContent = t.tabStandard;
       document.getElementById("tabAllSuites").textContent = t.tabAllSuites;
-      document.getElementById("tabActorAll").textContent = t.tabActorAll;
-      document.getElementById("tabActorAI").textContent = t.tabActorAI;
-      document.getElementById("tabActorBot").textContent = t.tabActorBot;
       document.getElementById("searchInput").placeholder = t.searchPlaceholder;
       document.getElementById("lblCompleteOnly").textContent = t.completeOnly;
       document.getElementById("chartTitle").textContent = t.chartTitle;
@@ -987,27 +938,12 @@
       document.getElementById("thOutcomes").textContent = t.thOutcomes;
       document.getElementById("thDays").textContent = t.thDays;
       document.getElementById("thCalls").textContent = t.thCalls;
-      document.getElementById("thCost").textContent = t.thCost;
-    }
-
-    function toggleLang() {
-      currentLang = currentLang === "de" ? "en" : "de";
-      applyI18n();
-      renderAll();
     }
 
     function setSuite(suite) {
       currentSuite = suite;
       document.querySelectorAll("#suiteTabs .tab-btn").forEach(b => {
         b.classList.toggle("active", b.dataset.suite === suite);
-      });
-      renderAll();
-    }
-
-    function setActor(actor) {
-      currentActor = actor;
-      document.querySelectorAll("#actorTabs .tab-btn").forEach(b => {
-        b.classList.toggle("active", b.dataset.actor === actor);
       });
       renderAll();
     }
@@ -1021,10 +957,8 @@
       const q = (document.getElementById("searchInput").value || "").trim().toLowerCase();
       const completeOnly = document.getElementById("completeOnlyCheck").checked;
       return (boardData.rows || []).filter(r => {
+        if (r.backend === "bot" || String(r.model).startsWith("bot:")) return false;
         if (currentSuite !== "all" && r.suite !== currentSuite) return false;
-        const isBot = r.backend === "bot" || String(r.model).startsWith("bot:");
-        if (currentActor === "ai" && isBot) return false;
-        if (currentActor === "bot" && !isBot) return false;
         if (completeOnly && !r.complete) return false;
         const prov = providerOf(r.model);
         if (currentProvider !== "all" && prov !== currentProvider) return false;
@@ -1042,18 +976,15 @@
     }
 
     function renderPodium() {
-      const t = I18N[currentLang];
+      const t = I18N.en;
       const aiQuick = (boardData.rows || []).filter(r =>
         r.suite === "quick" && r.complete && r.backend !== "bot" && !String(r.model).startsWith("bot:")
       );
-      const botChamp = (boardData.rows || []).find(r =>
-        r.suite === "quick" && (r.backend === "bot" || String(r.model).startsWith("bot:"))
-      );
 
       const cards = [];
-      const labels = [t.leaderAI, t.secondAI, t.thirdAI];
-      const classes = ["rank-1", "rank-2", "rank-3"];
-      for (let i = 0; i < 3; i++) {
+      const labels = [t.leaderAI, t.secondAI, t.thirdAI, t.fourthAI];
+      const classes = ["rank-1", "rank-2", "rank-3", "rank-kpi"];
+      for (let i = 0; i < 4; i++) {
         const row = aiQuick[i];
         if (!row) continue;
         cards.push(`
@@ -1062,22 +993,9 @@
             <div class="podium-model">${escapeHtml(row.model)}</div>
             <div class="podium-score-row">
               <div class="podium-score">${Number(row.score).toFixed(1)}</div>
-              <div class="podium-sub">${row.wins}/${row.of} Wins · Ø ${row.mean_win_days > 0 ? row.mean_win_days + 'd' : '—'}</div>
+              <div class="podium-sub">${row.wins}/${row.of} Wins · Mean ${row.mean_win_days > 0 ? row.mean_win_days + 'd' : '—'}</div>
             </div>
             <div class="podium-sub">${Object.entries(row.outcomes || {}).map(([k,v]) => `${formatOutcome(k)} ×${v}`).join(" · ")}</div>
-          </div>
-        `);
-      }
-      if (botChamp) {
-        cards.push(`
-          <div class="podium-card rank-kpi" onclick='openInspector(${JSON.stringify(botChamp.model)}, ${JSON.stringify(botChamp.suite)}, ${JSON.stringify(botChamp.params_id)})' style="cursor:pointer;">
-            <div class="podium-badge">${t.botChamp}</div>
-            <div class="podium-model">${escapeHtml(botChamp.model)}</div>
-            <div class="podium-score-row">
-              <div class="podium-score">${Number(botChamp.score).toFixed(1)}</div>
-              <div class="podium-sub">${botChamp.wins}/${botChamp.of} Wins · Ø ${botChamp.mean_win_days}d</div>
-            </div>
-            <div class="podium-sub">Standard Suite (10 Seeds): 67.8 (8/10 Wins)</div>
           </div>
         `);
       }
@@ -1087,16 +1005,13 @@
     function renderProviderChips() {
       const counts = {};
       (boardData.rows || []).forEach(r => {
+        if (r.backend === "bot" || String(r.model).startsWith("bot:")) return;
         if (currentSuite !== "all" && r.suite !== currentSuite) return;
         const p = providerOf(r.model);
         counts[p] = (counts[p] || 0) + 1;
       });
-      const providers = Object.keys(counts).sort((a, b) => {
-        if (a === "bot") return 1;
-        if (b === "bot") return -1;
-        return a.localeCompare(b);
-      });
-      const allBtn = `<span class="chip ${currentProvider === 'all' ? 'active' : ''}" onclick="setProvider('all')">Alle (${Object.values(counts).reduce((a,b)=>a+b,0)})</span>`;
+      const providers = Object.keys(counts).sort((a, b) => a.localeCompare(b));
+      const allBtn = `<span class="chip ${currentProvider === 'all' ? 'active' : ''}" onclick="setProvider('all')">All (${Object.values(counts).reduce((a,b)=>a+b,0)})</span>`;
       const chips = providers.map(p =>
         `<span class="chip ${currentProvider === p ? 'active' : ''}" onclick="setProvider('${p}')">${escapeHtml(p)} (${counts[p]})</span>`
       );
@@ -1107,14 +1022,13 @@
       const container = document.getElementById("scoreChart");
       const topRows = rows.slice(0, 12);
       if (!topRows.length) {
-        container.innerHTML = `<div class="mono" style="color:var(--text-2); padding:0.5rem 0;">Keine Einträge für diesen Filter.</div>`;
+        container.innerHTML = `<div class="mono" style="color:var(--text-2); padding:0.5rem 0;">No entries matching this filter.</div>`;
         return;
       }
       let firstAiSeen = false;
       container.innerHTML = topRows.map(r => {
-        const isBot = r.backend === "bot" || String(r.model).startsWith("bot:");
-        let fillClass = isBot ? "bot" : "ai";
-        if (!isBot && !firstAiSeen && r.complete) {
+        let fillClass = "ai";
+        if (!firstAiSeen && r.complete) {
           fillClass = "leader";
           firstAiSeen = true;
         }
@@ -1132,17 +1046,16 @@
     }
 
     function renderTable(rows) {
-      const t = I18N[currentLang];
+      const t = I18N.en;
       const tbody = document.getElementById("tableBody");
       if (!rows.length) {
-        tbody.innerHTML = `<tr><td colspan="11" class="mono" style="text-align:center; color:var(--text-2); padding:2rem;">Keine passenden Modelle gefunden.</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="10" class="mono" style="text-align:center; color:var(--text-2); padding:2rem;">No matching models found.</td></tr>`;
         return;
       }
       let rankCounter = 0;
       tbody.innerHTML = rows.map(r => {
-        const isBot = r.backend === "bot" || String(r.model).startsWith("bot:");
         const prov = providerOf(r.model);
-        const shortName = isBot ? r.model.replace("bot:", "") : (r.model.includes("/") ? r.model.split("/").slice(1).join("/") : r.model);
+        const shortName = r.model.includes("/") ? r.model.split("/").slice(1).join("/") : r.model;
         let rankHtml = `<span style="color:var(--text-2);">—</span>`;
         if (r.complete) {
           rankCounter++;
@@ -1151,23 +1064,19 @@
           else if (rankCounter === 3) rankHtml = `<span class="rank-medal m3">🥉</span>`;
           else rankHtml = `<span class="mono" style="color:var(--text-1); padding-left:0.4rem;">#${rankCounter}</span>`;
         } else {
-          rankHtml = `<span class="badge badge-partial" title="Unvollständige Suite">${r.runs}/${r.of}</span>`;
+          rankHtml = `<span class="badge badge-partial" title="Incomplete suite">${r.runs}/${r.of}</span>`;
         }
 
         const versions = (r.model_versions && r.model_versions.length)
           ? `<div class="model-ver">${escapeHtml(r.model_versions.join(", "))}</div>`
           : "";
 
-        let effortHtml = `<span class="badge badge-bot">Bot Policy</span>`;
-        if (!isBot) {
-          if (r.effort) {
-            const cls = String(r.effort).includes("high") || String(r.effort).includes("ultra") ? "badge-high" : "badge-normal";
-            effortHtml = `<span class="badge ${cls}">${escapeHtml(r.effort)}</span>`;
-          } else if (r.params && r.params.choice_version) {
-            effortHtml = `<span class="badge badge-normal">Choice v${r.params.choice_version}</span>`;
-          } else {
-            effortHtml = `<span class="badge badge-normal">Standard</span>`;
-          }
+        let effortHtml = `<span class="badge badge-normal">Standard</span>`;
+        if (r.effort) {
+          const cls = String(r.effort).includes("high") || String(r.effort).includes("ultra") ? "badge-high" : "badge-normal";
+          effortHtml = `<span class="badge ${cls}">${escapeHtml(r.effort)}</span>`;
+        } else if (r.params && r.params.choice_version) {
+          effortHtml = `<span class="badge badge-normal">Choice v${r.params.choice_version}</span>`;
         }
 
         const winRatio = r.runs > 0 ? r.wins / r.runs : 0;
@@ -1179,8 +1088,7 @@
         }).join("");
 
         const scoreVal = Number(r.score || 0);
-        const costStr = isBot ? "—" : `$${Number(r.cost_usd || 0).toFixed(2)}`;
-        const callsStr = isBot ? "—" : `${r.calls}${r.invalid_answers > 0 ? ` <span style="color:var(--crimson);" title="Unlesbare Antworten">(${r.invalid_answers} err)</span>` : ''}`;
+        const callsStr = `${r.calls}${r.invalid_answers > 0 ? ` <span style="color:var(--crimson);" title="Unreadable answers">(${r.invalid_answers} err)</span>` : ''}`;
 
         return `
           <tr class="data-row" onclick='openInspector(${JSON.stringify(r.model)}, ${JSON.stringify(r.suite)}, ${JSON.stringify(r.params_id)})'>
@@ -1188,7 +1096,7 @@
             <td>
               <div class="model-cell">
                 <div class="model-name-line">
-                  <span class="provider-tag ${isBot ? 'bot-tag' : ''}">${escapeHtml(prov)}</span>
+                  <span class="provider-tag">${escapeHtml(prov)}</span>
                   <span class="model-id">${escapeHtml(shortName)}</span>
                 </div>
                 ${versions}
@@ -1204,7 +1112,6 @@
             <td><div class="outcome-list">${outcomesHtml}</div></td>
             <td class="mono">${r.mean_win_days > 0 ? r.mean_win_days + 'd' : '—'}</td>
             <td class="mono">${callsStr}</td>
-            <td class="mono">${costStr}</td>
             <td><button class="btn" style="padding:0.25rem 0.55rem; font-size:0.7rem;">${t.inspectBtn}</button></td>
           </tr>
         `;
@@ -1212,7 +1119,8 @@
     }
 
     function renderAll() {
-      const totalRuns = (boardData.rows || []).reduce((acc, r) => acc + (r.runs || 0), 0);
+      const aiRows = (boardData.rows || []).filter(r => r.backend !== "bot" && !String(r.model).startsWith("bot:"));
+      const totalRuns = aiRows.reduce((acc, r) => acc + (r.runs || 0), 0);
       document.getElementById("metaGenerated").textContent = boardData.generated || "—";
       document.getElementById("metaHash").textContent = (boardData.content_hash || "—").slice(0, 10);
       document.getElementById("metaTotalRuns").textContent = totalRuns;
@@ -1239,7 +1147,7 @@
               <span class="mono" style="font-weight:800; color:var(--cyan);">SEED ${s.seed}</span>
               <span class="outcome-chip ${isWin ? 'win' : 'lose'}">${formatOutcome(s.outcome)}</span>
             </div>
-            <div class="mono" style="font-size:0.82rem; color:var(--text-0);">Score: <strong>${Number(s.score).toFixed(1)}</strong> · ${s.days} Tage</div>
+            <div class="mono" style="font-size:0.82rem; color:var(--text-0);">Score: <strong>${Number(s.score).toFixed(1)}</strong> · ${s.days} days</div>
             <div class="mono" style="font-size:0.68rem; color:var(--emerald); margin-top:0.35rem;">✓ SHA-256: ${String(s.sha256 || "").slice(0, 12)}…</div>
           </div>
         `;
@@ -1258,7 +1166,7 @@
       const strip = document.getElementById("runTelemetryStrip");
       container.style.display = "flex";
       document.getElementById("rawJsonLink").href = `./${filePath}`;
-      timeline.innerHTML = `<div style="color:var(--text-1);">Lade verifiziertes Replay-Protokoll (${escapeHtml(filePath)})...</div>`;
+      timeline.innerHTML = `<div style="color:var(--text-1);">Loading verified replay log (${escapeHtml(filePath)})...</div>`;
 
       try {
         const res = await fetch(`./${filePath}?t=${Date.now()}`);
@@ -1268,7 +1176,7 @@
         strip.innerHTML = `
           <div class="meta-chip">Seed: <strong>${entry.seed}</strong></div>
           <div class="meta-chip">Outcome: <strong>${formatOutcome(entry.variant || entry.outcome)}</strong></div>
-          <div class="meta-chip">Dauer: <strong>${entry.days} Tage</strong></div>
+          <div class="meta-chip">Duration: <strong>${entry.days} days</strong></div>
           <div class="meta-chip">Calls: <strong>${entry.calls}</strong> (Invalid: ${entry.invalid_answers}, Refused: ${entry.rejected_actions})</div>
           <div class="meta-chip">Tokens: <strong>${(entry.tokens_in || 0).toLocaleString()} in / ${(entry.tokens_out || 0).toLocaleString()} out</strong></div>
           <div class="meta-chip">State Hash: <strong>${String(entry.hash || "").slice(0, 12)}…</strong></div>
@@ -1276,7 +1184,7 @@
 
         const strategicCmds = (entry.commands || []).filter(c => c.type !== "collect_anomaly");
         if (!strategicCmds.length) {
-          timeline.innerHTML = `<div style="color:var(--text-2);">Keine strategischen Kommandos in diesem Lauf.</div>`;
+          timeline.innerHTML = `<div style="color:var(--text-2);">No strategic commands in this run.</div>`;
           return;
         }
         timeline.innerHTML = strategicCmds.map(c => {
@@ -1289,14 +1197,14 @@
           else detail = escapeHtml(JSON.stringify(c));
           return `
             <div class="cmd-line">
-              <span class="cmd-day">Tag ${c.day}</span>
+              <span class="cmd-day">Day ${c.day}</span>
               <span class="cmd-verb">${escapeHtml(c.type)}</span>
               <span class="cmd-target">${detail}</span>
             </div>
           `;
         }).join("");
       } catch (err) {
-        timeline.innerHTML = `<div style="color:var(--crimson);">Run-Datei konnte nicht geladen werden: ${escapeHtml(err.message)}</div>`;
+        timeline.innerHTML = `<div style="color:var(--crimson);">Failed to load run file: ${escapeHtml(err.message)}</div>`;
       }
     }
 
@@ -1318,7 +1226,9 @@
       try {
         const res = await fetch(`./leaderboard.json?t=${Date.now()}`, { cache: "no-store" });
         if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        boardData = await res.json();
+        const raw = await res.json();
+        raw.rows = (raw.rows || []).filter(r => r.backend !== "bot" && !String(r.model).startsWith("bot:"));
+        boardData = raw;
         const now = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
         statusEl.textContent = `LIVE · ${now}`;
         renderAll();

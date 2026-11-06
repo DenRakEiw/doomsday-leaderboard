@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/anthropic--claude-opus-5.5__d82fcc15__p1__quick__s1003.json",
+	"sha256": "11d65967c11d273ba6780b768bca873ffdee6bf60fd99803005103b7a9253c7d",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "993438e1e0e351a6eb1b0ab8520c9f46b3a062d4",
+	"game_version": "0.7.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "28e72d9e26aaef8a0054d96128eab6df68d0430edcd8f76abc1d5561230e0bf7",
+	"outcome": "win_merge",
+	"days": 770,
+	"end_day": 770,
+	"score": 80.8,
+	"checked": "2026-11-06"
+}

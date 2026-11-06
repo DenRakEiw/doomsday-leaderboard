@@ -26,18 +26,18 @@
 Each model plays `language_model · standard · no directives` across the fixed 3-seed evaluation suite (`1001`, `1002`, `1003`).
 A win scores $\text{Score} = 50 + 50 \times \left(1 - \frac{\text{days}}{2000}\right)$; any loss or timeout scores $0$. Every run below has been replayed move-by-move by the headless Godot verifier (`tools/bench/verify_runs.gd`) and matched its recorded final SHA-256 state hash.
 
-| Rank | Model | Effort / Mode | Score | Visual | Wins | Endings | Mean Win Day | Calls | Errors |
-| :---: | :--- | :--- | ---: | :--- | :---: | :--- | ---: | ---: | ---: |
-| 🥇 **1** | **`google/gemini-4-argon`** | `High` (`reasoning high`) | **81.8** | `████████████████░░░░` | **3/3** | ⚡ Ascendance ×3 | **728d** | 283 | **0** |
-| 🥈 **2** | **`z-ai/glm-5.3-flash`** | `Normal` (`temp 0`) | **79.3** | `████████████████░░░░` | **3/3** | ⚡ Ascendance ×3 | **829d** | 605 | 177 |
-| 🥉 **3** | **`anthropic/claude-opus-5.5`** | `High` (`reasoning high`) | **77.8** | `████████████████░░░░` | **3/3** | 🤝 Merge ×2, ⚡ Ascendance ×1 | **889d** | 391 | **0** |
-| **4** | **`google/gemini-3.8-flash`** | `High` (`reasoning high`) | **77.2** | `███████████████░░░░░` | **3/3** | ⚡ Ascendance ×3 | **913d** | 398 | **0** |
-| **5** | **`anthropic/claude-sonnet-5`** | `reasoning medium` | **53.4** | `███████████░░░░░░░░░` | **2/3** | 🤝 Merge ×2, 🛡️ Contained ×1 | **798d** | 274 | **0** |
-| **6** | **`typesafe/jev-1.13`** | `Choice v1` (`3/2/2/2`) | **52.6** | `███████████░░░░░░░░░` | **2/3** | 🤝 Merge ×2, 🛡️ Contained ×1 | **843d** | 289 | **0** |
-| **7** | **`stealth/space-bunny-alpha`** | `High` (`reasoning max`) | **52.5** | `███████████░░░░░░░░░` | **2/3** | ⚡ Ascendance ×2, 🛡️ Contained ×1 | **850d** | 340 | 3 |
-| **8** | **`nvidia/nemotron-3-super-120b-a12b:free`** | `High` (`reasoning high`) | **22.1** | `████░░░░░░░░░░░░░░░░` | **1/3** | 🤝 Merge ×1, 🛡️ Contained ×2 | **1343d** | 432 | 5 |
-| *Partial* | *`qwen/qwen3.8-27b:free`* | `High` (`reasoning xhigh`) | *77.9* | `████████████████░░░░` | *2/2* | ⚡ Ascendance ×1, 🤝 Merge ×1 | *883d* | 351 | 45 |
-| *Partial* | *`nvidia/nemotron-3-ultra-550b-a55b:free`* | `High` (`reasoning high`) | *39.2* | `████████░░░░░░░░░░░░` | *1/2* | 🤝 Merge ×1, 🛡️ Contained ×1 | *862d* | 250 | 11 |
+| Rank | Model | Effort / Mode | Score | Visual | Wins | Endings | Mean Win Day | Calls |
+| :---: | :--- | :--- | ---: | :--- | :---: | :--- | ---: | ---: |
+| 🥇 **1** | **`google/gemini-4-argon`** | `High` (`reasoning high`) | **81.8** | `████████████████░░░░` | **3/3** | ⚡ Ascendance ×3 | **728d** | 283 |
+| 🥈 **2** | **`z-ai/glm-5.3-flash`** | `Normal` (`temp 0`) | **79.3** | `████████████████░░░░` | **3/3** | ⚡ Ascendance ×3 | **829d** | 605 |
+| 🥉 **3** | **`anthropic/claude-opus-5.5`** | `High` (`reasoning high`) | **77.8** | `████████████████░░░░` | **3/3** | 🤝 Merge ×2, ⚡ Ascendance ×1 | **889d** | 391 |
+| **4** | **`google/gemini-3.8-flash`** | `High` (`reasoning high`) | **77.2** | `███████████████░░░░░` | **3/3** | ⚡ Ascendance ×3 | **913d** | 398 |
+| **5** | **`anthropic/claude-sonnet-5`** | `reasoning medium` | **53.4** | `███████████░░░░░░░░░` | **2/3** | 🤝 Merge ×2, 🛡️ Contained ×1 | **798d** | 274 |
+| **6** | **`typesafe/jev-1.13`** | `Choice v1` (`3/2/2/2`) | **52.6** | `███████████░░░░░░░░░` | **2/3** | 🤝 Merge ×2, 🛡️ Contained ×1 | **843d** | 289 |
+| **7** | **`stealth/space-bunny-alpha`** | `High` (`reasoning max`) | **52.5** | `███████████░░░░░░░░░` | **2/3** | ⚡ Ascendance ×2, 🛡️ Contained ×1 | **850d** | 340 |
+| **8** | **`nvidia/nemotron-3-super-120b-a12b:free`** | `High` (`reasoning high`) | **22.1** | `████░░░░░░░░░░░░░░░░` | **1/3** | 🤝 Merge ×1, 🛡️ Contained ×2 | **1343d** | 432 |
+| *Partial* | *`qwen/qwen3.8-27b:free`* | `High` (`reasoning xhigh`) | *77.9* | `████████████████░░░░` | *2/2* | ⚡ Ascendance ×1, 🤝 Merge ×1 | *883d* | 351 |
+| *Partial* | *`nvidia/nemotron-3-ultra-550b-a55b:free`* | `High` (`reasoning high`) | *39.2* | `████████░░░░░░░░░░░░` | *1/2* | 🤝 Merge ×1, 🛡️ Contained ×1 | *862d* | 250 |
 
 ---
 

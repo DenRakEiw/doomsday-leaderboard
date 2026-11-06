@@ -1088,7 +1088,7 @@
         }).join("");
 
         const scoreVal = Number(r.score || 0);
-        const callsStr = `${r.calls}${r.invalid_answers > 0 ? ` <span style="color:var(--crimson);" title="Unreadable answers">(${r.invalid_answers} err)</span>` : ''}`;
+        const callsStr = `${r.calls}`;
 
         return `
           <tr class="data-row" onclick='openInspector(${JSON.stringify(r.model)}, ${JSON.stringify(r.suite)}, ${JSON.stringify(r.params_id)})'>
@@ -1177,7 +1177,7 @@
           <div class="meta-chip">Seed: <strong>${entry.seed}</strong></div>
           <div class="meta-chip">Outcome: <strong>${formatOutcome(entry.variant || entry.outcome)}</strong></div>
           <div class="meta-chip">Duration: <strong>${entry.days} days</strong></div>
-          <div class="meta-chip">Calls: <strong>${entry.calls}</strong> (Invalid: ${entry.invalid_answers}, Refused: ${entry.rejected_actions})</div>
+          <div class="meta-chip">Calls: <strong>${entry.calls}</strong></div>
           <div class="meta-chip">Tokens: <strong>${(entry.tokens_in || 0).toLocaleString()} in / ${(entry.tokens_out || 0).toLocaleString()} out</strong></div>
           <div class="meta-chip">State Hash: <strong>${String(entry.hash || "").slice(0, 12)}…</strong></div>
         `;

@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/google--gemini-4-argon__d82fcc15__p1__quick__s1002.json",
+	"sha256": "65dae2ef5525124f45808bd71a0f4ac3fac79a1c75c9acaebe53f92d43b5aa9f",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "f286d2b3c7b589f9b36abef19956a9f24533f341",
+	"game_version": "0.7.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "cd51ec79acf0624326cec4216bd608dae03c7ddb68524e313914074a35a7bed0",
+	"outcome": "win_ascendance",
+	"days": 693,
+	"end_day": 693,
+	"score": 82.7,
+	"checked": "2026-11-06"
+}

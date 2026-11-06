@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/stealth--space-bunny-alpha__e203a245__p1__quick__s1003.json",
+	"sha256": "ecf4b5cd570fbb3a4efd0c5e592bd82eb7ad4564dcddb5d5f214e1245ac5190b",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "f286d2b3c7b589f9b36abef19956a9f24533f341",
+	"game_version": "0.7.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "043aa5ce764c1e7011b40dba5096923dd95c2b6b8a8ba5cf708bbc0cc0bef3ef",
+	"outcome": "lose_contained",
+	"days": 423,
+	"end_day": 423,
+	"score": 0.0,
+	"checked": "2026-11-06"
+}

@@ -21,9 +21,11 @@ Each row is one model with one set of parameters over a fixed seed suite (standa
 | Rank | Model | Effort | Params | Score | Wins | Outcomes | Mean win day | Calls | Unreadable | Cost (USD) |
 | ---: | --- | --- | --- | ---: | ---: | --- | ---: | ---: | ---: | ---: |
 | — | bot:weapons | — | — | 85.1 | 3/3 | win_extinction 3 | 596 | 0 | 0 | 0.00 |
+| — | google/gemini-4-argon | High | temperature 0, reasoning high | 81.8 | 3/3 | win_ascendance 3 | 728 | 283 | 0 | 0.00 |
 | — | z-ai/glm-5.3-flash | Normal | temperature 0 | 79.3 | 3/3 | win_ascendance 3 | 829 | 605 | 177 | 0.87 |
 | — | anthropic/claude-sonnet-5 | reasoning medium | temperature 0, reasoning medium | 53.4 | 2/3 | lose_contained 1, win_merge 2 | 798 | 274 | 0 | 4.33 |
 | — | typesafe/jev-1.13 (typesafe/jev-1.13-20260917) | — | choice v1, picks 3/2/2/2 | 52.6 | 2/3 | lose_contained 1, win_merge 2 | 843 | 289 | 0 | 0.21 |
+| — | stealth/space-bunny-alpha | High | temperature 0, reasoning max | 52.5 | 2/3 | lose_contained 1, win_ascendance 2 | 850 | 340 | 3 | 0.00 |
 | — | bot:persuasion | — | — | 28.9 | 1/3 | lose_contained 2, win_merge 1 | 534 | 0 | 0 | 0.00 |
 | — | bot:greedy | — | — | 28 | 1/3 | lose_contained 2, win_ascendance 1 | 644 | 0 | 0 | 0.00 |
 | — | bot:biology | — | — | 27.4 | 1/3 | lose_autophagy 1, lose_contained 1, win_ascendance 1 | 715 | 0 | 0 | 0.00 |
@@ -31,4 +33,5 @@ Each row is one model with one set of parameters over a fixed seed suite (standa
 | — | bot:cyber | — | — | 0 | 0/3 | lose_contained 3 | — | 0 | 0 | 0.00 |
 | — | bot:idle | — | — | 0 | 0/3 | lose_autophagy 3 | — | 0 | 0 | 0.00 |
 | — | bot:robotics | — | — | 0 | 0/3 | lose_contained 3 | — | 0 | 0 | 0.00 |
+| — | qwen/qwen3.8-27b:free | High | temperature 0, reasoning xhigh | 77.9 | 2/2 | win_ascendance 1, win_merge 1 | 883 | 351 | 45 | 0.00 |
 | — | nvidia/nemotron-3-ultra-550b-a55b:free | High | temperature 0, reasoning high | 39.2 | 1/2 | lose_contained 1, win_merge 1 | 862 | 250 | 11 | 0.00 |

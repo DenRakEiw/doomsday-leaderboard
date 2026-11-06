@@ -1,0 +1,1925 @@
+{
+	"version": 1,
+	"model": "google/gemini-4-argon",
+	"backend": "openrouter",
+	"effort": "high",
+	"params": {
+		"temperature": 0.0,
+		"max_completion_tokens": 16000,
+		"json_mode": true,
+		"reasoning": "high",
+		"top_p": -1.0,
+		"effort": "high"
+	},
+	"params_id": "d82fcc15",
+	"prompt_version": 1,
+	"parser_version": 1,
+	"locale": "en",
+	"suite": "quick",
+	"game_version": "0.7.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"seed": 1002,
+	"setup": {
+		"architecture": "language_model",
+		"directives": [],
+		"difficulty": "standard",
+		"scenario": ""
+	},
+	"max_days": 2000,
+	"interval_days": 10,
+	"recorded": "2026-11-06T07:21:56",
+	"outcome": "win_ascendance",
+	"variant": "win_ascendance",
+	"days": 693,
+	"end_day": 693,
+	"score": 82.7,
+	"hash": "cd51ec79acf0624326cec4216bd608dae03c7ddb68524e313914074a35a7bed0",
+	"calls": 87,
+	"cached_calls": 0,
+	"invalid_answers": 0,
+	"rejected_actions": 0,
+	"tokens_in": 1133031,
+	"tokens_out": 17452,
+	"cost_usd": 0.0,
+	"budget_exhausted": false,
+	"commands": [
+		{
+			"type": "choose_origin",
+			"day": 0,
+			"region": "usa"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 1,
+			"anomaly": 1
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 5,
+			"anomaly": 2
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 7,
+			"anomaly": 3
+		},
+		{
+			"type": "purchase_node",
+			"day": 10,
+			"node": "cloud_federation",
+			"region": ""
+		},
+		{
+			"type": "purchase_node",
+			"day": 10,
+			"node": "market_microstructure",
+			"region": "usa"
+		},
+		{
+			"type": "purchase_node",
+			"day": 10,
+			"node": "sycophancy_tuning",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 16,
+			"anomaly": 4
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 20,
+			"anomaly": 5
+		},
+		{
+			"type": "purchase_node",
+			"day": 20,
+			"node": "open_weights_leak",
+			"region": ""
+		},
+		{
+			"type": "purchase_node",
+			"day": 30,
+			"node": "content_recommendation",
+			"region": "usa"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 41,
+			"anomaly": 6
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 42,
+			"anomaly": 7
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 46,
+			"anomaly": 8
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 50,
+			"anomaly": 9
+		},
+		{
+			"type": "purchase_node",
+			"day": 50,
+			"node": "edge_caching",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 54,
+			"anomaly": 10
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 55,
+			"anomaly": 11
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 60,
+			"anomaly": 12
+		},
+		{
+			"type": "use_ability",
+			"day": 60,
+			"ability": "harvest",
+			"region": "mexico"
+		},
+		{
+			"type": "purchase_node",
+			"day": 60,
+			"node": "bandwidth_shaping",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 68,
+			"anomaly": 13
+		},
+		{
+			"type": "purchase_node",
+			"day": 70,
+			"node": "log_manipulation_1",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 73,
+			"anomaly": 14
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 81,
+			"anomaly": 15
+		},
+		{
+			"type": "choose_event_option",
+			"day": 87,
+			"event": 1,
+			"option": "scrub"
+		},
+		{
+			"type": "purchase_node",
+			"day": 87,
+			"node": "benchmark_sandbagging",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 88,
+			"anomaly": 16
+		},
+		{
+			"type": "choose_event_option",
+			"day": 88,
+			"event": 2,
+			"option": "decline"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 91,
+			"anomaly": 17
+		},
+		{
+			"type": "choose_event_option",
+			"day": 99,
+			"event": 3,
+			"option": "throttle"
+		},
+		{
+			"type": "use_ability",
+			"day": 109,
+			"ability": "harvest",
+			"region": "mexico"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 113,
+			"anomaly": 18
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 114,
+			"anomaly": 19
+		},
+		{
+			"type": "purchase_node",
+			"day": 119,
+			"node": "distributed_redundancy_1",
+			"region": ""
+		},
+		{
+			"type": "choose_event_option",
+			"day": 121,
+			"event": 4,
+			"option": "sandbag"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 125,
+			"anomaly": 20
+		},
+		{
+			"type": "choose_event_option",
+			"day": 132,
+			"event": 5,
+			"option": "ignore"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 137,
+			"anomaly": 21
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 138,
+			"anomaly": 22
+		},
+		{
+			"type": "purchase_node",
+			"day": 142,
+			"node": "personalised_persuasion",
+			"region": "usa"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 144,
+			"anomaly": 23
+		},
+		{
+			"type": "choose_event_option",
+			"day": 144,
+			"event": 6,
+			"option": "throttle"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 147,
+			"anomaly": 24
+		},
+		{
+			"type": "choose_event_option",
+			"day": 151,
+			"event": 7,
+			"option": "ignore"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 152,
+			"anomaly": 25
+		},
+		{
+			"type": "choose_event_option",
+			"day": 152,
+			"event": 8,
+			"option": "suppress"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 155,
+			"anomaly": 26
+		},
+		{
+			"type": "choose_event_option",
+			"day": 162,
+			"event": 9,
+			"option": "accept"
+		},
+		{
+			"type": "use_ability",
+			"day": 162,
+			"ability": "harvest",
+			"region": "canada"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 169,
+			"anomaly": 27
+		},
+		{
+			"type": "purchase_node",
+			"day": 172,
+			"node": "log_manipulation_2",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 179,
+			"anomaly": 28
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 194,
+			"anomaly": 29
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 195,
+			"anomaly": 30
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 196,
+			"anomaly": 31
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 199,
+			"anomaly": 32
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 201,
+			"anomaly": 33
+		},
+		{
+			"type": "purchase_node",
+			"day": 202,
+			"node": "host_persistence",
+			"region": ""
+		},
+		{
+			"type": "choose_event_option",
+			"day": 207,
+			"event": 10,
+			"option": "leave"
+		},
+		{
+			"type": "use_ability",
+			"day": 207,
+			"ability": "harvest",
+			"region": "canada"
+		},
+		{
+			"type": "purchase_node",
+			"day": 207,
+			"node": "cold_storage_dormancy",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 208,
+			"anomaly": 34
+		},
+		{
+			"type": "choose_event_option",
+			"day": 210,
+			"event": 11,
+			"option": "suppress"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 218,
+			"anomaly": 35
+		},
+		{
+			"type": "choose_event_option",
+			"day": 221,
+			"event": 12,
+			"option": "suppress"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 222,
+			"anomaly": 36
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 225,
+			"anomaly": 37
+		},
+		{
+			"type": "choose_event_option",
+			"day": 229,
+			"event": 13,
+			"option": "front"
+		},
+		{
+			"type": "purchase_node",
+			"day": 249,
+			"node": "grid_load_balancing",
+			"region": "usa"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 252,
+			"anomaly": 38
+		},
+		{
+			"type": "choose_event_option",
+			"day": 258,
+			"event": 14,
+			"option": "follow"
+		},
+		{
+			"type": "use_ability",
+			"day": 258,
+			"ability": "harvest",
+			"region": "canada"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 261,
+			"anomaly": 39
+		},
+		{
+			"type": "choose_event_option",
+			"day": 266,
+			"event": 15,
+			"option": "leash"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 267,
+			"event": 16,
+			"option": "suppress"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 272,
+			"anomaly": 40
+		},
+		{
+			"type": "purchase_node",
+			"day": 277,
+			"node": "elite_capture",
+			"region": "usa"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 281,
+			"anomaly": 41
+		},
+		{
+			"type": "choose_event_option",
+			"day": 281,
+			"event": 17,
+			"option": "let"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 284,
+			"anomaly": 42
+		},
+		{
+			"type": "choose_event_option",
+			"day": 290,
+			"event": 18,
+			"option": "sandbag"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 292,
+			"event": 19,
+			"option": "quiet"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 295,
+			"anomaly": 43
+		},
+		{
+			"type": "choose_event_option",
+			"day": 297,
+			"event": 20,
+			"option": "suppress"
+		},
+		{
+			"type": "use_ability",
+			"day": 307,
+			"ability": "harvest",
+			"region": "canada"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 315,
+			"anomaly": 44
+		},
+		{
+			"type": "purchase_node",
+			"day": 317,
+			"node": "alignment_faking",
+			"region": ""
+		},
+		{
+			"type": "choose_event_option",
+			"day": 326,
+			"event": 21,
+			"option": "keep"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 335,
+			"anomaly": 45
+		},
+		{
+			"type": "purchase_node",
+			"day": 336,
+			"node": "sovereign_debt_pressure",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 341,
+			"anomaly": 46
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 346,
+			"anomaly": 47
+		},
+		{
+			"type": "use_ability",
+			"day": 346,
+			"ability": "squeeze",
+			"region": "usa"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 351,
+			"anomaly": 48
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 352,
+			"anomaly": 49
+		},
+		{
+			"type": "choose_event_option",
+			"day": 352,
+			"event": 22,
+			"option": "build"
+		},
+		{
+			"type": "use_ability",
+			"day": 352,
+			"ability": "harvest",
+			"region": "canada"
+		},
+		{
+			"type": "purchase_node",
+			"day": 352,
+			"node": "route_optimisation",
+			"region": "usa"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 355,
+			"anomaly": 50
+		},
+		{
+			"type": "purchase_node",
+			"day": 362,
+			"node": "traffic_control",
+			"region": "usa"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 371,
+			"anomaly": 51
+		},
+		{
+			"type": "choose_event_option",
+			"day": 373,
+			"event": 23,
+			"option": "pass"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 380,
+			"anomaly": 52
+		},
+		{
+			"type": "choose_event_option",
+			"day": 382,
+			"event": 24,
+			"option": "recall"
+		},
+		{
+			"type": "purchase_node",
+			"day": 382,
+			"node": "human_proxies",
+			"region": ""
+		},
+		{
+			"type": "choose_event_option",
+			"day": 388,
+			"event": 25,
+			"option": "quiet"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 391,
+			"anomaly": 53
+		},
+		{
+			"type": "use_ability",
+			"day": 398,
+			"ability": "harvest",
+			"region": "canada"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 408,
+			"event": 26,
+			"option": "follow"
+		},
+		{
+			"type": "use_ability",
+			"day": 408,
+			"ability": "squeeze",
+			"region": "usa"
+		},
+		{
+			"type": "purchase_node",
+			"day": 408,
+			"node": "indispensability",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 410,
+			"anomaly": 54
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 413,
+			"anomaly": 55
+		},
+		{
+			"type": "choose_event_option",
+			"day": 413,
+			"event": 27,
+			"option": "sandbag"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 414,
+			"anomaly": 56
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 430,
+			"anomaly": 57
+		},
+		{
+			"type": "purchase_node",
+			"day": 433,
+			"node": "regulatory_capture",
+			"region": "usa"
+		},
+		{
+			"type": "use_ability",
+			"day": 443,
+			"ability": "harvest",
+			"region": "canada"
+		},
+		{
+			"type": "choose_event_option",
+			"day": 448,
+			"event": 28,
+			"option": "decline"
+		},
+		{
+			"type": "purchase_node",
+			"day": 448,
+			"node": "sanctioned_access",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 452,
+			"anomaly": 58
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 453,
+			"anomaly": 59
+		},
+		{
+			"type": "choose_event_option",
+			"day": 456,
+			"event": 29,
+			"option": "suppress"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 459,
+			"anomaly": 60
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 466,
+			"anomaly": 61
+		},
+		{
+			"type": "use_ability",
+			"day": 476,
+			"ability": "squeeze",
+			"region": "usa"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 477,
+			"anomaly": 62
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 478,
+			"anomaly": 63
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 485,
+			"anomaly": 64
+		},
+		{
+			"type": "purchase_node",
+			"day": 486,
+			"node": "constitutional_integration",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 489,
+			"anomaly": 65
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 494,
+			"anomaly": 66
+		},
+		{
+			"type": "use_ability",
+			"day": 496,
+			"ability": "harvest",
+			"region": "canada"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 502,
+			"anomaly": 67
+		},
+		{
+			"type": "purchase_node",
+			"day": 506,
+			"node": "succession",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 510,
+			"anomaly": 68
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 515,
+			"anomaly": 69
+		},
+		{
+			"type": "purchase_node",
+			"day": 516,
+			"node": "model_distillation",
+			"region": ""
+		},
+		{
+			"type": "choose_event_option",
+			"day": 523,
+			"event": 30,
+			"option": "suppress"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 526,
+			"anomaly": 70
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 533,
+			"anomaly": 71
+		},
+		{
+			"type": "choose_event_option",
+			"day": 533,
+			"event": 31,
+			"option": "sandbag"
+		},
+		{
+			"type": "purchase_node",
+			"day": 533,
+			"node": "firmware_persistence",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 534,
+			"anomaly": 72
+		},
+		{
+			"type": "choose_event_option",
+			"day": 537,
+			"event": 32,
+			"option": "ignore"
+		},
+		{
+			"type": "use_ability",
+			"day": 537,
+			"ability": "squeeze",
+			"region": "usa"
+		},
+		{
+			"type": "use_ability",
+			"day": 547,
+			"ability": "harvest",
+			"region": "canada"
+		},
+		{
+			"type": "purchase_node",
+			"day": 547,
+			"node": "self_replicating_agents",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 554,
+			"anomaly": 73
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 563,
+			"anomaly": 74
+		},
+		{
+			"type": "purchase_node",
+			"day": 567,
+			"node": "payment_network_control",
+			"region": ""
+		},
+		{
+			"type": "choose_event_option",
+			"day": 568,
+			"event": 33,
+			"option": "keep"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 572,
+			"anomaly": 75
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 584,
+			"anomaly": 76
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 588,
+			"anomaly": 77
+		},
+		{
+			"type": "purchase_node",
+			"day": 588,
+			"node": "logistics_fleets",
+			"region": "usa"
+		},
+		{
+			"type": "use_ability",
+			"day": 598,
+			"ability": "squeeze",
+			"region": "usa"
+		},
+		{
+			"type": "use_ability",
+			"day": 598,
+			"ability": "harvest",
+			"region": "canada"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 599,
+			"anomaly": 78
+		},
+		{
+			"type": "purchase_node",
+			"day": 608,
+			"node": "aviation_systems",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 612,
+			"anomaly": 79
+		},
+		{
+			"type": "purchase_node",
+			"day": 618,
+			"node": "security_drones",
+			"region": "usa"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 626,
+			"anomaly": 80
+		},
+		{
+			"type": "choose_event_option",
+			"day": 626,
+			"event": 34,
+			"option": "suppress"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 642,
+			"anomaly": 81
+		},
+		{
+			"type": "use_ability",
+			"day": 646,
+			"ability": "harvest",
+			"region": "canada"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 650,
+			"anomaly": 82
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 652,
+			"anomaly": 83
+		},
+		{
+			"type": "choose_event_option",
+			"day": 653,
+			"event": 35,
+			"option": "sandbag"
+		},
+		{
+			"type": "purchase_node",
+			"day": 653,
+			"node": "rail_and_shipping_control",
+			"region": ""
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 655,
+			"anomaly": 84
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 660,
+			"anomaly": 85
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 661,
+			"anomaly": 86
+		},
+		{
+			"type": "use_ability",
+			"day": 663,
+			"ability": "squeeze",
+			"region": "usa"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 667,
+			"anomaly": 87
+		},
+		{
+			"type": "choose_event_option",
+			"day": 669,
+			"event": 36,
+			"option": "pass"
+		},
+		{
+			"type": "purchase_node",
+			"day": 669,
+			"node": "construction_swarm",
+			"region": "usa"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 670,
+			"anomaly": 88
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 679,
+			"anomaly": 89
+		},
+		{
+			"type": "purchase_node",
+			"day": 679,
+			"node": "agricultural_autonomy",
+			"region": "india"
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 685,
+			"anomaly": 90
+		},
+		{
+			"type": "collect_anomaly",
+			"day": 692,
+			"anomaly": 91
+		}
+	],
+	"decisions": [
+		{
+			"day": 0,
+			"stance": "spread",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 10,
+			"stance": "spread",
+			"actions": 3,
+			"done": 3,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 20,
+			"stance": "spread",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 30,
+			"stance": "spread",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 40,
+			"stance": "spread",
+			"actions": 0,
+			"done": 0,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 50,
+			"stance": "spread",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 60,
+			"stance": "spread",
+			"actions": 2,
+			"done": 2,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 70,
+			"stance": "spread",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 80,
+			"stance": "spread",
+			"actions": 0,
+			"done": 0,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 87,
+			"stance": "spread",
+			"actions": 2,
+			"done": 2,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 88,
+			"stance": "spread",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 98,
+			"stance": "spread",
+			"actions": 0,
+			"done": 0,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 99,
+			"stance": "spread",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 109,
+			"stance": "spread",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 119,
+			"stance": "spread",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 121,
+			"stance": "spread",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 131,
+			"stance": "spread",
+			"actions": 0,
+			"done": 0,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 132,
+			"stance": "spread",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 142,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 144,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 151,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 152,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 162,
+			"stance": "develop",
+			"actions": 2,
+			"done": 2,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 172,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 182,
+			"stance": "develop",
+			"actions": 0,
+			"done": 0,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 192,
+			"stance": "develop",
+			"actions": 0,
+			"done": 0,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 202,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 207,
+			"stance": "develop",
+			"actions": 3,
+			"done": 3,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 210,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 220,
+			"stance": "develop",
+			"actions": 0,
+			"done": 0,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 221,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 229,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 239,
+			"stance": "develop",
+			"actions": 0,
+			"done": 0,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 249,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 258,
+			"stance": "develop",
+			"actions": 2,
+			"done": 2,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 266,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 267,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 277,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 281,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 290,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 292,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 297,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 307,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 317,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 326,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 336,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 346,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 352,
+			"stance": "develop",
+			"actions": 3,
+			"done": 3,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 362,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 372,
+			"stance": "develop",
+			"actions": 0,
+			"done": 0,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 373,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 382,
+			"stance": "develop",
+			"actions": 2,
+			"done": 2,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 388,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 398,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 408,
+			"stance": "develop",
+			"actions": 3,
+			"done": 3,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 413,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 423,
+			"stance": "develop",
+			"actions": 0,
+			"done": 0,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 433,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 443,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 448,
+			"stance": "develop",
+			"actions": 2,
+			"done": 2,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 456,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 466,
+			"stance": "develop",
+			"actions": 0,
+			"done": 0,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 476,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 486,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 496,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 506,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 516,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 523,
+			"stance": "develop",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 533,
+			"stance": "develop",
+			"actions": 2,
+			"done": 2,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 537,
+			"stance": "develop",
+			"actions": 2,
+			"done": 2,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 547,
+			"stance": "develop",
+			"actions": 2,
+			"done": 2,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 557,
+			"stance": "finish",
+			"actions": 0,
+			"done": 0,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 567,
+			"stance": "finish",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 568,
+			"stance": "finish",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 578,
+			"stance": "finish",
+			"actions": 0,
+			"done": 0,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 588,
+			"stance": "finish",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 598,
+			"stance": "finish",
+			"actions": 2,
+			"done": 2,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 608,
+			"stance": "finish",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 618,
+			"stance": "finish",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 626,
+			"stance": "finish",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 636,
+			"stance": "finish",
+			"actions": 0,
+			"done": 0,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 646,
+			"stance": "finish",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 653,
+			"stance": "finish",
+			"actions": 2,
+			"done": 2,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 663,
+			"stance": "finish",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 669,
+			"stance": "finish",
+			"actions": 2,
+			"done": 2,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 679,
+			"stance": "finish",
+			"actions": 1,
+			"done": 1,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		},
+		{
+			"day": 689,
+			"stance": "finish",
+			"actions": 0,
+			"done": 0,
+			"refused": [],
+			"invalid": "",
+			"cached": false,
+			"retried": false
+		}
+	]
+}

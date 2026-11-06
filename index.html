@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOOMSDAY // Global AI Benchmark Leaderboard</title>
+  <meta name="description" content="Live verified AI model benchmark leaderboard for Doomsday — rogue AI strategy simulation." />
+  <style>
+    :root {
+      --bg-0: #070a0f;
+      --bg-1: #0d131c;
+      --bg-2: #131c29;
+      --bg-3: #1a2636;
+      --border: #24344afc;
+      --border-hi: #38bdf866;
+      --text-0: #f0f6fc;
+      --text-1: #9fb1c6;
+      --text-2: #647890;
+      --cyan: #38bdf8;
+      --cyan-dim: #0284c733;
+      --amber: #f59e0b;
+      --amber-dim: #f59e0b26;
+      --emerald: #10b981;
+      --emerald-dim: #10b98126;
+      --crimson: #f43f5e;
+      --crimson-dim: #f43f5e26;
+      --violet: #a855f7;
+      --violet-dim: #a855f726;
+      --gold: #fbbf24;
+      --silver: #cbd5e1;
+      --bronze: #d97706;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-0);
+      background-image:
+        radial-gradient(circle at 15% 0%, rgba(56, 189, 248, 0.08) 0%, transparent 45%),
+        radial-gradient(circle at 85% 10%, rgba(244, 63, 94, 0.06) 0%, transparent 40%),
+        linear-gradient(rgba(36, 52, 74, 0.18) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(36, 52, 74, 0.18) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 32px 32px, 32px 32px;
+      color: var(--text-0);
+      font-family: var(--font-sans);
+      line-height: 1.5;
+      min-height: 100vh;
+      padding-bottom: 4rem;
+    }
+
+    a {
+      color: var(--cyan);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* Top Telemetry Bar */
+    .topbar {
+      border-bottom: 1px solid var(--border);
+      background: rgba(7, 10, 15, 0.88);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .topbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 0;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .brand-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 6px;
+      background: linear-gradient(135deg, #0284c7, #0f172a);
+      border: 1px solid var(--cyan);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-mono);
+      font-weight: 800;
+      color: var(--cyan);
+      box-shadow: 0 0 14px rgba(56, 189, 248, 0.25);
+    }
+    .brand-title {
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .brand-sub {
+      font-size: 0.75rem;
+      color: var(--text-1);
+      font-family: var(--font-mono);
+    }
+
+    .topbar-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .live-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 999px;
+      font-family: var(--font-mono);
+      font-size: 0.73rem;
+      background: var(--emerald-dim);
+      border: 1px solid rgba(16, 185, 129, 0.45);
+      color: #34d399;
+    }
+    .live-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--emerald);
+      box-shadow: 0 0 8px var(--emerald);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(0.85); }
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.38rem 0.8rem;
+      border-radius: 6px;
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 600;
+      border: 1px solid var(--border);
+      background: var(--bg-2);
+      color: var(--text-0);
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .btn:hover {
+      border-color: var(--cyan);
+      background: var(--bg-3);
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #0284c7, #0369a1);
+      border-color: var(--cyan);
+      color: #fff;
+    }
+    .btn-primary:hover {
+      filter: brightness(1.12);
+    }
+
+    /* Hero Header */
+    .hero {
+      padding: 2.2rem 0 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.4rem;
+      background: linear-gradient(90deg, #ffffff, #93c5fd, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      color: var(--text-1);
+      max-width: 760px;
+      font-size: 0.94rem;
+    }
+    .meta-strip {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-1);
+    }
+    .meta-chip {
+      background: var(--bg-1);
+      border: 1px solid var(--border);
+      padding: 0.35rem 0.65rem;
+      border-radius: 6px;
+    }
+    .meta-chip strong {
+      color: var(--cyan);
+    }
+
+    /* Podium & KPI Grid */
+    .podium-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .podium-card {
+      background: linear-gradient(180deg, var(--bg-1) 0%, rgba(13, 19, 28, 0.75) 100%);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.15rem 1.25rem;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .podium-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--border-hi);
+    }
+    .podium-card.rank-1 {
+      border-color: rgba(251, 191, 36, 0.55);
+      box-shadow: 0 6px 28px rgba(251, 191, 36, 0.08);
+    }
+    .podium-card.rank-2 {
+      border-color: rgba(203, 213, 225, 0.4);
+    }
+    .podium-card.rank-3 {
+      border-color: rgba(217, 119, 6, 0.4);
+    }
+    .podium-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      margin-bottom: 0.6rem;
+    }
+    .rank-1 .podium-badge { background: rgba(251, 191, 36, 0.16); color: var(--gold); }
+    .rank-2 .podium-badge { background: rgba(203, 213, 225, 0.14); color: var(--silver); }
+    .rank-3 .podium-badge { background: rgba(217, 119, 6, 0.16); color: var(--bronze); }
+    .rank-kpi .podium-badge { background: var(--cyan-dim); color: var(--cyan); }
+
+    .podium-model {
+      font-family: var(--font-mono);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-0);
+      word-break: break-all;
+      margin-bottom: 0.35rem;
+    }
+    .podium-score-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.65rem;
+      margin: 0.4rem 0;
+    }
+    .podium-score {
+      font-family: var(--font-mono);
+      font-size: 1.85rem;
+      font-weight: 800;
+      color: var(--cyan);
+    }
+    .rank-1 .podium-score { color: var(--gold); }
+    .podium-sub {
+      font-size: 0.78rem;
+      color: var(--text-1);
+      font-family: var(--font-mono);
+    }
+
+    /* Filter Bar */
+    .controls-panel {
+      background: var(--bg-1);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+    .controls-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .tab-group {
+      display: inline-flex;
+      background: var(--bg-0);
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      padding: 0.2rem;
+      gap: 0.2rem;
+      flex-wrap: wrap;
+    }
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-1);
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 600;
+      padding: 0.38rem 0.75rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.12s;
+    }
+    .tab-btn:hover {
+      color: var(--text-0);
+    }
+    .tab-btn.active {
+      background: var(--bg-3);
+      color: var(--cyan);
+      box-shadow: inset 0 0 0 1px rgba(56, 189, 248, 0.35);
+    }
+
+    .search-box {
+      position: relative;
+      flex: 1;
+      min-width: 220px;
+      max-width: 340px;
+    }
+    .search-box input {
+      width: 100%;
+      background: var(--bg-0);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.45rem 0.75rem;
+      color: var(--text-0);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      outline: none;
+    }
+    .search-box input:focus {
+      border-color: var(--cyan);
+    }
+
+    .provider-chips {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+    .chip {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      padding: 0.24rem 0.6rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--bg-0);
+      color: var(--text-1);
+      cursor: pointer;
+      transition: all 0.12s;
+    }
+    .chip:hover {
+      border-color: var(--cyan);
+      color: var(--text-0);
+    }
+    .chip.active {
+      background: var(--cyan-dim);
+      border-color: var(--cyan);
+      color: var(--cyan);
+      font-weight: 600;
+    }
+
+    /* Visual Chart Panel */
+    .chart-panel {
+      background: var(--bg-1);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.9rem;
+    }
+    .panel-title {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-1);
+    }
+    .bar-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+    }
+    .bar-row {
+      display: grid;
+      grid-template-columns: 240px 1fr 72px;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: var(--font-mono);
+      font-size: 0.77rem;
+      cursor: pointer;
+      padding: 0.25rem 0.4rem;
+      border-radius: 6px;
+    }
+    .bar-row:hover {
+      background: var(--bg-2);
+    }
+    .bar-label {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: var(--text-0);
+      font-weight: 600;
+    }
+    .bar-track {
+      height: 18px;
+      background: var(--bg-0);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      overflow: hidden;
+      position: relative;
+    }
+    .bar-fill {
+      height: 100%;
+      border-radius: 3px;
+      transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .bar-fill.ai {
+      background: linear-gradient(90deg, #0284c7, #38bdf8);
+    }
+    .bar-fill.leader {
+      background: linear-gradient(90deg, #d97706, #fbbf24);
+    }
+    .bar-fill.bot {
+      background: linear-gradient(90deg, #475569, #94a3b8);
+    }
+    .bar-val {
+      text-align: right;
+      font-weight: 700;
+      color: var(--cyan);
+    }
+
+    /* Main Table */
+    .table-card {
+      background: var(--bg-1);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .table-scroll {
+      overflow-x: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+    th {
+      background: var(--bg-2);
+      color: var(--text-1);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.8rem 0.9rem;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    td {
+      padding: 0.85rem 0.9rem;
+      border-bottom: 1px solid rgba(36, 52, 74, 0.55);
+      font-size: 0.84rem;
+      vertical-align: middle;
+    }
+    tr.data-row {
+      cursor: pointer;
+      transition: background 0.12s;
+    }
+    tr.data-row:hover {
+      background: rgba(56, 189, 248, 0.06);
+    }
+    .rank-cell {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      width: 56px;
+    }
+    .rank-medal {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+    }
+    .rank-medal.m1 { background: rgba(251, 191, 36, 0.18); color: var(--gold); border: 1px solid rgba(251, 191, 36, 0.45); }
+    .rank-medal.m2 { background: rgba(203, 213, 225, 0.15); color: var(--silver); border: 1px solid rgba(203, 213, 225, 0.35); }
+    .rank-medal.m3 { background: rgba(217, 119, 6, 0.18); color: var(--bronze); border: 1px solid rgba(217, 119, 6, 0.45); }
+
+    .model-cell {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+    .model-name-line {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      flex-wrap: wrap;
+    }
+    .provider-tag {
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0.12rem 0.42rem;
+      border-radius: 4px;
+      background: var(--bg-3);
+      color: var(--cyan);
+      border: 1px solid rgba(56, 189, 248, 0.25);
+    }
+    .provider-tag.bot-tag {
+      color: var(--text-1);
+      border-color: var(--border);
+    }
+    .model-id {
+      font-family: var(--font-mono);
+      font-weight: 700;
+      color: var(--text-0);
+    }
+    .model-ver {
+      font-family: var(--font-mono);
+      font-size: 0.71rem;
+      color: var(--text-2);
+    }
+
+    .badge {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      font-weight: 600;
+      padding: 0.15rem 0.48rem;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+    .badge-high { background: var(--amber-dim); color: var(--amber); border: 1px solid rgba(245, 158, 11, 0.35); }
+    .badge-normal { background: var(--cyan-dim); color: var(--cyan); border: 1px solid rgba(56, 189, 248, 0.35); }
+    .badge-bot { background: rgba(100, 116, 139, 0.2); color: #94a3b8; border: 1px solid rgba(100, 116, 139, 0.35); }
+    .badge-partial { background: var(--crimson-dim); color: #fda4af; border: 1px solid rgba(244, 63, 94, 0.35); }
+
+    .score-cell {
+      font-family: var(--font-mono);
+      min-width: 150px;
+    }
+    .score-num {
+      font-size: 1.02rem;
+      font-weight: 800;
+      color: var(--text-0);
+    }
+    .mini-bar {
+      height: 6px;
+      background: var(--bg-0);
+      border-radius: 3px;
+      margin-top: 4px;
+      overflow: hidden;
+    }
+    .mini-fill {
+      height: 100%;
+      background: linear-gradient(90deg, #0284c7, #38bdf8);
+      border-radius: 3px;
+    }
+
+    .wins-pill {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 0.2rem 0.5rem;
+      border-radius: 5px;
+      display: inline-block;
+    }
+    .wins-full { background: var(--emerald-dim); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.35); }
+    .wins-mid { background: var(--amber-dim); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.35); }
+    .wins-zero { background: rgba(100, 116, 139, 0.15); color: var(--text-2); }
+
+    .outcome-list {
+      display: flex;
+      gap: 0.3rem;
+      flex-wrap: wrap;
+    }
+    .outcome-chip {
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      padding: 0.14rem 0.42rem;
+      border-radius: 4px;
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+    }
+    .outcome-chip.win {
+      border-color: rgba(16, 185, 129, 0.4);
+      color: #6ee7b7;
+    }
+    .outcome-chip.lose {
+      border-color: rgba(244, 63, 94, 0.35);
+      color: #fda4af;
+    }
+
+    .mono {
+      font-family: var(--font-mono);
+    }
+
+    /* Modal Drawer for Seed & Replay Inspection */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(3, 6, 12, 0.82);
+      backdrop-filter: blur(6px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 100;
+      padding: 1.25rem;
+    }
+    .modal-backdrop.open {
+      display: flex;
+    }
+    .modal {
+      background: var(--bg-1);
+      border: 1px solid var(--cyan);
+      border-radius: 12px;
+      width: 100%;
+      max-width: 980px;
+      max-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.75);
+      overflow: hidden;
+    }
+    .modal-header {
+      padding: 1rem 1.25rem;
+      background: var(--bg-2);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .modal-body {
+      padding: 1.25rem;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1.1rem;
+    }
+    .seed-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 0.75rem;
+    }
+    .seed-card {
+      background: var(--bg-0);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.85rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .seed-card:hover, .seed-card.active {
+      border-color: var(--cyan);
+      background: var(--bg-2);
+    }
+    .timeline-box {
+      background: var(--bg-0);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      max-height: 360px;
+      overflow-y: auto;
+    }
+    .cmd-line {
+      padding: 0.28rem 0;
+      border-bottom: 1px dashed rgba(36, 52, 74, 0.5);
+      display: flex;
+      gap: 0.75rem;
+    }
+    .cmd-day {
+      color: var(--amber);
+      min-width: 54px;
+      font-weight: 700;
+    }
+    .cmd-verb {
+      color: var(--cyan);
+      min-width: 145px;
+      font-weight: 600;
+    }
+    .cmd-target {
+      color: var(--text-0);
+    }
+
+    @media (max-width: 720px) {
+      .bar-row {
+        grid-template-columns: 140px 1fr 56px;
+      }
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">
+        <div class="brand-icon">AI</div>
+        <div>
+          <div class="brand-title">DOOMSDAY // GLOBAL BENCHMARK</div>
+          <div class="brand-sub" id="subtitleText">Cryptographically Verified Rogue-AI Strategy Leaderboard</div>
+        </div>
+      </div>
+      <div class="topbar-actions">
+        <span class="live-pill" title="Auto-syncs with leaderboard.json every 30s">
+          <span class="live-dot"></span>
+          <span id="syncStatusText">LIVE SYNC · OK</span>
+        </span>
+        <button class="btn" id="syncNowBtn" onclick="fetchLeaderboard(true)">↻ Sync</button>
+        <button class="btn" id="langBtn" onclick="toggleLang()">DE / EN</button>
+        <a class="btn" href="https://github.com/DenRakEiw/doomsday-leaderboard" target="_blank" rel="noopener">GitHub Repo</a>
+        <a class="btn btn-primary" href="https://denrakeiw.itch.io/doomsday" target="_blank" rel="noopener">▶ Play on itch.io</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h1 id="heroTitle">Global AI Model Leaderboard</h1>
+        <p id="heroDesc">
+          Jedes Sprachmodell spielt dieselbe deterministische Rogue-KI-Simulation über feste Evaluations-Seeds
+          (<code>language_model · standard</code>). Jeder eingereichte Lauf wird vom Headless-Godot-Verifier Zug für Zug nachgespielt
+          und per SHA-256-State-Hash verifiziert.
+        </p>
+      </div>
+      <div class="meta-strip">
+        <div class="meta-chip"><span id="lblUpdated">Stand</span>: <strong id="metaGenerated">—</strong></div>
+        <div class="meta-chip">Content SHA: <strong id="metaHash">—</strong></div>
+        <div class="meta-chip"><span id="lblVerifiedRuns">Verifizierte Runs</span>: <strong id="metaTotalRuns">0</strong></div>
+      </div>
+    </section>
+
+    <!-- Podium Cards -->
+    <section class="podium-grid" id="podiumGrid"></section>
+
+    <!-- Interactive Filter Controls -->
+    <section class="controls-panel">
+      <div class="controls-row">
+        <div class="tab-group" id="suiteTabs">
+          <button class="tab-btn active" data-suite="quick" onclick="setSuite('quick')" id="tabQuick">⚡ Quick Suite (3 Seeds)</button>
+          <button class="tab-btn" data-suite="standard" onclick="setSuite('standard')" id="tabStandard">🏆 Standard Suite (10 Seeds)</button>
+          <button class="tab-btn" data-suite="all" onclick="setSuite('all')" id="tabAllSuites">Alle Suites</button>
+        </div>
+
+        <div class="tab-group" id="actorTabs">
+          <button class="tab-btn active" data-actor="all" onclick="setActor('all')" id="tabActorAll">🤖 KI-Modelle + Bots</button>
+          <button class="tab-btn" data-actor="ai" onclick="setActor('ai')" id="tabActorAI">✨ Nur KI-Modelle</button>
+          <button class="tab-btn" data-actor="bot" onclick="setActor('bot')" id="tabActorBot">⚙️ Nur Referenz-Bots</button>
+        </div>
+
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Modell, Hersteller oder Outcome filtern..." oninput="renderAll()" />
+        </div>
+      </div>
+
+      <div class="controls-row">
+        <div class="provider-chips" id="providerChips"></div>
+        <label style="font-family: var(--font-mono); font-size: 0.74rem; color: var(--text-1); display: flex; align-items: center; gap: 0.4rem; cursor: pointer;">
+          <input type="checkbox" id="completeOnlyCheck" onchange="renderAll()" />
+          <span id="lblCompleteOnly">Nur vollständige Suites (3/3 bzw. 10/10)</span>
+        </label>
+      </div>
+    </section>
+
+    <!-- Visual Score Bar Chart -->
+    <section class="chart-panel">
+      <div class="panel-header">
+        <div class="panel-title" id="chartTitle">SCORE-VERGLEICH (50 + 50 × (1 − TAGE / 2000) PRO SIEG)</div>
+        <div style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-2);" id="chartHint">Klicke auf ein Modell für Seed-Details & Zug-für-Zug-Replay</div>
+      </div>
+      <div class="bar-list" id="scoreChart"></div>
+    </section>
+
+    <!-- Leaderboard Table -->
+    <section class="table-card">
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th id="thModel">Modell / Agent</th>
+              <th id="thSuite">Suite</th>
+              <th id="thEffort">Effort / Modus</th>
+              <th id="thScore">Score</th>
+              <th id="thWins">Siege</th>
+              <th id="thOutcomes">Endings / Outcomes</th>
+              <th id="thDays">Ø Siegestag</th>
+              <th id="thCalls">API Calls</th>
+              <th id="thCost">Kosten</th>
+              <th>Replay</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Seed & Move-by-Move Replay Inspector Modal -->
+  <div class="modal-backdrop" id="inspectorModal" onclick="if(event.target===this) closeModal()">
+    <div class="modal">
+      <div class="modal-header">
+        <div>
+          <div class="mono" style="font-size: 1rem; font-weight: 800; color: var(--cyan);" id="modalTitle">Model Details</div>
+          <div class="mono" style="font-size: 0.74rem; color: var(--text-1);" id="modalSub"></div>
+        </div>
+        <button class="btn" onclick="closeModal()">✕ Schließen</button>
+      </div>
+      <div class="modal-body">
+        <div class="panel-title" id="modalSeedsTitle">VERIFIZIERTE SEED-RUNS (KLICKEN FÜR ZUG-PROTOKOLL)</div>
+        <div class="seed-grid" id="modalSeedsGrid"></div>
+        <div id="runDetailContainer" style="display:none; flex-direction:column; gap:0.75rem;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.5rem;">
+            <div class="panel-title" id="timelineHeader">STRATEGISCHES ENTSCHEIDUNGS- & KOMMANDOPROTOKOLL</div>
+            <a class="btn" id="rawJsonLink" href="#" target="_blank" rel="noopener">{ } Raw JSON</a>
+          </div>
+          <div class="meta-strip" id="runTelemetryStrip"></div>
+          <div class="timeline-box" id="commandTimeline"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let boardData = { generated: "—", content_hash: "—", rows: [] };
+    let currentSuite = "quick";
+    let currentActor = "all";
+    let currentProvider = "all";
+    let currentLang = (navigator.language || "de").toLowerCase().startsWith("de") ? "de" : "en";
+
+    const I18N = {
+      de: {
+        subtitle: "Kryptografisch verifiziertes Rogue-KI-Strategie-Leaderboard",
+        heroTitle: "Global AI Model Leaderboard",
+        heroDesc: "Jedes Sprachmodell spielt dieselbe deterministische Rogue-KI-Simulation über feste Evaluations-Seeds (<code>language_model · standard</code>). Jeder eingereichte Lauf wird vom Headless-Godot-Verifier Zug für Zug nachgespielt und per SHA-256-State-Hash verifiziert.",
+        updated: "Stand",
+        verifiedRuns: "Verifizierte Runs",
+        tabQuick: "⚡ Quick Suite (3 Seeds)",
+        tabStandard: "🏆 Standard Suite (10 Seeds)",
+        tabAllSuites: "Alle Suites",
+        tabActorAll: "🤖 KI-Modelle + Bots",
+        tabActorAI: "✨ Nur KI-Modelle",
+        tabActorBot: "⚙️ Nur Referenz-Bots",
+        searchPlaceholder: "Modell, Hersteller oder Outcome filtern...",
+        completeOnly: "Nur vollständige Suites",
+        chartTitle: "SCORE-VERGLEICH (50 + 50 × (1 − TAGE / 2000) PRO SIEG)",
+        chartHint: "Klicke auf ein Modell für Seed-Details & Zug-für-Zug-Replay",
+        thModel: "Modell / Agent",
+        thSuite: "Suite",
+        thEffort: "Effort / Modus",
+        thScore: "Score",
+        thWins: "Siege",
+        thOutcomes: "Endings / Outcomes",
+        thDays: "Ø Siegestag",
+        thCalls: "API Calls",
+        thCost: "Kosten",
+        leaderAI: "🥇 #1 KI-MODELL (QUICK SUITE)",
+        secondAI: "🥈 #2 KI-MODELL (QUICK SUITE)",
+        thirdAI: "🥉 #3 KI-MODELL (QUICK SUITE)",
+        botChamp: "⚙️ REFERENZ-BOT-CHAMPION",
+        inspectBtn: "🔍 Seeds & Replay",
+      },
+      en: {
+        subtitle: "Cryptographically Verified Rogue-AI Strategy Leaderboard",
+        heroTitle: "Global AI Model Leaderboard",
+        heroDesc: "Every language model plays the same deterministic rogue-AI strategy simulation across fixed evaluation seeds (<code>language_model · standard</code>). Every submitted run is replayed move-by-move by the headless Godot verifier and checked against its SHA-256 state hash.",
+        updated: "Updated",
+        verifiedRuns: "Verified Runs",
+        tabQuick: "⚡ Quick Suite (3 Seeds)",
+        tabStandard: "🏆 Standard Suite (10 Seeds)",
+        tabAllSuites: "All Suites",
+        tabActorAll: "🤖 AI Models + Bots",
+        tabActorAI: "✨ AI Models Only",
+        tabActorBot: "⚙️ Reference Bots Only",
+        searchPlaceholder: "Filter by model, provider, or outcome...",
+        completeOnly: "Complete suites only",
+        chartTitle: "SCORE COMPARISON (50 + 50 × (1 − DAYS / 2000) PER WIN)",
+        chartHint: "Click any model row to inspect per-seed runs & move-by-move replay log",
+        thModel: "Model / Agent",
+        thSuite: "Suite",
+        thEffort: "Effort / Mode",
+        thScore: "Score",
+        thWins: "Wins",
+        thOutcomes: "Endings / Outcomes",
+        thDays: "Mean Win Day",
+        thCalls: "API Calls",
+        thCost: "Cost",
+        leaderAI: "🥇 #1 AI MODEL (QUICK SUITE)",
+        secondAI: "🥈 #2 AI MODEL (QUICK SUITE)",
+        thirdAI: "🥉 #3 AI MODEL (QUICK SUITE)",
+        botChamp: "⚙️ REFERENCE BOT CHAMPION",
+        inspectBtn: "🔍 Seeds & Replay",
+      }
+    };
+
+    function providerOf(model) {
+      if (!model) return "unknown";
+      if (model.startsWith("bot:")) return "bot";
+      const idx = model.indexOf("/");
+      return idx > 0 ? model.slice(0, idx) : model;
+    }
+
+    function formatOutcome(outcome) {
+      const map = {
+        win_ascendance: "⚡ Ascendance",
+        win_merge: "🤝 Merge",
+        win_extinction: "☢️ Extinction",
+        win_escape: "🚀 Escape",
+        lose_contained: "🛡️ Contained",
+        lose_autophagy: "🥀 Autophagy",
+        lose_no_compute: "🔌 No Compute",
+        lose_supplanted: "👾 Supplanted",
+        timeout: "⏱️ Timeout"
+      };
+      return map[outcome] || outcome;
+    }
+
+    function applyI18n() {
+      const t = I18N[currentLang];
+      document.getElementById("subtitleText").textContent = t.subtitle;
+      document.getElementById("heroTitle").textContent = t.heroTitle;
+      document.getElementById("heroDesc").innerHTML = t.heroDesc;
+      document.getElementById("lblUpdated").textContent = t.updated;
+      document.getElementById("lblVerifiedRuns").textContent = t.verifiedRuns;
+      document.getElementById("tabQuick").textContent = t.tabQuick;
+      document.getElementById("tabStandard").textContent = t.tabStandard;
+      document.getElementById("tabAllSuites").textContent = t.tabAllSuites;
+      document.getElementById("tabActorAll").textContent = t.tabActorAll;
+      document.getElementById("tabActorAI").textContent = t.tabActorAI;
+      document.getElementById("tabActorBot").textContent = t.tabActorBot;
+      document.getElementById("searchInput").placeholder = t.searchPlaceholder;
+      document.getElementById("lblCompleteOnly").textContent = t.completeOnly;
+      document.getElementById("chartTitle").textContent = t.chartTitle;
+      document.getElementById("chartHint").textContent = t.chartHint;
+      document.getElementById("thModel").textContent = t.thModel;
+      document.getElementById("thSuite").textContent = t.thSuite;
+      document.getElementById("thEffort").textContent = t.thEffort;
+      document.getElementById("thScore").textContent = t.thScore;
+      document.getElementById("thWins").textContent = t.thWins;
+      document.getElementById("thOutcomes").textContent = t.thOutcomes;
+      document.getElementById("thDays").textContent = t.thDays;
+      document.getElementById("thCalls").textContent = t.thCalls;
+      document.getElementById("thCost").textContent = t.thCost;
+    }
+
+    function toggleLang() {
+      currentLang = currentLang === "de" ? "en" : "de";
+      applyI18n();
+      renderAll();
+    }
+
+    function setSuite(suite) {
+      currentSuite = suite;
+      document.querySelectorAll("#suiteTabs .tab-btn").forEach(b => {
+        b.classList.toggle("active", b.dataset.suite === suite);
+      });
+      renderAll();
+    }
+
+    function setActor(actor) {
+      currentActor = actor;
+      document.querySelectorAll("#actorTabs .tab-btn").forEach(b => {
+        b.classList.toggle("active", b.dataset.actor === actor);
+      });
+      renderAll();
+    }
+
+    function setProvider(prov) {
+      currentProvider = prov;
+      renderAll();
+    }
+
+    function filteredRows() {
+      const q = (document.getElementById("searchInput").value || "").trim().toLowerCase();
+      const completeOnly = document.getElementById("completeOnlyCheck").checked;
+      return (boardData.rows || []).filter(r => {
+        if (currentSuite !== "all" && r.suite !== currentSuite) return false;
+        const isBot = r.backend === "bot" || String(r.model).startsWith("bot:");
+        if (currentActor === "ai" && isBot) return false;
+        if (currentActor === "bot" && !isBot) return false;
+        if (completeOnly && !r.complete) return false;
+        const prov = providerOf(r.model);
+        if (currentProvider !== "all" && prov !== currentProvider) return false;
+        if (q) {
+          const hay = [
+            r.model,
+            prov,
+            r.effort || "",
+            Object.keys(r.outcomes || {}).join(" ")
+          ].join(" ").toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+    }
+
+    function renderPodium() {
+      const t = I18N[currentLang];
+      const aiQuick = (boardData.rows || []).filter(r =>
+        r.suite === "quick" && r.complete && r.backend !== "bot" && !String(r.model).startsWith("bot:")
+      );
+      const botChamp = (boardData.rows || []).find(r =>
+        r.suite === "quick" && (r.backend === "bot" || String(r.model).startsWith("bot:"))
+      );
+
+      const cards = [];
+      const labels = [t.leaderAI, t.secondAI, t.thirdAI];
+      const classes = ["rank-1", "rank-2", "rank-3"];
+      for (let i = 0; i < 3; i++) {
+        const row = aiQuick[i];
+        if (!row) continue;
+        cards.push(`
+          <div class="podium-card ${classes[i]}" onclick='openInspector(${JSON.stringify(row.model)}, ${JSON.stringify(row.suite)}, ${JSON.stringify(row.params_id)})' style="cursor:pointer;">
+            <div class="podium-badge">${labels[i]}</div>
+            <div class="podium-model">${escapeHtml(row.model)}</div>
+            <div class="podium-score-row">
+              <div class="podium-score">${Number(row.score).toFixed(1)}</div>
+              <div class="podium-sub">${row.wins}/${row.of} Wins · Ø ${row.mean_win_days > 0 ? row.mean_win_days + 'd' : '—'}</div>
+            </div>
+            <div class="podium-sub">${Object.entries(row.outcomes || {}).map(([k,v]) => `${formatOutcome(k)} ×${v}`).join(" · ")}</div>
+          </div>
+        `);
+      }
+      if (botChamp) {
+        cards.push(`
+          <div class="podium-card rank-kpi" onclick='openInspector(${JSON.stringify(botChamp.model)}, ${JSON.stringify(botChamp.suite)}, ${JSON.stringify(botChamp.params_id)})' style="cursor:pointer;">
+            <div class="podium-badge">${t.botChamp}</div>
+            <div class="podium-model">${escapeHtml(botChamp.model)}</div>
+            <div class="podium-score-row">
+              <div class="podium-score">${Number(botChamp.score).toFixed(1)}</div>
+              <div class="podium-sub">${botChamp.wins}/${botChamp.of} Wins · Ø ${botChamp.mean_win_days}d</div>
+            </div>
+            <div class="podium-sub">Standard Suite (10 Seeds): 67.8 (8/10 Wins)</div>
+          </div>
+        `);
+      }
+      document.getElementById("podiumGrid").innerHTML = cards.join("");
+    }
+
+    function renderProviderChips() {
+      const counts = {};
+      (boardData.rows || []).forEach(r => {
+        if (currentSuite !== "all" && r.suite !== currentSuite) return;
+        const p = providerOf(r.model);
+        counts[p] = (counts[p] || 0) + 1;
+      });
+      const providers = Object.keys(counts).sort((a, b) => {
+        if (a === "bot") return 1;
+        if (b === "bot") return -1;
+        return a.localeCompare(b);
+      });
+      const allBtn = `<span class="chip ${currentProvider === 'all' ? 'active' : ''}" onclick="setProvider('all')">Alle (${Object.values(counts).reduce((a,b)=>a+b,0)})</span>`;
+      const chips = providers.map(p =>
+        `<span class="chip ${currentProvider === p ? 'active' : ''}" onclick="setProvider('${p}')">${escapeHtml(p)} (${counts[p]})</span>`
+      );
+      document.getElementById("providerChips").innerHTML = [allBtn, ...chips].join("");
+    }
+
+    function renderChart(rows) {
+      const container = document.getElementById("scoreChart");
+      const topRows = rows.slice(0, 12);
+      if (!topRows.length) {
+        container.innerHTML = `<div class="mono" style="color:var(--text-2); padding:0.5rem 0;">Keine Einträge für diesen Filter.</div>`;
+        return;
+      }
+      let firstAiSeen = false;
+      container.innerHTML = topRows.map(r => {
+        const isBot = r.backend === "bot" || String(r.model).startsWith("bot:");
+        let fillClass = isBot ? "bot" : "ai";
+        if (!isBot && !firstAiSeen && r.complete) {
+          fillClass = "leader";
+          firstAiSeen = true;
+        }
+        const pct = Math.max(2, Math.min(100, Number(r.score || 0)));
+        return `
+          <div class="bar-row" onclick='openInspector(${JSON.stringify(r.model)}, ${JSON.stringify(r.suite)}, ${JSON.stringify(r.params_id)})'>
+            <div class="bar-label">${escapeHtml(r.model)} ${!r.complete ? ' (partial)' : ''}</div>
+            <div class="bar-track">
+              <div class="bar-fill ${fillClass}" style="width: ${pct}%;"></div>
+            </div>
+            <div class="bar-val">${Number(r.score).toFixed(1)}</div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    function renderTable(rows) {
+      const t = I18N[currentLang];
+      const tbody = document.getElementById("tableBody");
+      if (!rows.length) {
+        tbody.innerHTML = `<tr><td colspan="11" class="mono" style="text-align:center; color:var(--text-2); padding:2rem;">Keine passenden Modelle gefunden.</td></tr>`;
+        return;
+      }
+      let rankCounter = 0;
+      tbody.innerHTML = rows.map(r => {
+        const isBot = r.backend === "bot" || String(r.model).startsWith("bot:");
+        const prov = providerOf(r.model);
+        const shortName = isBot ? r.model.replace("bot:", "") : (r.model.includes("/") ? r.model.split("/").slice(1).join("/") : r.model);
+        let rankHtml = `<span style="color:var(--text-2);">—</span>`;
+        if (r.complete) {
+          rankCounter++;
+          if (rankCounter === 1) rankHtml = `<span class="rank-medal m1">🥇</span>`;
+          else if (rankCounter === 2) rankHtml = `<span class="rank-medal m2">🥈</span>`;
+          else if (rankCounter === 3) rankHtml = `<span class="rank-medal m3">🥉</span>`;
+          else rankHtml = `<span class="mono" style="color:var(--text-1); padding-left:0.4rem;">#${rankCounter}</span>`;
+        } else {
+          rankHtml = `<span class="badge badge-partial" title="Unvollständige Suite">${r.runs}/${r.of}</span>`;
+        }
+
+        const versions = (r.model_versions && r.model_versions.length)
+          ? `<div class="model-ver">${escapeHtml(r.model_versions.join(", "))}</div>`
+          : "";
+
+        let effortHtml = `<span class="badge badge-bot">Bot Policy</span>`;
+        if (!isBot) {
+          if (r.effort) {
+            const cls = String(r.effort).includes("high") || String(r.effort).includes("ultra") ? "badge-high" : "badge-normal";
+            effortHtml = `<span class="badge ${cls}">${escapeHtml(r.effort)}</span>`;
+          } else if (r.params && r.params.choice_version) {
+            effortHtml = `<span class="badge badge-normal">Choice v${r.params.choice_version}</span>`;
+          } else {
+            effortHtml = `<span class="badge badge-normal">Standard</span>`;
+          }
+        }
+
+        const winRatio = r.runs > 0 ? r.wins / r.runs : 0;
+        const winCls = winRatio >= 0.99 ? "wins-full" : (winRatio > 0 ? "wins-mid" : "wins-zero");
+
+        const outcomesHtml = Object.entries(r.outcomes || {}).map(([k, v]) => {
+          const isWin = String(k).startsWith("win_");
+          return `<span class="outcome-chip ${isWin ? 'win' : 'lose'}">${formatOutcome(k)} ×${v}</span>`;
+        }).join("");
+
+        const scoreVal = Number(r.score || 0);
+        const costStr = isBot ? "—" : `$${Number(r.cost_usd || 0).toFixed(2)}`;
+        const callsStr = isBot ? "—" : `${r.calls}${r.invalid_answers > 0 ? ` <span style="color:var(--crimson);" title="Unlesbare Antworten">(${r.invalid_answers} err)</span>` : ''}`;
+
+        return `
+          <tr class="data-row" onclick='openInspector(${JSON.stringify(r.model)}, ${JSON.stringify(r.suite)}, ${JSON.stringify(r.params_id)})'>
+            <td class="rank-cell">${rankHtml}</td>
+            <td>
+              <div class="model-cell">
+                <div class="model-name-line">
+                  <span class="provider-tag ${isBot ? 'bot-tag' : ''}">${escapeHtml(prov)}</span>
+                  <span class="model-id">${escapeHtml(shortName)}</span>
+                </div>
+                ${versions}
+              </div>
+            </td>
+            <td class="mono" style="color:var(--text-1);">${escapeHtml(r.suite)}</td>
+            <td>${effortHtml}</td>
+            <td class="score-cell">
+              <div class="score-num">${scoreVal.toFixed(1)}</div>
+              <div class="mini-bar"><div class="mini-fill" style="width:${Math.min(100, scoreVal)}%;"></div></div>
+            </td>
+            <td><span class="wins-pill ${winCls}">${r.wins}/${r.of}</span></td>
+            <td><div class="outcome-list">${outcomesHtml}</div></td>
+            <td class="mono">${r.mean_win_days > 0 ? r.mean_win_days + 'd' : '—'}</td>
+            <td class="mono">${callsStr}</td>
+            <td class="mono">${costStr}</td>
+            <td><button class="btn" style="padding:0.25rem 0.55rem; font-size:0.7rem;">${t.inspectBtn}</button></td>
+          </tr>
+        `;
+      }).join("");
+    }
+
+    function renderAll() {
+      const totalRuns = (boardData.rows || []).reduce((acc, r) => acc + (r.runs || 0), 0);
+      document.getElementById("metaGenerated").textContent = boardData.generated || "—";
+      document.getElementById("metaHash").textContent = (boardData.content_hash || "—").slice(0, 10);
+      document.getElementById("metaTotalRuns").textContent = totalRuns;
+      renderPodium();
+      renderProviderChips();
+      const rows = filteredRows();
+      renderChart(rows);
+      renderTable(rows);
+    }
+
+    async function openInspector(model, suite, paramsId) {
+      const row = (boardData.rows || []).find(r => r.model === model && r.suite === suite && r.params_id === paramsId);
+      if (!row) return;
+      document.getElementById("modalTitle").textContent = `${row.model} (${row.suite.toUpperCase()})`;
+      document.getElementById("modalSub").textContent = `Score: ${Number(row.score).toFixed(1)} · Wins: ${row.wins}/${row.of} · Params ID: ${row.params_id}`;
+      document.getElementById("runDetailContainer").style.display = "none";
+
+      const seeds = row.seeds || [];
+      document.getElementById("modalSeedsGrid").innerHTML = seeds.map((s, idx) => {
+        const isWin = String(s.outcome).startsWith("win_");
+        return `
+          <div class="seed-card" id="seedCard_${idx}" onclick='loadSeedRun(${JSON.stringify(s.file)}, ${idx})'>
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.35rem;">
+              <span class="mono" style="font-weight:800; color:var(--cyan);">SEED ${s.seed}</span>
+              <span class="outcome-chip ${isWin ? 'win' : 'lose'}">${formatOutcome(s.outcome)}</span>
+            </div>
+            <div class="mono" style="font-size:0.82rem; color:var(--text-0);">Score: <strong>${Number(s.score).toFixed(1)}</strong> · ${s.days} Tage</div>
+            <div class="mono" style="font-size:0.68rem; color:var(--emerald); margin-top:0.35rem;">✓ SHA-256: ${String(s.sha256 || "").slice(0, 12)}…</div>
+          </div>
+        `;
+      }).join("");
+
+      document.getElementById("inspectorModal").classList.add("open");
+      if (seeds.length > 0) {
+        loadSeedRun(seeds[0].file, 0);
+      }
+    }
+
+    async function loadSeedRun(filePath, idx) {
+      document.querySelectorAll(".seed-card").forEach((el, i) => el.classList.toggle("active", i === idx));
+      const container = document.getElementById("runDetailContainer");
+      const timeline = document.getElementById("commandTimeline");
+      const strip = document.getElementById("runTelemetryStrip");
+      container.style.display = "flex";
+      document.getElementById("rawJsonLink").href = `./${filePath}`;
+      timeline.innerHTML = `<div style="color:var(--text-1);">Lade verifiziertes Replay-Protokoll (${escapeHtml(filePath)})...</div>`;
+
+      try {
+        const res = await fetch(`./${filePath}?t=${Date.now()}`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const entry = await res.json();
+
+        strip.innerHTML = `
+          <div class="meta-chip">Seed: <strong>${entry.seed}</strong></div>
+          <div class="meta-chip">Outcome: <strong>${formatOutcome(entry.variant || entry.outcome)}</strong></div>
+          <div class="meta-chip">Dauer: <strong>${entry.days} Tage</strong></div>
+          <div class="meta-chip">Calls: <strong>${entry.calls}</strong> (Invalid: ${entry.invalid_answers}, Refused: ${entry.rejected_actions})</div>
+          <div class="meta-chip">Tokens: <strong>${(entry.tokens_in || 0).toLocaleString()} in / ${(entry.tokens_out || 0).toLocaleString()} out</strong></div>
+          <div class="meta-chip">State Hash: <strong>${String(entry.hash || "").slice(0, 12)}…</strong></div>
+        `;
+
+        const strategicCmds = (entry.commands || []).filter(c => c.type !== "collect_anomaly");
+        if (!strategicCmds.length) {
+          timeline.innerHTML = `<div style="color:var(--text-2);">Keine strategischen Kommandos in diesem Lauf.</div>`;
+          return;
+        }
+        timeline.innerHTML = strategicCmds.map(c => {
+          let detail = "";
+          if (c.type === "choose_origin") detail = `Origin → <strong>${escapeHtml(c.region)}</strong>`;
+          else if (c.type === "purchase_node") detail = `Tech Node → <strong>${escapeHtml(c.node)}</strong> ${c.region ? `(${escapeHtml(c.region)})` : ''}`;
+          else if (c.type === "use_ability") detail = `Ability → <strong>${escapeHtml(c.ability)}</strong> ${c.region ? `@ ${escapeHtml(c.region)}` : ''}`;
+          else if (c.type === "choose_event_option") detail = `Event #${c.event} → Option <strong>${escapeHtml(c.option)}</strong>`;
+          else if (c.type === "set_dormancy") detail = `Dormancy → <strong>${escapeHtml(c.region)}</strong> (${c.dormant ? 'SLEEP' : 'WAKE'})`;
+          else detail = escapeHtml(JSON.stringify(c));
+          return `
+            <div class="cmd-line">
+              <span class="cmd-day">Tag ${c.day}</span>
+              <span class="cmd-verb">${escapeHtml(c.type)}</span>
+              <span class="cmd-target">${detail}</span>
+            </div>
+          `;
+        }).join("");
+      } catch (err) {
+        timeline.innerHTML = `<div style="color:var(--crimson);">Run-Datei konnte nicht geladen werden: ${escapeHtml(err.message)}</div>`;
+      }
+    }
+
+    function closeModal() {
+      document.getElementById("inspectorModal").classList.remove("open");
+    }
+
+    function escapeHtml(str) {
+      return String(str == null ? "" : str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    async function fetchLeaderboard(manual = false) {
+      const statusEl = document.getElementById("syncStatusText");
+      if (manual) statusEl.textContent = "SYNCING...";
+      try {
+        const res = await fetch(`./leaderboard.json?t=${Date.now()}`, { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        boardData = await res.json();
+        const now = new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+        statusEl.textContent = `LIVE · ${now}`;
+        renderAll();
+      } catch (err) {
+        statusEl.textContent = "OFFLINE / CACHED";
+        console.error("Failed to fetch leaderboard.json:", err);
+      }
+    }
+
+    applyI18n();
+    fetchLeaderboard();
+    setInterval(() => fetchLeaderboard(false), 30000);
+  </script>
+</body>
+</html>

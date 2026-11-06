@@ -64,6 +64,74 @@
 			]
 		},
 		{
+			"model": "google/gemini-4-argon",
+			"backend": "openrouter",
+			"effort": "high",
+			"params": {
+				"temperature": 0.0,
+				"max_completion_tokens": 16000.0,
+				"json_mode": true,
+				"reasoning": "high",
+				"top_p": -1.0,
+				"effort": "high"
+			},
+			"params_id": "d82fcc15",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "quick",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 3,
+			"of": 3,
+			"score": 81.8,
+			"wins": 3,
+			"win_rate": 1.0,
+			"outcomes": {
+				"win_ascendance": 3
+			},
+			"mean_win_days": 728,
+			"calls": 283,
+			"invalid_answers": 0,
+			"rejected_actions": 0,
+			"tokens_in": 3702756,
+			"tokens_out": 56939,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/google--gemini-4-argon__d82fcc15__p1__quick__s1001.json",
+				"runs/google--gemini-4-argon__d82fcc15__p1__quick__s1002.json",
+				"runs/google--gemini-4-argon__d82fcc15__p1__quick__s1003.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/google--gemini-4-argon__d82fcc15__p1__quick__s1001.json",
+					"sha256": "27b2eba70dfbb375af4262823be3fcd989a91549e7468d92816de6971bf2eb86",
+					"outcome": "win_ascendance",
+					"days": 758,
+					"score": 81.0
+				},
+				{
+					"seed": 1002,
+					"file": "runs/google--gemini-4-argon__d82fcc15__p1__quick__s1002.json",
+					"sha256": "65dae2ef5525124f45808bd71a0f4ac3fac79a1c75c9acaebe53f92d43b5aa9f",
+					"outcome": "win_ascendance",
+					"days": 693,
+					"score": 82.7
+				},
+				{
+					"seed": 1003,
+					"file": "runs/google--gemini-4-argon__d82fcc15__p1__quick__s1003.json",
+					"sha256": "18667feea4a8454230057f9f91ad242fb16709d0ea64423b9af163b16eb95345",
+					"outcome": "win_ascendance",
+					"days": 733,
+					"score": 81.7
+				}
+			]
+		},
+		{
 			"model": "z-ai/glm-5.3-flash",
 			"backend": "openrouter",
 			"effort": "normal",
@@ -516,6 +584,75 @@
 					"sha256": "6a3a443dec1213701119ddd7db94a8135e390c6e5ce130fa2091c630ff39cc82",
 					"outcome": "lose_contained",
 					"days": 429,
+					"score": 0.0
+				}
+			]
+		},
+		{
+			"model": "stealth/space-bunny-alpha",
+			"backend": "openrouter",
+			"effort": "high",
+			"params": {
+				"temperature": 0.0,
+				"max_completion_tokens": 16000.0,
+				"json_mode": true,
+				"reasoning": "max",
+				"top_p": -1.0,
+				"effort": "high"
+			},
+			"params_id": "e203a245",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "quick",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 3,
+			"of": 3,
+			"score": 52.5,
+			"wins": 2,
+			"win_rate": 0.666666666666667,
+			"outcomes": {
+				"lose_contained": 1,
+				"win_ascendance": 2
+			},
+			"mean_win_days": 850,
+			"calls": 340,
+			"invalid_answers": 3,
+			"rejected_actions": 77,
+			"tokens_in": 4861575,
+			"tokens_out": 1424264,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/stealth--space-bunny-alpha__e203a245__p1__quick__s1001.json",
+				"runs/stealth--space-bunny-alpha__e203a245__p1__quick__s1002.json",
+				"runs/stealth--space-bunny-alpha__e203a245__p1__quick__s1003.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/stealth--space-bunny-alpha__e203a245__p1__quick__s1001.json",
+					"sha256": "e309e48b53ba0867834b1b5a930603b24bdb8ea9cc3291cd4cb03812db4409a8",
+					"outcome": "win_ascendance",
+					"days": 823,
+					"score": 79.4
+				},
+				{
+					"seed": 1002,
+					"file": "runs/stealth--space-bunny-alpha__e203a245__p1__quick__s1002.json",
+					"sha256": "8d71e987924e8c4c0024c5a508e5b9daef7aea8b7c4a2c95e2d5ca076e293974",
+					"outcome": "win_ascendance",
+					"days": 877,
+					"score": 78.1
+				},
+				{
+					"seed": 1003,
+					"file": "runs/stealth--space-bunny-alpha__e203a245__p1__quick__s1003.json",
+					"sha256": "ecf4b5cd570fbb3a4efd0c5e592bd82eb7ad4564dcddb5d5f214e1245ac5190b",
+					"outcome": "lose_contained",
+					"days": 423,
 					"score": 0.0
 				}
 			]
@@ -1570,6 +1707,66 @@
 					"outcome": "lose_contained",
 					"days": 332,
 					"score": 0.0
+				}
+			]
+		},
+		{
+			"model": "qwen/qwen3.8-27b:free",
+			"backend": "openrouter",
+			"effort": "high",
+			"params": {
+				"temperature": 0.0,
+				"max_completion_tokens": 16000.0,
+				"json_mode": true,
+				"reasoning": "xhigh",
+				"top_p": -1.0,
+				"effort": "high"
+			},
+			"params_id": "b494adb1",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "quick",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": false,
+			"runs": 2,
+			"of": 3,
+			"score": 77.9,
+			"wins": 2,
+			"win_rate": 1.0,
+			"outcomes": {
+				"win_ascendance": 1,
+				"win_merge": 1
+			},
+			"mean_win_days": 883,
+			"calls": 351,
+			"invalid_answers": 45,
+			"rejected_actions": 21,
+			"tokens_in": 5156990,
+			"tokens_out": 2801850,
+			"cost_usd": 0.0,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/qwen--qwen3.8-27b-free__b494adb1__p1__quick__s1001.json",
+				"runs/qwen--qwen3.8-27b-free__b494adb1__p1__quick__s1003.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/qwen--qwen3.8-27b-free__b494adb1__p1__quick__s1001.json",
+					"sha256": "bd0db5d3efd6e79aca260534a0adb4da9a9a97630c6c491217a0043711e9f36e",
+					"outcome": "win_merge",
+					"days": 802,
+					"score": 80.0
+				},
+				{
+					"seed": 1003,
+					"file": "runs/qwen--qwen3.8-27b-free__b494adb1__p1__quick__s1003.json",
+					"sha256": "2e48af410c400065a6ce487c10cfb2181ddbd095c54d9343758c0c271ac5c055",
+					"outcome": "win_ascendance",
+					"days": 964,
+					"score": 75.9
 				}
 			]
 		},

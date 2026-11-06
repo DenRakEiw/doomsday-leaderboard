@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/qwen--qwen3.8-27b-free__b494adb1__p1__quick__s1002.json",
+	"sha256": "9920797d73c9651e233ba803206388a6328af105c1d6f343bb1fac4930a52ca8",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "77531a30d45fa90281f7506c70f211ee169b72c7",
+	"game_version": "0.7.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "302352bd9eda6ff8cf89eb58f7b618bd323f7cc6a40336ac217d1a768fa5d889",
+	"outcome": "win_ascendance",
+	"days": 1218,
+	"end_day": 1218,
+	"score": 69.5,
+	"checked": "2026-11-06"
+}

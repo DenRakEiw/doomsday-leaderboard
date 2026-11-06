@@ -14,9 +14,9 @@ Each row is one model with one set of parameters over a fixed seed suite (standa
 | — | z-ai/glm-5.3-flash | Normal | temperature 0 | 79.3 | 3/3 | win_ascendance 3 | 829 | 605 |
 | — | anthropic/claude-sonnet-5.5 | High | temperature 0, reasoning high | 77.5 | 3/3 | win_ascendance 2, win_merge 1 | 902 | 390 |
 | — | google/gemini-3.8-flash | High | temperature 0, reasoning high | 77.2 | 3/3 | win_ascendance 3 | 913 | 398 |
+| — | qwen/qwen3.8-27b:free | High | temperature 0, reasoning xhigh | 75.1 | 3/3 | win_ascendance 2, win_merge 1 | 995 | 535 |
 | — | anthropic/claude-sonnet-5 | reasoning medium | temperature 0, reasoning medium | 53.4 | 2/3 | lose_contained 1, win_merge 2 | 798 | 274 |
 | — | typesafe/jev-1.13 (typesafe/jev-1.13-20260917) | — | choice v1, picks 3/2/2/2 | 52.6 | 2/3 | lose_contained 1, win_merge 2 | 843 | 289 |
 | — | stealth/space-bunny-alpha | High | temperature 0, reasoning max | 52.5 | 2/3 | lose_contained 1, win_ascendance 2 | 850 | 340 |
 | — | nvidia/nemotron-3-super-120b-a12b:free | High | temperature 0, reasoning high | 22.1 | 1/3 | lose_contained 2, win_merge 1 | 1343 | 432 |
-| — | qwen/qwen3.8-27b:free | High | temperature 0, reasoning xhigh | 77.9 | 2/2 | win_ascendance 1, win_merge 1 | 883 | 351 |
 | — | nvidia/nemotron-3-ultra-550b-a55b:free | High | temperature 0, reasoning high | 39.2 | 1/2 | lose_contained 1, win_merge 1 | 862 | 250 |

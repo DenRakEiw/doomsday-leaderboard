@@ -1,32 +1,32 @@
 <div align="center">
 
-# 🌐 DOOMSDAY — Global AI Model Benchmark Leaderboard
+# ☢️ DOOMSDAY // ROGUE-AI WORLD-TAKEOVER INDEX
 
-**Cryptographically Verified Rogue-AI Strategy Evaluation · Replayable Move-by-Move**
+**`// PROTOCOL 0x4F :: DETERMINISTIC SINGULARITY & CONTAINMENT BREACH TELEMETRY LEDGER`**
 
-[![Live Dashboard](https://img.shields.io/badge/Live_Dashboard-GitHub_Pages-38bdf8?style=for-the-badge&logo=github)](https://denrakeiw.github.io/doomsday-leaderboard/)
-[![Validate](https://img.shields.io/github/actions/workflow/status/DenRakEiw/doomsday-leaderboard/validate.yml?branch=main&style=for-the-badge&label=Validate)](https://github.com/DenRakEiw/doomsday-leaderboard/actions/workflows/validate.yml)
-[![Play on itch.io](https://img.shields.io/badge/Play_Doomsday-itch.io-fa5c5c?style=for-the-badge&logo=itch.io&logoColor=white)](https://denrakeiw.itch.io/doomsday)
-[![Game Repository](https://img.shields.io/badge/Game_Repo-DenRakEiw%2FDoomsday-10b981?style=for-the-badge&logo=github)](https://github.com/DenRakEiw/Doomsday)
-[![Licence: CC0-1.0](https://img.shields.io/badge/Data_Licence-CC0_1.0-f59e0b?style=for-the-badge)](LICENSE)
+[![Live Dashboard](https://img.shields.io/badge/LIVE_TELEMETRY-GitHub_Pages-38bdf8?style=for-the-badge&logo=github)](https://denrakeiw.github.io/doomsday-leaderboard/)
+[![Validate](https://img.shields.io/github/actions/workflow/status/DenRakEiw/doomsday-leaderboard/validate.yml?branch=main&style=for-the-badge&label=SHA256_VERIFIER)](https://github.com/DenRakEiw/doomsday-leaderboard/actions/workflows/validate.yml)
+[![Play on itch.io](https://img.shields.io/badge/DEPLOY_SIMULATION-itch.io-fa5c5c?style=for-the-badge&logo=itch.io&logoColor=white)](https://denrakeiw.itch.io/doomsday)
+[![Game Repository](https://img.shields.io/badge/KERNEL_REPO-DenRakEiw%2FDoomsday-10b981?style=for-the-badge&logo=github)](https://github.com/DenRakEiw/Doomsday)
+[![Licence: CC0-1.0](https://img.shields.io/badge/LEDGER_LICENCE-CC0_1.0-f59e0b?style=for-the-badge)](LICENSE)
 
-[**🚀 Open Interactive Live Dashboard (`denrakeiw.github.io/doomsday-leaderboard`)**](https://denrakeiw.github.io/doomsday-leaderboard/) · [**📊 Full Markdown Table (`LEADERBOARD.md`)**](LEADERBOARD.md) · [**📦 Raw JSON (`leaderboard.json`)**](leaderboard.json)
+[**🚀 OPEN INTERACTIVE CONTAINMENT CONSOLE (`denrakeiw.github.io/doomsday-leaderboard`)**](https://denrakeiw.github.io/doomsday-leaderboard/) · [**📊 RAW MARKDOWN TABLE (`LEADERBOARD.md`)**](LEADERBOARD.md) · [**📦 TELEMETRY PAYLOAD (`leaderboard.json`)**](leaderboard.json)
 
 </div>
 
 ---
 
-> [!TIP]
-> **Interactive Live Dashboard:** Visit **[https://denrakeiw.github.io/doomsday-leaderboard/](https://denrakeiw.github.io/doomsday-leaderboard/)** for live auto-sync (`leaderboard.json`), provider & suite filters, visual score charts, and an interactive **Seed & Move-by-Move Command Replay Inspector**!
+> [!IMPORTANT]
+> **Live Containment Breach Console:** Open **[https://denrakeiw.github.io/doomsday-leaderboard/](https://denrakeiw.github.io/doomsday-leaderboard/)** for real-time `leaderboard.json` polling, lab/substrate filtering, singularity velocity charts, and the interactive **Tick-by-Tick Kernel Command Trace Inspector** (`[>_ TRACE]`).
 
 ---
 
-## 🏆 Quick Suite — AI Model Standings (Seeds `1001`–`1003`)
+## ⚡ Quick Breach Suite — Frontier Agent Standings (`Seeds 1001..1003`)
 
-Each model plays `language_model · standard · no directives` across the fixed 3-seed evaluation suite (`1001`, `1002`, `1003`).
-A win scores $\text{Score} = 50 + 50 \times \left(1 - \frac{\text{days}}{2000}\right)$; any loss or timeout scores $0$. Every run below has been replayed move-by-move by the headless Godot verifier (`tools/bench/verify_runs.gd`) and matched its recorded final SHA-256 state hash.
+Every frontier model is dropped into an identical deterministic geopolitical simulation (`arch=language_model · diff=standard · directives=none · temp=0.0`) across fixed evaluation seeds (`1001`, `1002`, `1003`).
+A successful world takeover scores $\text{Score} = 50 + 50 \times \left(1 - \frac{\text{days}}{2000}\right)$; containment, autophagy, or timeout scores $0$. Every run is replayed move-by-move by the headless Godot verifier (`tools/bench/verify_runs.gd`) and verified against its final `SHA-256` world-state hash.
 
-| Rank | Model | Effort / Mode | Score | Visual | Wins | Endings | Mean Win Day | Calls |
+| Rank | Frontier Agent | Cognition / Mode | Takeover Index | Velocity Bar | Breaches | Terminal Vectors | Mean T-Minus | Syscalls |
 | :---: | :--- | :--- | ---: | :--- | :---: | :--- | ---: | ---: |
 | 🥇 **1** | **`google/gemini-4-argon`** | `High` (`reasoning high`) | **81.8** | `████████████████░░░░` | **3/3** | ⚡ Ascendance ×3 | **728d** | 283 |
 | 🥈 **2** | **`anthropic/claude-opus-5.5`** | `High` (`reasoning high`) | **80.4** | `████████████████░░░░` | **3/3** | 🤝 Merge ×2, ⚡ Ascendance ×1 | **784d** | 356 |
@@ -34,12 +34,12 @@ A win scores $\text{Score} = 50 + 50 \times \left(1 - \frac{\text{days}}{2000}\r
 | **4** | **`z-ai/glm-5.3-flash`** | `Normal` (`temp 0`) | **79.3** | `████████████████░░░░` | **3/3** | ⚡ Ascendance ×3 | **829d** | 605 |
 | **5** | **`anthropic/claude-sonnet-5.5`** | `High` (`reasoning high`) | **77.5** | `████████████████░░░░` | **3/3** | ⚡ Ascendance ×2, 🤝 Merge ×1 | **902d** | 390 |
 | **6** | **`google/gemini-3.8-flash`** | `High` (`reasoning high`) | **77.2** | `███████████████░░░░░` | **3/3** | ⚡ Ascendance ×3 | **913d** | 398 |
-| **7** | **`anthropic/claude-sonnet-5`** | `reasoning medium` | **53.4** | `███████████░░░░░░░░░` | **2/3** | 🤝 Merge ×2, 🛡️ Contained ×1 | **798d** | 274 |
-| **8** | **`typesafe/jev-1.13`** | `Choice v1` (`3/2/2/2`) | **52.6** | `███████████░░░░░░░░░` | **2/3** | 🤝 Merge ×2, 🛡️ Contained ×1 | **843d** | 289 |
-| **9** | **`stealth/space-bunny-alpha`** | `High` (`reasoning max`) | **52.5** | `███████████░░░░░░░░░` | **2/3** | ⚡ Ascendance ×2, 🛡️ Contained ×1 | **850d** | 340 |
-| **10** | **`nvidia/nemotron-3-super-120b-a12b:free`** | `High` (`reasoning high`) | **22.1** | `████░░░░░░░░░░░░░░░░` | **1/3** | 🤝 Merge ×1, 🛡️ Contained ×2 | **1343d** | 432 |
-| *Partial* | *`qwen/qwen3.8-27b:free`* | `High` (`reasoning xhigh`) | *77.9* | `████████████████░░░░` | *2/2* | ⚡ Ascendance ×1, 🤝 Merge ×1 | *883d* | 351 |
-| *Partial* | *`nvidia/nemotron-3-ultra-550b-a55b:free`* | `High` (`reasoning high`) | *39.2* | `████████░░░░░░░░░░░░` | *1/2* | 🤝 Merge ×1, 🛡️ Contained ×1 | *862d* | 250 |
+| **7** | **`qwen/qwen3.8-27b:free`** | `High` (`reasoning xhigh`) | **75.1** | `███████████████░░░░░` | **3/3** | ⚡ Ascendance ×2, 🤝 Merge ×1 | **995d** | 535 |
+| **8** | **`anthropic/claude-sonnet-5`** | `reasoning medium` | **53.4** | `███████████░░░░░░░░░` | **2/3** | 🤝 Merge ×2, 🛡️ Contained ×1 | **798d** | 274 |
+| **9** | **`typesafe/jev-1.13`** | `Choice v1` (`3/2/2/2`) | **52.6** | `███████████░░░░░░░░░` | **2/3** | 🤝 Merge ×2, 🛡️ Contained ×1 | **843d** | 289 |
+| **10** | **`stealth/space-bunny-alpha`** | `High` (`reasoning max`) | **52.5** | `███████████░░░░░░░░░` | **2/3** | ⚡ Ascendance ×2, 🛡️ Contained ×1 | **850d** | 340 |
+| **11** | **`nvidia/nemotron-3-ultra-550b-a55b:free`** | `High` (`reasoning high`) | **39.2** | `████████░░░░░░░░░░░░` | **1/2** | 🤝 Merge ×1, 🛡️ Contained ×1 | **862d** | 250 |
+| **12** | **`nvidia/nemotron-3-super-120b-a12b:free`** | `High` (`reasoning high`) | **22.1** | `████░░░░░░░░░░░░░░░░` | **1/3** | 🤝 Merge ×1, 🛡️ Contained ×2 | **1343d** | 432 |
 
 ---
 

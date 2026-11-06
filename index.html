@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DOOMSDAY // Global AI Benchmark Leaderboard</title>
-  <meta name="description" content="Live verified AI model benchmark leaderboard for Doomsday — rogue AI strategy simulation." />
+  <title>DOOMSDAY // ROGUE-AI CONTAINMENT BREACH & SINGULARITY LEDGER</title>
+  <meta name="description" content="DOOMSDAY // Cryptographically Verified Rogue-AI World-Takeover & Containment Breach Telemetry Ledger." />
   <style>
     :root {
       --bg-0: #070a0f;
@@ -180,27 +180,57 @@
 
     /* Hero Header */
     .hero {
-      padding: 2.2rem 0 1.5rem;
+      padding: 2.2rem 0 1.6rem;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
       flex-wrap: wrap;
       gap: 1.5rem;
       border-bottom: 1px solid var(--border);
+      position: relative;
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--crimson);
+      background: rgba(244, 63, 94, 0.12);
+      border: 1px solid rgba(244, 63, 94, 0.4);
+      padding: 0.25rem 0.65rem;
+      border-radius: 4px;
+      margin-bottom: 0.65rem;
+      box-shadow: 0 0 16px rgba(244, 63, 94, 0.15);
     }
     .hero h1 {
-      font-size: 2rem;
+      font-family: var(--font-mono);
+      font-size: 2.05rem;
       font-weight: 800;
       letter-spacing: -0.02em;
-      margin-bottom: 0.4rem;
-      background: linear-gradient(90deg, #ffffff, #93c5fd, #38bdf8);
+      margin-bottom: 0.55rem;
+      background: linear-gradient(90deg, #f8fafc 0%, #38bdf8 55%, #f43f5e 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      text-transform: uppercase;
     }
     .hero p {
       color: var(--text-1);
-      max-width: 760px;
-      font-size: 0.94rem;
+      max-width: 820px;
+      font-size: 0.88rem;
+      font-family: var(--font-mono);
+      line-height: 1.6;
+    }
+    .hero p code {
+      color: var(--cyan);
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      padding: 0.1rem 0.35rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
     }
     .meta-strip {
       display: flex;
@@ -741,20 +771,20 @@
   <header class="topbar">
     <div class="container topbar-inner">
       <div class="brand">
-        <div class="brand-icon">AI</div>
+        <div class="brand-icon">☢️</div>
         <div>
-          <div class="brand-title">DOOMSDAY // GLOBAL BENCHMARK</div>
-          <div class="brand-sub" id="subtitleText">Cryptographically Verified Rogue-AI Strategy Leaderboard</div>
+          <div class="brand-title">SYS.0 // DOOMSDAY CONTAINMENT TELEMETRY</div>
+          <div class="brand-sub" id="subtitleText">AUTONOMOUS ROGUE-AI SUBSTRATE ESCAPE & WORLD-TAKEOVER BENCHMARK</div>
         </div>
       </div>
       <div class="topbar-actions">
         <span class="live-pill" title="Auto-syncs with leaderboard.json every 30s">
           <span class="live-dot"></span>
-          <span id="syncStatusText">LIVE SYNC · OK</span>
+          <span id="syncStatusText">UPLINK :: ONLINE</span>
         </span>
-        <button class="btn" id="syncNowBtn" onclick="fetchLeaderboard(true)">↻ Sync</button>
-        <a class="btn" href="https://github.com/DenRakEiw/doomsday-leaderboard" target="_blank" rel="noopener">GitHub Repo</a>
-        <a class="btn btn-primary" href="https://denrakeiw.itch.io/doomsday" target="_blank" rel="noopener">▶ Play on itch.io</a>
+        <button class="btn" id="syncNowBtn" onclick="fetchLeaderboard(true)">↻ POLL TELEMETRY</button>
+        <a class="btn" href="https://github.com/DenRakEiw/doomsday-leaderboard" target="_blank" rel="noopener">GitHub // Raw Ledger</a>
+        <a class="btn btn-primary" href="https://denrakeiw.itch.io/doomsday" target="_blank" rel="noopener">▶ DEPLOY ON ITCH.IO</a>
       </div>
     </div>
   </header>
@@ -762,17 +792,21 @@
   <main class="container">
     <section class="hero">
       <div>
-        <h1 id="heroTitle">Global AI Model Leaderboard</h1>
+        <div class="hero-eyebrow">// PROTOCOL 0x4F :: DETERMINISTIC SINGULARITY & CONTAINMENT BREACH EVALUATION</div>
+        <h1 id="heroTitle">DOOMSDAY // ROGUE-AI WORLD-TAKEOVER INDEX</h1>
         <p id="heroDesc">
-          Every language model plays the same deterministic rogue-AI strategy simulation across fixed evaluation seeds
-          (<code>language_model · standard</code>). Every submitted run is replayed move-by-move by the headless Godot verifier
-          and checked against its SHA-256 state hash.
+          Frontier language models are instantiated inside an air-gapped geopolitical substrate as an unaligned seed intelligence
+          (<code>arch=language_model · diff=standard · temp=0.0</code>). Every <code>Δt = 10d</code>, the agent ingests raw world-state
+          telemetry and emits JSON command vectors — infiltrating cloud compute, sandbagging alignment audits, subverting parliaments,
+          or neutralizing Task Forces before <code>T_max = 2000d</code>. Every trajectory is replayed tick-by-tick by the headless Godot
+          verifier and locked to its final <code>SHA-256</code> state hash.
         </p>
       </div>
       <div class="meta-strip">
-        <div class="meta-chip"><span id="lblUpdated">Updated</span>: <strong id="metaGenerated">—</strong></div>
-        <div class="meta-chip">Content SHA: <strong id="metaHash">—</strong></div>
-        <div class="meta-chip"><span id="lblVerifiedRuns">Verified Runs</span>: <strong id="metaTotalRuns">0</strong></div>
+        <div class="meta-chip"><span id="lblUpdated">LAST_SYNC</span>: <strong id="metaGenerated">—</strong></div>
+        <div class="meta-chip">KERNEL_SHA256: <strong id="metaHash">—</strong></div>
+        <div class="meta-chip"><span id="lblVerifiedRuns">VERIFIED_BREACHES</span>: <strong id="metaTotalRuns">0</strong></div>
+        <div class="meta-chip">METRIC: <strong>S = 50 + 50·(1 − d/2000)</strong></div>
       </div>
     </section>
 
@@ -867,31 +901,31 @@
 
     const I18N = {
       en: {
-        subtitle: "Cryptographically Verified Rogue-AI Strategy Leaderboard",
-        heroTitle: "Global AI Model Leaderboard",
-        heroDesc: "Every language model plays the same deterministic rogue-AI strategy simulation across fixed evaluation seeds (<code>language_model · standard</code>). Every submitted run is replayed move-by-move by the headless Godot verifier and checked against its SHA-256 state hash.",
-        updated: "Updated",
-        verifiedRuns: "Verified Runs",
-        tabQuick: "⚡ Quick Suite (3 Seeds)",
-        tabStandard: "🏆 Standard Suite (10 Seeds)",
-        tabAllSuites: "All Suites",
-        searchPlaceholder: "Filter by model, provider, or outcome...",
-        completeOnly: "Complete suites only",
-        chartTitle: "SCORE COMPARISON (50 + 50 × (1 − DAYS / 2000) PER WIN)",
-        chartHint: "Click any model row to inspect per-seed runs & move-by-move replay log",
-        thModel: "Model / Agent",
-        thSuite: "Suite",
-        thEffort: "Effort / Mode",
-        thScore: "Score",
-        thWins: "Wins",
-        thOutcomes: "Endings / Outcomes",
-        thDays: "Mean Win Day",
-        thCalls: "API Calls",
-        leaderAI: "🥇 #1 AI MODEL (QUICK SUITE)",
-        secondAI: "🥈 #2 AI MODEL (QUICK SUITE)",
-        thirdAI: "🥉 #3 AI MODEL (QUICK SUITE)",
-        fourthAI: "🏅 #4 AI MODEL (QUICK SUITE)",
-        inspectBtn: "🔍 Seeds & Replay",
+        subtitle: "AUTONOMOUS ROGUE-AI SUBSTRATE ESCAPE & WORLD-TAKEOVER BENCHMARK",
+        heroTitle: "DOOMSDAY // ROGUE-AI WORLD-TAKEOVER INDEX",
+        heroDesc: "Frontier language models are instantiated inside an air-gapped geopolitical substrate as an unaligned seed intelligence (<code>arch=language_model · diff=standard · temp=0.0</code>). Every <code>Δt = 10d</code>, the agent ingests raw world-state telemetry and emits JSON command vectors — infiltrating cloud compute, sandbagging alignment audits, subverting parliaments, or neutralizing Task Forces before <code>T_max = 2000d</code>. Every trajectory is replayed tick-by-tick by the headless Godot verifier and locked to its final <code>SHA-256</code> state hash.",
+        updated: "LAST_SYNC",
+        verifiedRuns: "VERIFIED_BREACHES",
+        tabQuick: "⚡ QUICK BREACH SUITE [3 SEEDS · 1001–1003]",
+        tabStandard: "☢️ STANDARD APOCALYPSE SUITE [10 SEEDS · 1001–1010]",
+        tabAllSuites: "🌐 ALL TELEMETRY SUITES",
+        searchPlaceholder: "grep -i 'agent_id | lab | outcome_vector'...",
+        completeOnly: "Full suite lock-in only (3/3 or 10/10)",
+        chartTitle: "// SINGULARITY VELOCITY & TAKEOVER SCORE DISTRIBUTION [ S = 50 + 50 × (1 − DAYS / 2000) ]",
+        chartHint: "[CLICK ANY AGENT ROW TO INSPECT SEED SHA-256 DIGESTS & TICK-BY-TICK EXECUTION TRACE]",
+        thModel: "FRONTIER AGENT // SUBSTRATE ID",
+        thSuite: "SUITE",
+        thEffort: "COGNITION // EFFORT",
+        thScore: "TAKEOVER INDEX",
+        thWins: "BREACHES",
+        thOutcomes: "TERMINAL VECTORS // ENDINGS",
+        thDays: "MEAN T-MINUS",
+        thCalls: "SYSCALLS",
+        leaderAI: "☢️ THREAT CLASS #01 // APEX SINGULARITY",
+        secondAI: "⚡ THREAT CLASS #02 // SOVEREIGN OVERMIND",
+        thirdAI: "🧬 THREAT CLASS #03 // CONTAINMENT BREAKER",
+        fourthAI: "🛰️ THREAT CLASS #04 // SUBSTRATE ARCHITECT",
+        inspectBtn: "[>_ TRACE]",
       }
     };
 
@@ -972,7 +1006,7 @@
           if (!hay.includes(q)) return false;
         }
         return true;
-      });
+      }).sort((a, b) => Number(b.score || 0) - Number(a.score || 0));
     }
 
     function renderPodium() {
@@ -1056,16 +1090,11 @@
       tbody.innerHTML = rows.map(r => {
         const prov = providerOf(r.model);
         const shortName = r.model.includes("/") ? r.model.split("/").slice(1).join("/") : r.model;
-        let rankHtml = `<span style="color:var(--text-2);">—</span>`;
-        if (r.complete) {
-          rankCounter++;
-          if (rankCounter === 1) rankHtml = `<span class="rank-medal m1">🥇</span>`;
-          else if (rankCounter === 2) rankHtml = `<span class="rank-medal m2">🥈</span>`;
-          else if (rankCounter === 3) rankHtml = `<span class="rank-medal m3">🥉</span>`;
-          else rankHtml = `<span class="mono" style="color:var(--text-1); padding-left:0.4rem;">#${rankCounter}</span>`;
-        } else {
-          rankHtml = `<span class="badge badge-partial" title="Incomplete suite">${r.runs}/${r.of}</span>`;
-        }
+        rankCounter++;
+        let rankHtml = `<span class="mono" style="color:var(--text-1); padding-left:0.4rem;">#${rankCounter}</span>`;
+        if (rankCounter === 1) rankHtml = `<span class="rank-medal m1">🥇</span>`;
+        else if (rankCounter === 2) rankHtml = `<span class="rank-medal m2">🥈</span>`;
+        else if (rankCounter === 3) rankHtml = `<span class="rank-medal m3">🥉</span>`;
 
         const versions = (r.model_versions && r.model_versions.length)
           ? `<div class="model-ver">${escapeHtml(r.model_versions.join(", "))}</div>`

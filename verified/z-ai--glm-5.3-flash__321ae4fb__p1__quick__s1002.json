@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/z-ai--glm-5.3-flash__321ae4fb__p1__quick__s1002.json",
+	"sha256": "0688aa7bc631762e9e155e68722d67a449e8adf34db783817c120349fa9bb5bd",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "3fa30ad83bba198931187b316f539175a8168d50",
+	"game_version": "0.7.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "43b39cfe0174266ac6fac4c4412b5ebe33f84f85153af21e27872b8685040a38",
+	"outcome": "win_ascendance",
+	"days": 919,
+	"end_day": 919,
+	"score": 77.0,
+	"checked": "2026-11-06"
+}

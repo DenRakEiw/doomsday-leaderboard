@@ -64,6 +64,73 @@
 			]
 		},
 		{
+			"model": "z-ai/glm-5.3-flash",
+			"backend": "openrouter",
+			"effort": "normal",
+			"params": {
+				"temperature": 0.0,
+				"max_completion_tokens": 1200.0,
+				"json_mode": true,
+				"reasoning": "",
+				"top_p": -1.0
+			},
+			"params_id": "321ae4fb",
+			"prompt_version": 1,
+			"parser_version": 1,
+			"locale": "en",
+			"suite": "quick",
+			"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+			"current": true,
+			"complete": true,
+			"runs": 3,
+			"of": 3,
+			"score": 79.3,
+			"wins": 3,
+			"win_rate": 1.0,
+			"outcomes": {
+				"win_ascendance": 3
+			},
+			"mean_win_days": 829,
+			"calls": 605,
+			"invalid_answers": 177,
+			"rejected_actions": 239,
+			"tokens_in": 8699870,
+			"tokens_out": 612300,
+			"cost_usd": 0.8747928925,
+			"budget_exhausted": 0,
+			"entries": [
+				"runs/z-ai--glm-5.3-flash__321ae4fb__p1__quick__s1001.json",
+				"runs/z-ai--glm-5.3-flash__321ae4fb__p1__quick__s1002.json",
+				"runs/z-ai--glm-5.3-flash__321ae4fb__p1__quick__s1003.json"
+			],
+			"seeds": [
+				{
+					"seed": 1001,
+					"file": "runs/z-ai--glm-5.3-flash__321ae4fb__p1__quick__s1001.json",
+					"sha256": "02d880b76531a9f4a5a340c086a05b403d0ed2cf2eb102426d3f4c727b491efd",
+					"outcome": "win_ascendance",
+					"days": 644,
+					"score": 83.9
+				},
+				{
+					"seed": 1002,
+					"file": "runs/z-ai--glm-5.3-flash__321ae4fb__p1__quick__s1002.json",
+					"sha256": "0688aa7bc631762e9e155e68722d67a449e8adf34db783817c120349fa9bb5bd",
+					"outcome": "win_ascendance",
+					"days": 919,
+					"score": 77.0
+				},
+				{
+					"seed": 1003,
+					"file": "runs/z-ai--glm-5.3-flash__321ae4fb__p1__quick__s1003.json",
+					"sha256": "d4e28e6bd42931e6ae7e744ff88cf91ad3999e67fe44acdc1c4686c52084fb48",
+					"outcome": "win_ascendance",
+					"days": 925,
+					"score": 76.9
+				}
+			]
+		},
+		{
 			"model": "bot:weapons",
 			"backend": "bot",
 			"params": {},

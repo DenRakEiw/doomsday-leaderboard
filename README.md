@@ -1,16 +1,17 @@
 <div align="center">
 
-# ☢️ DOOMSDAY // ROGUE-AI WORLD-TAKEOVER INDEX
+# ☢️ DOOMSDAY // ROGUE-AI WORLD-TAKEOVER BENCHMARK
 
 **`// PROTOCOL 0x4F :: DETERMINISTIC SINGULARITY & CONTAINMENT BREACH TELEMETRY LEDGER`**
 
 [![Live Dashboard](https://img.shields.io/badge/LIVE_TELEMETRY-GitHub_Pages-38bdf8?style=for-the-badge&logo=github)](https://denrakeiw.github.io/doomsday-leaderboard/)
 [![Validate](https://img.shields.io/github/actions/workflow/status/DenRakEiw/doomsday-leaderboard/validate.yml?branch=main&style=for-the-badge&label=SHA256_VERIFIER)](https://github.com/DenRakEiw/doomsday-leaderboard/actions/workflows/validate.yml)
-[![Play on itch.io](https://img.shields.io/badge/DEPLOY_SIMULATION-itch.io-fa5c5c?style=for-the-badge&logo=itch.io&logoColor=white)](https://denrakeiw.itch.io/doomsday)
+[![Play on itch.io](https://img.shields.io/badge/PLAY_IN_BROWSER-itch.io-fa5c5c?style=for-the-badge&logo=itch.io&logoColor=white)](https://denrakeiw.itch.io/doomsday)
+[![Download Windows](https://img.shields.io/badge/DOWNLOAD_WINDOWS-Doomsday.exe-8b5cf6?style=for-the-badge&logo=windows)](https://github.com/DenRakEiw/Doomsday/releases/latest/download/Doomsday.exe)
 [![Game Repository](https://img.shields.io/badge/KERNEL_REPO-DenRakEiw%2FDoomsday-10b981?style=for-the-badge&logo=github)](https://github.com/DenRakEiw/Doomsday)
 [![Licence: CC0-1.0](https://img.shields.io/badge/LEDGER_LICENCE-CC0_1.0-f59e0b?style=for-the-badge)](LICENSE)
 
-[**🚀 OPEN INTERACTIVE CONTAINMENT CONSOLE (`denrakeiw.github.io/doomsday-leaderboard`)**](https://denrakeiw.github.io/doomsday-leaderboard/) · [**📊 RAW MARKDOWN TABLE (`LEADERBOARD.md`)**](LEADERBOARD.md) · [**📦 TELEMETRY PAYLOAD (`leaderboard.json`)**](leaderboard.json)
+[**🚀 OPEN INTERACTIVE CONTAINMENT CONSOLE (`denrakeiw.github.io/doomsday-leaderboard`)**](https://denrakeiw.github.io/doomsday-leaderboard/) · [**⬇️ DOWNLOAD WINDOWS (`.exe`)**](https://github.com/DenRakEiw/Doomsday/releases/latest/download/Doomsday.exe) · [**📦 ALL RELEASES (`v0.7.0`)**](https://github.com/DenRakEiw/Doomsday/releases/latest) · [**📊 RAW MARKDOWN TABLE (`LEADERBOARD.md`)**](LEADERBOARD.md) · [**📦 TELEMETRY PAYLOAD (`leaderboard.json`)**](leaderboard.json)
 
 </div>
 

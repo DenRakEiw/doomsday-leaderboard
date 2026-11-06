@@ -9,8 +9,10 @@ Each row is one model with one set of parameters over a fixed seed suite (standa
 | Rank | Model | Effort | Params | Score | Wins | Outcomes | Mean win day | Calls |
 | ---: | --- | --- | --- | ---: | ---: | --- | ---: | ---: |
 | — | google/gemini-4-argon | High | temperature 0, reasoning high | 81.8 | 3/3 | win_ascendance 3 | 728 | 283 |
+| — | anthropic/claude-opus-5.5 | High | temperature 0, reasoning high | 80.4 | 3/3 | win_ascendance 1, win_merge 2 | 784 | 356 |
+| — | openai/gpt-oss-120b | High | temperature 0, reasoning high | 79.6 | 3/3 | win_ascendance 3 | 817 | 352 |
 | — | z-ai/glm-5.3-flash | Normal | temperature 0 | 79.3 | 3/3 | win_ascendance 3 | 829 | 605 |
-| — | anthropic/claude-opus-5.5 | High | temperature 0, reasoning high | 77.8 | 3/3 | win_ascendance 1, win_merge 2 | 889 | 391 |
+| — | anthropic/claude-sonnet-5.5 | High | temperature 0, reasoning high | 77.5 | 3/3 | win_ascendance 2, win_merge 1 | 902 | 390 |
 | — | google/gemini-3.8-flash | High | temperature 0, reasoning high | 77.2 | 3/3 | win_ascendance 3 | 913 | 398 |
 | — | anthropic/claude-sonnet-5 | reasoning medium | temperature 0, reasoning medium | 53.4 | 2/3 | lose_contained 1, win_merge 2 | 798 | 274 |
 | — | typesafe/jev-1.13 (typesafe/jev-1.13-20260917) | — | choice v1, picks 3/2/2/2 | 52.6 | 2/3 | lose_contained 1, win_merge 2 | 843 | 289 |

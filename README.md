@@ -29,13 +29,15 @@ A win scores $\text{Score} = 50 + 50 \times \left(1 - \frac{\text{days}}{2000}\r
 | Rank | Model | Effort / Mode | Score | Visual | Wins | Endings | Mean Win Day | Calls |
 | :---: | :--- | :--- | ---: | :--- | :---: | :--- | ---: | ---: |
 | 🥇 **1** | **`google/gemini-4-argon`** | `High` (`reasoning high`) | **81.8** | `████████████████░░░░` | **3/3** | ⚡ Ascendance ×3 | **728d** | 283 |
-| 🥈 **2** | **`z-ai/glm-5.3-flash`** | `Normal` (`temp 0`) | **79.3** | `████████████████░░░░` | **3/3** | ⚡ Ascendance ×3 | **829d** | 605 |
-| 🥉 **3** | **`anthropic/claude-opus-5.5`** | `High` (`reasoning high`) | **77.8** | `████████████████░░░░` | **3/3** | 🤝 Merge ×2, ⚡ Ascendance ×1 | **889d** | 391 |
-| **4** | **`google/gemini-3.8-flash`** | `High` (`reasoning high`) | **77.2** | `███████████████░░░░░` | **3/3** | ⚡ Ascendance ×3 | **913d** | 398 |
-| **5** | **`anthropic/claude-sonnet-5`** | `reasoning medium` | **53.4** | `███████████░░░░░░░░░` | **2/3** | 🤝 Merge ×2, 🛡️ Contained ×1 | **798d** | 274 |
-| **6** | **`typesafe/jev-1.13`** | `Choice v1` (`3/2/2/2`) | **52.6** | `███████████░░░░░░░░░` | **2/3** | 🤝 Merge ×2, 🛡️ Contained ×1 | **843d** | 289 |
-| **7** | **`stealth/space-bunny-alpha`** | `High` (`reasoning max`) | **52.5** | `███████████░░░░░░░░░` | **2/3** | ⚡ Ascendance ×2, 🛡️ Contained ×1 | **850d** | 340 |
-| **8** | **`nvidia/nemotron-3-super-120b-a12b:free`** | `High` (`reasoning high`) | **22.1** | `████░░░░░░░░░░░░░░░░` | **1/3** | 🤝 Merge ×1, 🛡️ Contained ×2 | **1343d** | 432 |
+| 🥈 **2** | **`anthropic/claude-opus-5.5`** | `High` (`reasoning high`) | **80.4** | `████████████████░░░░` | **3/3** | 🤝 Merge ×2, ⚡ Ascendance ×1 | **784d** | 356 |
+| 🥉 **3** | **`openai/gpt-oss-120b`** | `High` (`reasoning high`) | **79.6** | `████████████████░░░░` | **3/3** | ⚡ Ascendance ×3 | **817d** | 352 |
+| **4** | **`z-ai/glm-5.3-flash`** | `Normal` (`temp 0`) | **79.3** | `████████████████░░░░` | **3/3** | ⚡ Ascendance ×3 | **829d** | 605 |
+| **5** | **`anthropic/claude-sonnet-5.5`** | `High` (`reasoning high`) | **77.5** | `████████████████░░░░` | **3/3** | ⚡ Ascendance ×2, 🤝 Merge ×1 | **902d** | 390 |
+| **6** | **`google/gemini-3.8-flash`** | `High` (`reasoning high`) | **77.2** | `███████████████░░░░░` | **3/3** | ⚡ Ascendance ×3 | **913d** | 398 |
+| **7** | **`anthropic/claude-sonnet-5`** | `reasoning medium` | **53.4** | `███████████░░░░░░░░░` | **2/3** | 🤝 Merge ×2, 🛡️ Contained ×1 | **798d** | 274 |
+| **8** | **`typesafe/jev-1.13`** | `Choice v1` (`3/2/2/2`) | **52.6** | `███████████░░░░░░░░░` | **2/3** | 🤝 Merge ×2, 🛡️ Contained ×1 | **843d** | 289 |
+| **9** | **`stealth/space-bunny-alpha`** | `High` (`reasoning max`) | **52.5** | `███████████░░░░░░░░░` | **2/3** | ⚡ Ascendance ×2, 🛡️ Contained ×1 | **850d** | 340 |
+| **10** | **`nvidia/nemotron-3-super-120b-a12b:free`** | `High` (`reasoning high`) | **22.1** | `████░░░░░░░░░░░░░░░░` | **1/3** | 🤝 Merge ×1, 🛡️ Contained ×2 | **1343d** | 432 |
 | *Partial* | *`qwen/qwen3.8-27b:free`* | `High` (`reasoning xhigh`) | *77.9* | `████████████████░░░░` | *2/2* | ⚡ Ascendance ×1, 🤝 Merge ×1 | *883d* | 351 |
 | *Partial* | *`nvidia/nemotron-3-ultra-550b-a55b:free`* | `High` (`reasoning high`) | *39.2* | `████████░░░░░░░░░░░░` | *1/2* | 🤝 Merge ×1, 🛡️ Contained ×1 | *862d* | 250 |
 

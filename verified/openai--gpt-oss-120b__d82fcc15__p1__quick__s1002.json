@@ -1,0 +1,17 @@
+{
+	"version": 1,
+	"file": "runs/openai--gpt-oss-120b__d82fcc15__p1__quick__s1002.json",
+	"sha256": "5bbc4deef6d0b80974f0e45b114cff7dc79600243d8bedc1fe54a7f67272706e",
+	"verified": true,
+	"reason": "",
+	"detail": "",
+	"game_commit": "1f9087c49d2cfebc537130929eb12aed8785754e",
+	"game_version": "0.7.0",
+	"content_hash": "4a04fdf1827f7d32e758614d18db33f22a994f0672b1200bb990e854dab8dbe8",
+	"state_hash": "32a0d445584944bae9510d9197978d100cf177b8c2636accaaa3bfd0c653c8d2",
+	"outcome": "win_ascendance",
+	"days": 973,
+	"end_day": 973,
+	"score": 75.7,
+	"checked": "2026-11-06"
+}
